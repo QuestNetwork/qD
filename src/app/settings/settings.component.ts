@@ -58,13 +58,25 @@ autoSaveInterval = 30*10000;
       this.bootstrapIpfsPeers = this.q.os.getIpfsBootstrapPeers();
     });
     this.q.os.onSignIn().subscribe( () => {
+
+      if(this.q.os.getSaveLock()){
+        this.saveLockActive = false;
+      }else{
+        this.saveLockActive = true;
+      }
+
       this.autoSaveActive = this.q.os.getAutoSave();
       this.autoSaveInterval = this.q.os.getAutoSaveInterval();
-
     });
+    if(this.q.os.getSaveLock()){
+      this.saveLockActive = false;
+    }else{
+      this.saveLockActive = true;
+    }
 
 
   }
+
   refreshIpfsSwarmPeerList(){
     this.bootstrapIpfsPeers = this.q.os.getIpfsBootstrapPeers();
   }
