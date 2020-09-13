@@ -137,6 +137,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - Change AutoSave Interval
 - Dynamic Swarm Peer List On Desktop (add and remove bootstrap peers)
 - App is now modular, makes building add-ons easy
+- Drive Lock Fixed
 
 ## Roadmap
 
