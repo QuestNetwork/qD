@@ -1,0 +1,33 @@
+<div class="signInScreen" style="min-width: 300px;">
+
+                       <div class="file-drop file-drop-zone sign-in-drop-zone" style="    min-height: 99vh;">
+                       <ngx-file-drop dropZoneLabel="Drop files here" (onFileDrop)="dropped($event)"
+                     (onFileOver)="fileOver($event)">
+                     <!-- (onFileOver)="fileOver($event)" (onFileLeave)="fileLeave($event)"> -->
+
+                         <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
+                           &nbsp;&nbsp;drop .qcprofile here or
+                           <mat-button class="browse-files-button" color="primary" (click)="openFileSelector()">Browse Files</mat-button>
+                         </ng-template>
+                     </ngx-file-drop>
+
+                     <div class="file-drop" style="background:transparent;    text-align: center;">
+                         <button mat-stroked-button color="primary" (click)="generateDefaultSettings()" class="defaultSettingsButton">New Profile</button>
+                    </div>
+                
+
+                     </div>
+
+
+
+
+                 <!-- hidden file opener start !-->
+                 <div style="max-width:1px;max-height:1px;overflow:hidden;opacity:0;margin:0;padding:0;position: fixed;">
+                 <input type="file"  id="openFileButton" (change)="openFile($event.target.files)">
+                 </div>
+                 <!-- hidden file opener end !-->
+
+
+
+
+</div>

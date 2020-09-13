@@ -1,0 +1,47 @@
+
+<!-- <div style="position:fixed;left:0px;top:0px;right:0px;bottom:0px;z-index:1000" *ngIf="screenLocked"></div> -->
+
+<nb-layout>
+  <nb-layout-column>
+    <mat-tab-group #menuTabGroup (selectedTabChange)="selectedTabChanged($event);" dynamicHeight animationDuration="0ms"   (selectedTabChange)="tabClicked($event);">
+
+      <mat-tab label="Sign In"  class="signInTab" [disabled]="!tabAccessibility['signInTab']" >
+      </mat-tab>
+
+      <mat-tab label="Messages"  class="channelTab" [disabled]="!tabAccessibility['channelTab']">
+        </mat-tab>
+
+
+        <mat-tab label="Settings"  class="settingsTab" [disabled]="!tabAccessibility['settingsTab']">
+        </mat-tab>
+
+      </mat-tab-group>
+      <router-outlet></router-outlet>
+
+      </nb-layout-column>
+      </nb-layout>
+
+      <app-load-hex></app-load-hex>
+
+      <div class="statusBarWrapper" >
+        <div style="float:left;padding-top: 3px;" *ngIf="swarmPeers > 0">
+        Connected
+      </div>
+      <div style="float:left;padding-top: 3px;" *ngIf="swarmPeers < 1">
+      Offline
+      </div>
+      <div style="float:right;padding-top: 4px;">
+        <mat-icon class="statusBarRouterIcon">router</mat-icon>
+        &nbsp;
+        {{ swarmPeers }}
+        &nbsp;
+        <nb-icon  icon="radio-outline" class="statusBarRadioIcon"></nb-icon>
+        &nbsp;
+        {{ pubSubPeers }}
+        &nbsp;
+      </div>
+      </div>
+
+      <div class="web-top-links">
+      <a href="https://github.com/QuestNetwork/quest-messenger-js" target="_blank"><img src='./assets/1280px-Git-logo.svg.png' width=50></a>
+      </div>

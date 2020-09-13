@@ -1,0 +1,297 @@
+.ramField{
+      width: 60px !important;
+}
+
+
+.driveField{
+      width: 60px !important;
+}
+
+
+.gpuTypeField{
+  width: 140px !important;
+
+}
+
+.gpuField{
+width: 110px !important;
+}
+
+
+.locationField{
+width: 115px !important;
+}
+
+.driveField{
+  width: 95px !important;
+}
+
+.softwareField{
+  width: 115px !important;
+}
+
+.vCpuField, .qualityField, .FrameField, .endFrameField{
+      width: 90px !important;
+}
+
+
+.BuyTicketButton{
+color: #40de55eb;
+}
+
+
+
+.creditsRow .creditCodeField{
+  min-width: 217px;
+  margin:20px;
+
+}
+
+.creditsRow {
+ margin-top: 10px;
+ margin-bottom:0px;
+ height:66px;
+}
+
+
+.creditsRow .creditField{
+  margin:20px;
+  margin-left:10px;
+  width: 100px;
+    text-align: right;
+    z-index:2 !important;
+}
+
+
+
+.ticketButtonWrapper{
+  // bottom: 88px;
+  top: 127px;
+  background: white;
+  position: absolute;
+  left: 402px;
+  padding-left: 10px;
+  z-index: 10;
+  width: 160px;
+}
+
+
+.refreshCreditIcon{
+  position: absolute;
+    display: inline;
+    /* left: 43px; */
+    top: 130px;
+    left: 298px;
+    color: #888888;
+    cursor:pointer;
+    z-index:3 !important;
+}
+
+.creditsInfoRow{
+  font-size:8px;
+  color:#555555a3;
+  margin-top: 0px;
+  margin-bottom:30px;
+}
+
+.credtisInfoText{
+  margin-top:5px;
+}
+
+
+
+.termsButton{
+  margin-right:20px;
+  float: right;
+  padding-right: 0px;
+      padding-left: 10px;
+      padding-bottom: 3px;
+top: -1px;
+}
+
+
+.termsCheckbox{
+    margin-right: 23px;
+}
+
+
+.clusterButton{
+    margin-left: 20px !important;
+    margin-bottom: 18px !important;
+    float: left;
+}
+
+
+
+::ng-deep .termsButton .mat-checkbox-ripple {
+  display: none !important;
+}
+
+
+
+.useTicketButton{
+  color:#851d9ce8;
+  margin-right:10px;
+  font-size: 12px;
+margin-right: 10px;
+padding: 0px;
+}
+
+.discardTicketButton{
+  color:#a21818bd;
+  font-size: 12px;
+margin-right: 10px;
+padding: 0px;
+}
+
+
+
+
+.settingsMenu {
+  display:flex;
+  flex-grow: 1;
+  z-index: 11;
+}
+
+.generalSettingsScreen{
+  flex-grow: 3;
+  background-color: #2a2626;
+
+  font-size: 26px;
+    font-family: Ubuntu;
+    background-color: #2a2626;
+    z-index: 10;
+    padding: 40px;
+    color: #fef5e6ba;
+}
+.saveLockToggler{
+  color:#4982e7;
+  text-align: right !important;
+}
+
+.saveLockToggler:hover{
+  color:#2d62ea;
+}
+
+.saveLockTogger{
+  color: #f14f31ab;
+  font-weight:bold;
+}
+
+.saveLockTogglerTitle{
+    font-size:20px;
+color: #f14f31ab;
+
+font-weight: bold;
+font-family: Ubuntu;
+}
+
+.autoSaveIntervalTogglerTitle{
+  font-size: 20px;
+color: #afb89b;
+font-weight: bold;
+font-family: Ubuntu;
+}
+
+.saveLockTogglerTitleActive{
+    color: #f4dc5ff0;
+}
+
+.saveLockTogglerTitle,.saveLockTogglerTitleActive, .saveLockToggler, {
+  flex-grow:2;
+}
+
+.generalSettingsScreenHeader{
+  margin-bottom:20px;
+}
+
+.peerListWrapper{
+  background-color: #46277f33;
+  border-radius: 10px;
+  padding-top: 10px;
+  min-height: 30vh;
+  padding-bottom: 10px;
+  margin-top: 20px !important;
+}
+
+.peerListHeader{
+  background: #3455d28a;
+      text-align: center;
+      line-height: 29px;
+      font-family: Ubuntu;
+      color: #97abae;
+      font-size: 13px;
+      padding-bottom: 1px;
+}
+// REVIEW:
+.refreshIpfsSwarmPeerListIcon{
+  font-size: 23px;
+      font-weight: bold;
+      margin-left: 10px;
+      position: relative;
+      top: 5px;
+      padding: 2px;
+      color: #2f74f8;
+      cursor: pointer;
+}
+.refreshIpfsSwarmPeerListIcon:hover{
+  color:#2f5de1;
+}
+.peer{
+  font-size: 12px;
+text-align: center;
+padding-top: 9px;
+line-height: 12px;
+text-overflow: ellipsis;
+white-space: nowrap;
+max-width: 46vw;
+overflow: hidden;
+word-break: break-all;
+text-overflow: ellipsis;
+margin: auto;
+}
+
+.peerListBox{
+  min-height: 40vh;
+  max-height: 40vh;
+      overflow-y: scroll;
+}
+
+.peerListFooter{
+  text-align: center;
+}
+.newPeerButton{
+  color: #3877f2;margin-left: 20px; cursor: pointer;
+
+  font-size: 31px;
+    top: 6px;
+    position: relative;
+}
+.newPeerButton:hover{
+  color:#2f5de1;
+
+}
+
+.removePeerButton{
+  font-size: 1.25rem;
+line-height: 1;
+width: 1em;
+height: 1em;
+color: #f14f2f4a;
+position: relative;
+top: 3px;
+cursor:pointer;
+}
+
+.removePeerButton:hover{
+  color:#f14f2fa1;
+
+}
+
+
+::ng-deep .mat-form-field {
+
+    .mat-form-field-underline {
+        background-color: #f14f2f4a;
+    }
+}
