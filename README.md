@@ -1,5 +1,5 @@
 # qDesk
-> The Quest Network Cross-Platform Window Manager
+> The Quest Network Cross-Platform Window Platform
 
 ![Screenshot](https://github.com/QuestNetwork/quest-messenger-js/raw/0.9.2/doc/images/0.9.2.png?raw=true)
 
