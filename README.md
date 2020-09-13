@@ -1,10 +1,10 @@
-# qDesktop
+# qDesk
 > The Quest Network Cross-Platform Window Manager
 
 ![Screenshot](https://github.com/QuestNetwork/quest-messenger-js/raw/0.9.2/doc/images/0.9.2.png?raw=true)
 
 ## Description
-Quest Desktop is a window manager for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like the [Quest Messenger](https://github.com/QuestNetwork/quest-messenger-js). Look what other people have built with qDesktop: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
+Quest Desktop is a window manager for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like the [Quest Messenger](https://github.com/QuestNetwork/quest-messenger-js). Look what other people have built with qDesk: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
 
 ## Lead Maintainer
 
@@ -23,13 +23,13 @@ This project is a lot of work and unfortunately we need to eat food (ツ)
 ### IPFS Deploy
 **Memory** 3.75GB **Storage** 6GB **NodeJS** 14 **NPM** 6 **IPFS** 0.6
 
-`git clone https://github.com/QuestNetwork/qDesktop`
+`git clone https://github.com/QuestNetwork/qDesk`
 
-`cd qDesktop
+`cd qDesk
 
 `git checkout 0.9.3`
 
-Configure your favorite modules, qDesktop comes preloaded with the [Quest Messenger JS]((https://github.com/QuestNetwork/quest-messenger-js).
+Configure your favorite modules, qDesk comes preloaded with the [Quest Messenger JS]((https://github.com/QuestNetwork/quest-messenger-js).
 
 `npm install`
 
@@ -51,7 +51,7 @@ To fully participate in the development, you'll need:
 - [Quest Network PubSub Process](https://github.com/QuestNetwork/quest-pubsub-js)
 
 ```
-git clone https://github.com/QuestNetwork/qDesktop && git clone https://github.com/QuestNetwork/quest-os-js && git clone https://github.com/QuestNetwork/quest-bee-js && git clone https://github.com/QuestNetwork/quest-ocean-js && git clone https://github.com/QuestNetwork/quest-dolphin-js && git clone https://github.com/QuestNetwork/quest-pubsub-js && git clone https://github.com/QuestNetwork/quest-messenger-js
+git clone https://github.com/QuestNetwork/qDesk && git clone https://github.com/QuestNetwork/quest-os-js && git clone https://github.com/QuestNetwork/quest-bee-js && git clone https://github.com/QuestNetwork/quest-ocean-js && git clone https://github.com/QuestNetwork/quest-dolphin-js && git clone https://github.com/QuestNetwork/quest-pubsub-js && git clone https://github.com/QuestNetwork/quest-messenger-js
 ```
 
 ### Commands
