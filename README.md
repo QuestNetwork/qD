@@ -27,7 +27,7 @@ This project is a lot of work and unfortunately we need to eat food (ツ)
 
 `git clone https://github.com/QuestNetwork/qDesk`
 
-`cd qDesk
+`cd qDesk`
 
 `git checkout 0.9.3`
 
