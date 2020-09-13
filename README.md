@@ -4,7 +4,7 @@
 ![Screenshot](https://github.com/QuestNetwork/quest-messenger-js/raw/0.9.2/doc/images/0.9.2.png?raw=true)
 
 ## Description
-qDesk is a window manager for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like the [Quest Messenger](https://github.com/QuestNetwork/quest-messenger-js). Look what other people have built with qDesk: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
+qDesk is a window platform for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like the [Quest Messenger](https://github.com/QuestNetwork/quest-messenger-js). Look what other people have built with qDesk: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
 
 qDesk allows to lazy load modules. 
 
@@ -27,11 +27,19 @@ This project is a lot of work and unfortunately we need to eat food (ツ)
 
 `git clone https://github.com/QuestNetwork/qDesk`
 
-`cd qDesk
+`cd qDesk`
 
 `git checkout 0.9.3`
 
-Configure your favorite modules, qDesk comes preloaded with the [Quest Messenger JS]((https://github.com/QuestNetwork/quest-messenger-js).
+Configure your favorite modules
+
+qDesk is built for [Quest OS](https://github.com/QuestNetwork/quest-os-js), so until it's published:
+
+`cd .. && git clone https://github.com/QuestNetwork/quest-os-js && cd quest-os-js && git checkout 0.9.3 && cd ../qDesk`
+
+qDesk comes preloaded with the [Quest Messenger JS](https://github.com/QuestNetwork/quest-messenger-js), so until it's published:
+
+`cd .. && git clone https://github.com/QuestNetwork/quest-messenger-js && cd quest-messenger-js && git checkout 0.9.3 && cd ../qDesk`
 
 `npm install`
 
