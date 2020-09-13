@@ -1,5 +1,5 @@
 # Quest Desktop
-> The first fully featured, multi-platform, publicly auditable, decentralized, real-time end-to-end encrypted messenger.
+> The Quest Network Cross-Platform Window Manager
 
 ![Screenshot](https://github.com/QuestNetwork/quest-messenger-js/raw/0.9.2/doc/images/0.9.2.png?raw=true)
 
@@ -8,7 +8,7 @@
 [StationedInTheField](https://github.com/StationedInTheField)
 
 ## Description
-Quest Desktop is an Angular window manager for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like the [Quest Messenger]((https://github.com/QuestNetwork/quest-messenger-js). Look at what other people have built from this project: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
+Quest Desktop is a window manager for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like the [Quest Messenger]((https://github.com/QuestNetwork/quest-messenger-js). Look at what other people have built from this project: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
 
 ## Support Us
 This project is a lot of work and unfortunately we need to eat food (ツ)
