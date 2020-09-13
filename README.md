@@ -31,7 +31,13 @@ This project is a lot of work and unfortunately we need to eat food (ツ)
 
 `git checkout 0.9.3`
 
-Configure your favorite modules, qDesk comes preloaded with [Quest Messenger JS](https://github.com/QuestNetwork/quest-messenger-js), so until it's published:
+Configure your favorite modules
+
+qDesk is built for [Quest OS](https://github.com/QuestNetwork/quest-os-js), so until it's published:
+
+`cd .. && git clone https://github.com/QuestNetwork/quest-os-js && cd quest-os-js && git checkout 0.9.3 && cd ../qDesk`
+
+qDesk comes preloaded with the [Quest Messenger JS](https://github.com/QuestNetwork/quest-messenger-js), so until it's published:
 
 `cd .. && git clone https://github.com/QuestNetwork/quest-messenger-js && cd quest-messenger-js && git checkout 0.9.3 && cd ../qDesk`
 
