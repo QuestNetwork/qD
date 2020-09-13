@@ -3,12 +3,12 @@
 
 ![Screenshot](https://github.com/QuestNetwork/quest-messenger-js/raw/0.9.2/doc/images/0.9.2.png?raw=true)
 
+## Description
+Quest Desktop is a window manager for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like the [Quest Messenger](https://github.com/QuestNetwork/quest-messenger-js). Look what other people have built with qDesktop: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
+
 ## Lead Maintainer
 
 [StationedInTheField](https://github.com/StationedInTheField)
-
-## Description
-Quest Desktop is a window manager for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like the [Quest Messenger](https://github.com/QuestNetwork/quest-messenger-js). Look what other people have built with qDesktop: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
 
 ## Support Us
 This project is a lot of work and unfortunately we need to eat food (ツ)
