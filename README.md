@@ -103,6 +103,64 @@ We added an example ```swarm.json``` to the ```src/app``` folder with an example
 
 Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/to/quest-cli/index.js` from any folder on your system. It's much nicer!
 
+
+## Features
+
+**0.9.3**
+- Does not depend on the internet
+- Does not depend on centralized servers
+- No static external address or port forwarding necessary
+- Dark Mode
+- AutoSave For Settings
+- Auto SignIn, if signed in
+- Enhanced Mobile UI, Centered Snackbar, New Fonts, Icons & Buttons
+- Included All Fonts And Icons In The Bundle
+- [Quest Network Messenger JS](https://github.com/QuestNetwork/quest-messenger-js)
+- [Quest Network Operating System](https://github.com/QuestNetwork/quest-os-js)
+- [Quest Network Bee Process](https://github.com/QuestNetwork/quest-bee-js)
+- [Quest Network Ocean Process](https://github.com/QuestNetwork/quest-ocean-js)
+- [Quest Network Dolphin Process](https://github.com/QuestNetwork/quest-dolphin-js)
+- Export Settings
+- SignOut
+- Enable Write Lock To Keep All Processes From Writing
+- Disable AutoSave
+- Change AutoSave Interval
+- Dynamic Swarm Peer List On Desktop (add and remove bootstrap peers)
+- App is now modular, makes building add-ons easy
+
+## Roadmap
+
+**0.9.3**
+- Offer "LocalStorage" As A Storage Container On The Web To Stay Signed In
+
+**0.9.6**
+- [Quest Network Coral Process](https://github.com/QuestNetwork/quest-coral-js)
+- Encrypt Settings/Message History Files
+
+**0.9.7**
+- Add Custom Themes By Pasting CSS Into The Built-In Theme Editor
+- Import/Export Themes
+- Light Mode
+
+**0.9.8**
+- Badges For Notifications
+- Desktop Notifications
+
+**0.9.9**
+- Ethereum Payment Integration Beta
+
+**1.0.0**
+- Dynamic Swarm Peer List Also On The Web (add and remove bootstrap peers)
+
+**2.0.0**
+- Ethereum Payment Integration Finalized
+
+**4.0.0**
+- [OpenAI GPT3](https://en.wikipedia.org/wiki/GPT-3) Integration For Suggestions, AutoRespond And Completion
+
+**5.0.0**
+- Modular Crypto Currency Integration (presets for Bitcoin, Monero and Chainlink)
+
 ## License
 
 GNU Affero GPLv3
