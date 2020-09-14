@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: 'signin', component: SignInComponent },
 
   { path: 'settings', component: SettingsComponent },
- { path: 'messages', loadChildren: () => import('../../../quest-messenger-js/src/app/quest-messenger-js.module').then(m => m.QuestMessengerJSModule) }
+ { path: 'messages', loadChildren: () => import('../../../quest-messenger-js/src/qd-messages-ts.module').then(m => m.QuestMessengerJSModule) }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
