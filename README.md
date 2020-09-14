@@ -78,9 +78,9 @@ To The same directory you're cloning this repository to.
 
 **Build For Mac**
 ```
-sed -i 's/"@questnetwork\/quest-messenger-js"/"quest-messenger-js"/g' package.json
+sed -i 's/"@questnetwork\/q-desk"/"q-desk"/g' package.json
 && npm run mac```
-sed -i  's/"quest-messenger-js"/"@questnetwork\/quest-messenger-js"/g'  package.json
+sed -i  's/"q-desk"/"@questnetwork\/q-desk"/g'  package.json
 ```
 Builds MacOS DMG and .app files to ``dist/`` and ``dist/mac``
 
@@ -157,7 +157,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - Badges For Notifications
 - Desktop Notifications
 
-**0.9.9**
+**0.9.9*
 - Ethereum Payment Integration Beta
 
 **1.0.0**
