@@ -106,7 +106,6 @@ isElectron = false;
 
 async openFileLoaded(event){
 
-    this.ui.showSnack('Parsing File...','Almost There');
       let parsedStringify;
     try{
        parsedStringify = JSON.parse(event.target['result']);
