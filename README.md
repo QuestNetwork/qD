@@ -4,7 +4,7 @@
 ![Screenshot](https://github.com/QuestNetwork/quest-messenger-js/raw/0.9.2/doc/images/0.9.2.png?raw=true)
 
 ## Description
-qDesk is a window platform for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like the [Quest Messenger](https://github.com/QuestNetwork/quest-messenger-js). Look what other people have built with qDesk: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
+qDesk is a window platform for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js). Look what other people have built with qDesk: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
 
 qDesk allows to lazy load modules. 
 
@@ -37,7 +37,7 @@ qDesk is built for [Quest OS](https://github.com/QuestNetwork/quest-os-js), so u
 
 `cd .. && git clone https://github.com/QuestNetwork/quest-os-js && cd quest-os-js && git checkout 0.9.3 && cd ../qDesk`
 
-qDesk comes preloaded with the [Quest Messenger JS](https://github.com/QuestNetwork/quest-messenger-js), so until it's published:
+qDesk comes preloaded with [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js), so until it's published:
 
 `cd .. && git clone https://github.com/QuestNetwork/quest-messenger-js && cd quest-messenger-js && git checkout 0.9.3 && cd ../qDesk`
 
@@ -53,7 +53,7 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 ### Prerequisites
 
 To fully participate in the development, you'll need:
-- [Quest Messenger JS](https://github.com/QuestNetwork/quest-messenger-js)
+- [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js)
 - [Quest Network Operating System](https://github.com/QuestNetwork/quest-os-js)
 - [Quest Network Bee Process](https://github.com/QuestNetwork/quest-bee-js)
 - [Quest Network Ocean Process](https://github.com/QuestNetwork/quest-ocean-js)
@@ -78,9 +78,9 @@ To The same directory you're cloning this repository to.
 
 **Build For Mac**
 ```
-sed -i 's/"@questnetwork\/quest-messenger-js"/"quest-messenger-js"/g' package.json
+sed -i 's/"@questnetwork\/q-desk"/"q-desk"/g' package.json
 && npm run mac```
-sed -i  's/"quest-messenger-js"/"@questnetwork\/quest-messenger-js"/g'  package.json
+sed -i  's/"q-desk"/"@questnetwork\/q-desk"/g'  package.json
 ```
 Builds MacOS DMG and .app files to ``dist/`` and ``dist/mac``
 
@@ -137,6 +137,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - Change AutoSave Interval
 - Dynamic Swarm Peer List On Desktop (add and remove bootstrap peers)
 - App is now modular, makes building add-ons easy
+- Drive Lock Fixed
 
 ## Roadmap
 
@@ -156,7 +157,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - Badges For Notifications
 - Desktop Notifications
 
-**0.9.9**
+**0.9.9*
 - Ethereum Payment Integration Beta
 
 **1.0.0**
