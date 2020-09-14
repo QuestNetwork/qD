@@ -209,13 +209,10 @@ async openFileLoaded(event){
 
       this.ui.showSnack('Swarm Discovered...','Cool',{duration:1000});
 
-      let defaultChannel = "NoChannelSelected";
-      if(typeof(this.q.os.bee.config.getConfig()['selectedChannel']) != 'undefined'){
-        defaultChannel = this.q.os.bee.config.getConfig()['selectedChannel'];
-      }
-
+      console.log('Sign In, SEL CH, CFG',this.q.os.getSelectedChannel());
+      let defaultChannel = this.q.os.getSelectedChannel();
       console.log('SignIn: Selecting Channel: '+defaultChannel+'...');
-      this.q.os.ocean.dolphin.selectChannel(defaultChannel);
+      this.q.os.channels.selectChannel(defaultChannel);
       return true;
     }
 
