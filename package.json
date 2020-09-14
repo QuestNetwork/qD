@@ -14,7 +14,7 @@
     "appId": "qDesk.desktop",
     "icon": "src/assets/icon.png",
     "mac": {
-      "category": "com.quest-mesenger.app",
+      "category": "org.qDesk.app",
       "icon": "src/assets/icon.png"
     },
     "win": {
