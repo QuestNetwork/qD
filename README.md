@@ -1,5 +1,5 @@
 # qDesk
-![Completion](https://img.shields.io/badge/completion-12%25-orange) ![Help Wanted](https://img.shields.io/badge/%20-help--wanted-%23159818) ![Version 0.9.3](https://img.shields.io/badge/version-v0.9.3-blue) ![Sponsors](https://img.shields.io/badge/sponsors-10-brightgreen)
+![Completion](https://img.shields.io/badge/completion-12%25-orange) ![Help Wanted](https://img.shields.io/badge/%20-help--wanted-%23159818) ![Version 0.9.3](https://img.shields.io/badge/version-v0.9.3-blue) ![Sponsors](https://img.shields.io/badge/sponsors-2-brightgreen)
 
 > The Quest Network Cross-Platform Window Platform
 
