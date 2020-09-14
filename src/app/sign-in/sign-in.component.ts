@@ -52,7 +52,7 @@ isElectron = false;
             this.ui.showSnack('Loading Channels...','Almost There', {duration:2000});
             this.jumpToChannels();
             this.ui.signIn();
-            if(this.q.os.channels.getSelectedChannel() == 'NoChannelSelected'){
+            if(this.q.os.channel.getSelectedChannel() == 'NoChannelSelected'){
               this.ui.updateProcessingStatus(false);
             }
           }
@@ -136,7 +136,7 @@ async openFileLoaded(event){
     this.ui.enableTab('channelTab');
     this.ui.disableTab('signInTab');
 
-    if(this.q.os.channels.getSelectedChannel() == 'NoChannelSelected' ){
+    if(this.q.os.channel.getSelectedChannel() == 'NoChannelSelected' ){
       this.ui.updateProcessingStatus(false);
     }
 
@@ -208,9 +208,9 @@ async openFileLoaded(event){
 
       this.ui.showSnack('Swarm Discovered...','Cool',{duration:1000});
 
-      let defaultChannel = this.q.os.channels.getSelectedChannel();
+      let defaultChannel = this.q.os.channel.getSelectedChannel();
       console.log('SignIn: Selecting Channel: '+defaultChannel+'...');
-      this.q.os.channels.selectChannel(defaultChannel);
+      this.q.os.channel.selectChannel(defaultChannel);
       return true;
     }
 
