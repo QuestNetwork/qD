@@ -73,6 +73,8 @@ autoSaveInterval = 30*10000;
     }else{
       this.saveLockActive = true;
     }
+    this.autoSaveActive = this.q.os.getAutoSave();
+    this.autoSaveInterval = this.q.os.getAutoSaveInterval();
 
 
   }
