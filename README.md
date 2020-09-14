@@ -37,6 +37,10 @@ qDesk is built for [Quest OS](https://github.com/QuestNetwork/quest-os-js), so u
 
 `cd .. && git clone https://github.com/QuestNetwork/quest-os-js && cd quest-os-js && git checkout 0.9.3 && cd ../qDesk`
 
+qDesk is built with [Bee for Quest OS](https://github.com/QuestNetwork/quest-bee-js), so until it's published:
+
+`cd .. && git clone https://github.com/QuestNetwork/quest-bee-js && cd quest-bee-js && git checkout 0.9.3 && cd ../qDesk`
+
 qDesk comes preloaded with [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js), so until it's published:
 
 `cd .. && git clone https://github.com/QuestNetwork/quest-messenger-js && cd quest-messenger-js && git checkout 0.9.3 && cd ../qDesk`
