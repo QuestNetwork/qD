@@ -4,7 +4,7 @@
 ![Screenshot](https://github.com/QuestNetwork/quest-messenger-js/raw/0.9.2/doc/images/0.9.2.png?raw=true)
 
 ## Description
-qDesk is a window platform for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like the [Quest Messenger](https://github.com/QuestNetwork/quest-messenger-js). Look what other people have built with qDesk: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
+qDesk is a window platform for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js). Look what other people have built with qDesk: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
 
 qDesk allows to lazy load modules. 
 
@@ -37,7 +37,7 @@ qDesk is built for [Quest OS](https://github.com/QuestNetwork/quest-os-js), so u
 
 `cd .. && git clone https://github.com/QuestNetwork/quest-os-js && cd quest-os-js && git checkout 0.9.3 && cd ../qDesk`
 
-qDesk comes preloaded with the [Quest Messenger JS](https://github.com/QuestNetwork/quest-messenger-js), so until it's published:
+qDesk comes preloaded with [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js), so until it's published:
 
 `cd .. && git clone https://github.com/QuestNetwork/quest-messenger-js && cd quest-messenger-js && git checkout 0.9.3 && cd ../qDesk`
 
@@ -53,7 +53,7 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 ### Prerequisites
 
 To fully participate in the development, you'll need:
-- [Quest Messenger JS](https://github.com/QuestNetwork/quest-messenger-js)
+- [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js)
 - [Quest Network Operating System](https://github.com/QuestNetwork/quest-os-js)
 - [Quest Network Bee Process](https://github.com/QuestNetwork/quest-bee-js)
 - [Quest Network Ocean Process](https://github.com/QuestNetwork/quest-ocean-js)
