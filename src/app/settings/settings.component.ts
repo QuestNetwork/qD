@@ -11,7 +11,49 @@ import { NbMenuService } from '@nebular/theme';
 })
 export class SettingsComponent implements OnInit {
 
-  constructor(private menu: NbMenuService, private ui: UiService, private q: QuestOSService) {}
+  constructor(private menu: NbMenuService, private ui: UiService, private q: QuestOSService) {
+
+    this.menu.onItemClick().subscribe((e) => {
+      if(e['item']['title'] == 'Export'){
+          this.q.os.exportConfig();
+      }
+      else if(e['item']['title'] == 'Sign Out'){
+        this.q.os.signOut();
+      }
+      else if(typeof e['item']['title'] != 'undefined'){
+        this.selectedSetting = e['item']['title'];
+      }
+    });
+
+    if(this.q.os.isSignedIn()){
+      this.signIn();
+    }
+    this.q.os.onSignIn().subscribe( () => {
+      this.signIn();
+    });
+    this.q.os.onReady().subscribe( () => {
+      console.log('OS Ready');
+      this.ipfsOnline = true;
+      this.bootstrapIpfsPeers = this.q.os.getIpfsBootstrapPeers();
+    });
+    this.q.os.onSignIn().subscribe( () => {
+
+      if(this.q.os.getSaveLock()){
+        this.saveLockActive = false;
+      }else{
+        this.saveLockActive = true;
+      }
+
+      this.ipfsOnline = this.q.os.isReady();
+      this.bootstrapIpfsPeers = this.q.os.getIpfsBootstrapPeers();``
+
+      this.autoSaveActive = this.q.os.getAutoSave();
+      this.autoSaveInterval = this.q.os.getAutoSaveInterval();
+    });
+
+
+
+  }
   // @ViewChild('driveLockStatusField') driveLockStatusField;
 sideBarFixed = { left:false}
 autoSaveInterval = 30*10000;
@@ -32,42 +74,8 @@ autoSaveInterval = 30*10000;
   bootstrapIpfsPeers = [];
 
   ngOnInit(){
-    this.menu.onItemClick().subscribe((e) => {
-      if(e['item']['title'] == 'Export'){
-          this.q.os.exportConfig();
-      }
-      else if(e['item']['title'] == 'Sign Out'){
-        this.q.os.signOut();
-      }
-      else if(typeof e['item']['title'] != 'undefined'){
-        this.selectedSetting = e['item']['title'];
-      }
-    });
 
-    if(this.q.os.isSignedIn()){
-      this.signIn();
-    }
-    this.q.os.onSignIn().subscribe( () => {
-      this.signIn();
-    });
-    this.ipfsOnline = this.q.os.isReady();
-    this.bootstrapIpfsPeers = this.q.os.getIpfsBootstrapPeers();
-    this.q.os.onReady().subscribe( () => {
-      console.log('OS Ready');
-      this.ipfsOnline = true;
-      this.bootstrapIpfsPeers = this.q.os.getIpfsBootstrapPeers();
-    });
-    this.q.os.onSignIn().subscribe( () => {
 
-      if(this.q.os.getSaveLock()){
-        this.saveLockActive = false;
-      }else{
-        this.saveLockActive = true;
-      }
-
-      this.autoSaveActive = this.q.os.getAutoSave();
-      this.autoSaveInterval = this.q.os.getAutoSaveInterval();
-    });
     if(this.q.os.getSaveLock()){
       this.saveLockActive = false;
     }else{
