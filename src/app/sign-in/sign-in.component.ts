@@ -190,7 +190,6 @@ async openFileLoaded(event){
       this.ui.updateProcessingStatus(true);
       this.completeChallengeScreen = false;
 
-      this.ui.showSnack('Importing Profile...','Yeh');
 
       this.DEVMODE && console.log('SignIn: Reading Bee Config...')
       while(!this.q.os.isReady()){
