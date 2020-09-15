@@ -216,8 +216,6 @@ async openFileLoaded(event){
 
       this.ui.showSnack('Signing In...','Cool',{duration:1000});
       this.q.os.signIn(config);
-      console.log(this.q.os.bee.config.getConfig());
-      console.log(this.q.os.channel.getSelected());
       console.log('SignIn: Selecting Channel: '+this.q.os.channel.getSelected()+'...');
       this.q.os.channel.select(this.q.os.channel.getSelected());
       return true;
