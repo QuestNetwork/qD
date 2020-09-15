@@ -82,7 +82,10 @@ autoSaveInterval = 30*10000;
 
     this.autoSaveActive = this.q.os.getAutoSave();
     this.autoSaveInterval = this.q.os.getAutoSaveInterval();
-    this.storageLocation = this.q.os.getStorageLocation();
+
+    if(typeof this.q.os.getStorageLocation() != 'undefined'){
+      this.storageLocation = this.q.os.getStorageLocation();
+    }
 
     this.isElectron = this.q.os.isElectron();
 
@@ -163,7 +166,7 @@ autoSaveInterval = 30*10000;
     }
   }
 
-  storageLocation = "Download";
+  storageLocation = "LocalStorage";
   storageLocationChanged(v){
     this.q.os.setStorageLocation(v);
   }

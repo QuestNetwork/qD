@@ -83,7 +83,7 @@
 
 
 
-              <div fxLayout="row" [hidden]="isElectron || !saveLockInactive" style="margin-top:10px;" class="autoSaveIntervalSelectWrapper">
+              <div fxLayout="row" *ngIf="!isElectron && saveLockInactive" style="margin-top:10px;" class="autoSaveIntervalSelectWrapper">
                   <div class="autoSaveIntervalTogglerTitle">
                     Storage Location
                   </div>
