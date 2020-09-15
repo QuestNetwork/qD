@@ -52,7 +52,7 @@ isElectron = false;
             this.ui.showSnack('Loading Channels...','Almost There', {duration:2000});
             this.jumpToChannels();
             this.ui.signIn();
-            if(this.q.os.channel.getSelectedChannel() == 'NoChannelSelected'){
+            if(this.q.os.channel.getSelected() == 'NoChannelSelected'){
               this.ui.updateProcessingStatus(false);
             }
           }
@@ -106,23 +106,23 @@ isElectron = false;
 
 async openFileLoaded(event){
 
-      let parsedStringify;
+      let config;
     try{
-       parsedStringify = JSON.parse(event.target['result']);
+       config = JSON.parse(event.target['result']);
     }catch(error){}
 
-    this.DEVMODE && console.log(parsedStringify);
+    this.DEVMODE && console.log(config);
 
       //this is a quick file and settings save before payment
-    if(typeof(parsedStringify) == 'undefined' || typeof(parsedStringify.version) == 'undefined' || typeof(parsedStringify.appId) == 'undefined' || parsedStringify.appId != "quest-messenger-js"){
+    if(typeof(config) == 'undefined' || typeof(config.version) == 'undefined' || typeof(config.appId) == 'undefined' || config.appId != "quest-messenger-js"){
       //iNVALID FIlE FORMAT
       this.ui.showSnack('Not a valid QuestNetwork Keychain!','Got it!',{duration:2000});
       this.ui.updateProcessingStatus(false);
       return false;
     }
-    else if(typeof(parsedStringify) != 'undefined' && typeof(parsedStringify.version) != 'undefined' && typeof(parsedStringify.appId) != 'undefined' && parsedStringify.appId == "quest-messenger-js"){
+    else if(typeof(config) != 'undefined' && typeof(config.version) != 'undefined' && typeof(config.appId) != 'undefined' && config.appId == "quest-messenger-js"){
       //IMPORTED A .KEYCHAIN FILE
-      let importSettingsStatus = await this.attemptImportSettings(parsedStringify);
+      let importSettingsStatus = await this.attemptImportSettings(config);
       console.log('Sign In: Import Settings Status:',importSettingsStatus);
       if(importSettingsStatus){this.ui.showSnack('Opening Messages...','Almost There',{duration:2000});await this.jumpToChannels();return true;}
       else{this.ui.showSnack('Error Importing Settings!','Oh No');}
@@ -136,7 +136,7 @@ async openFileLoaded(event){
     this.ui.enableTab('channelTab');
     this.ui.disableTab('signInTab');
 
-    if(this.q.os.channel.getSelectedChannel() == 'NoChannelSelected' ){
+    if(this.q.os.channel.getSelected() == 'NoChannelSelected' ){
       this.ui.updateProcessingStatus(false);
     }
 
@@ -147,8 +147,6 @@ async openFileLoaded(event){
     this.ui.updateProcessingStatus(true);
     let importSettingsStatus = await this.attemptImportSettings({});
     console.log('Import Settings Status:',importSettingsStatus);
-    importSettingsStatus = await this.attemptImportSettings({});
-
     if(importSettingsStatus){
       this.ui.showSnack('Default Settings Loaded...','Almost There', {duration: 2000});
       console.log("Default Settings Loaded...");
@@ -160,9 +158,9 @@ async openFileLoaded(event){
   channelNameList = [];
   channelName;
 
-  async attemptImportSettings(parsedStringify){
+  async attemptImportSettings(config = {}){
     try{
-        await this.importSettings(parsedStringify);
+        await this.importSettings(config);
         return true;
     }
     catch(error){
@@ -182,20 +180,12 @@ async openFileLoaded(event){
     }
   }
 
-  async importSettings(parsedStringify){
+  async importSettings(config = {}){
     console.log('Sign In: Importing Settings ...');
-    this.DEVMODE && console.log(parsedStringify);
+    this.DEVMODE && console.log(config);
       this.ui.setElectronSize('0');
       this.ui.updateProcessingStatus(true);
       this.completeChallengeScreen = false;
-
-
-      this.DEVMODE && console.log('SignIn: Reading Bee Config...')
-      while(!this.q.os.isReady()){
-        await this.ui.delay(2000);
-      }
-      this.q.os.signIn(parsedStringify);
-
 
       //wait for ipfs
       this.ui.showSnack('Discovering Swarm...','Yeh');
@@ -206,11 +196,12 @@ async openFileLoaded(event){
         await this.ui.delay(5000);
       }
 
-      this.ui.showSnack('Swarm Discovered...','Cool',{duration:1000});
-
-      let defaultChannel = this.q.os.channel.getSelectedChannel();
-      console.log('SignIn: Selecting Channel: '+defaultChannel+'...');
-      this.q.os.channel.selectChannel(defaultChannel);
+      this.ui.showSnack('Signing In...','Cool',{duration:1000});
+      this.q.os.signIn(config);
+      console.log(this.q.os.bee.config.getConfig());
+      console.log(this.q.os.channel.getSelected());
+      console.log('SignIn: Selecting Channel: '+this.q.os.channel.getSelected()+'...');
+      this.q.os.channel.select(this.q.os.channel.getSelected());
       return true;
     }
 
