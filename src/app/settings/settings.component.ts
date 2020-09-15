@@ -47,8 +47,7 @@ export class SettingsComponent implements OnInit {
       this.ipfsOnline = this.q.os.isReady();
       this.bootstrapIpfsPeers = this.q.os.getIpfsBootstrapPeers();``
 
-      this.autoSaveActive = this.q.os.getAutoSave();
-      this.autoSaveInterval = this.q.os.getAutoSaveInterval();
+
     });
 
 
@@ -75,17 +74,20 @@ autoSaveInterval = 30*10000;
 
   ngOnInit(){
 
-
     if(this.q.os.getSaveLock()){
       this.saveLockActive = false;
     }else{
       this.saveLockActive = true;
     }
+
     this.autoSaveActive = this.q.os.getAutoSave();
     this.autoSaveInterval = this.q.os.getAutoSaveInterval();
+    this.storageLocation = this.q.os.getStorageLocation();
 
+    this.isElectron = this.q.os.isElectron();
 
   }
+  isElectron;
 
   refreshIpfsSwarmPeerList(){
     this.bootstrapIpfsPeers = this.q.os.getIpfsBootstrapPeers();
@@ -159,6 +161,14 @@ autoSaveInterval = 30*10000;
     else{
       this.q.os.disableAutoSave();
     }
+  }
+
+  storageLocation;
+  storageLocationChanged(v){
+    this.q.os.setStorageLocation(v);
+  }
+  getStorageLocation(){
+    this.q.os.getStorageLocation();
   }
 
 

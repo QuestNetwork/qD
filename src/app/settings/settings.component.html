@@ -83,6 +83,34 @@
 
 
 
+              <div fxLayout="row" *ngIf="saveLockActive" style="margin-top:10px;" class="autoSaveIntervalSelectWrapper">
+                  <div class="autoSaveIntervalTogglerTitle">
+                    Storage Location
+                  </div>
+
+                  <div class="saveLockOptions saveLockToggler "  style="font-size: 20px;    text-align: center;cursor:pointer;" >
+      <mat-form-field style="width: 24%;" >
+                       <mat-select [(value)]="storageLocation"  name="storageLocationSelect" id="storageLocationSelect" (selectionChange)="storageLocationChanged($event.value)" class="saveLockToggler" >
+                                    <mat-option  [value]="Download"  *ngIf="!isElectron">
+                                       Save As Download
+                                   </mat-option>
+                                   <mat-option  [value]="LocalStorage"  *ngIf="!isElectron">
+                                      Browser Storage
+                                  </mat-option>
+                                  <mat-option  [value]="ConfigFile" *ngIf="isElectron">
+                                    Config File
+                                 </mat-option>
+
+                         </mat-select>
+      </mat-form-field>
+
+                    </div>
+                </div>
+
+
+
+
+
 
             </div>
 
