@@ -189,6 +189,9 @@ async openFileLoaded(event){
       }
       else{
         this.ui.showSnack('Swarm Error =(','Start Over', {duration:8000});
+        // if(String(error).indexOf("Cannot read property 'channelKeyChain' of null") > -1){
+        //   window.location.reload();
+        // }
         console.log(error);
         await this.ui.delay(5000);
       //  window.location.reload();
