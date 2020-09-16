@@ -196,7 +196,7 @@ export class AppComponent {
       this.router.navigate(['/messages']);
     }
     else if(event.index == 2){
-      this.router.navigate(['/profile']);
+      this.router.navigate(['/social']);
     }
   }
 
