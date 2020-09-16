@@ -1,4 +1,4 @@
-![Completion](https://img.shields.io/badge/completion-12%25-orange) ![Help Wanted](https://img.shields.io/badge/%20-help--wanted-%23159818) ![Version 0.9.3](https://img.shields.io/badge/version-v0.9.2-green) ![Version 0.9.3](https://img.shields.io/badge/version-v0.9.3-blue) ![Sponsors](https://img.shields.io/badge/sponsors-2-orange)
+![Completion](https://img.shields.io/badge/completion-14%25-orange) ![Help Wanted](https://img.shields.io/badge/%20-help--wanted-%23159818) ![Version 0.9.3](https://img.shields.io/badge/version-v0.9.3-green) ![Version 0.9.3](https://img.shields.io/badge/version-v0.9.4-blue) ![Sponsors](https://img.shields.io/badge/sponsors-2-orange)
 
 # qDesk
 > The Quest Network Cross-Platform Window Platform
@@ -145,11 +145,10 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - Dynamic Swarm Peer List On Desktop (add and remove bootstrap peers)
 - App is now modular, makes building add-ons easy
 - Drive Lock Fixed
-
-## Roadmap
-
-**0.9.3**
 - Offer "LocalStorage" As A Storage Container On The Web To Stay Signed In
+- [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js)
+- [qDesk Social](https://github.com/QuestNetwork/quest-social-js)
+
 
 **0.9.6**
 - Encrypt Settings/Message History Files

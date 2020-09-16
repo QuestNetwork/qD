@@ -185,7 +185,7 @@ export class AppComponent {
   }
 
   tabClicked(event){
-    if(event.index == 2){
+    if(event.index == 3){
       //go to settings
          this.router.navigate(['/settings']);
     }
@@ -194,6 +194,9 @@ export class AppComponent {
     }
     else if(event.index == 1){
       this.router.navigate(['/messages']);
+    }
+    else if(event.index == 2){
+      this.router.navigate(['/social']);
     }
   }
 

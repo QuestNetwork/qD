@@ -23,6 +23,33 @@ export class SignInComponent implements OnInit {
 
   stringifyStore;
 isElectron = false;
+
+  initLoadConfig(){
+    console.log('Importing Settings...');
+
+    this.attemptImportSettings({}).then( (importSettingsStatus) => {
+      console.log('Import Settings Status:',importSettingsStatus);
+      console.log(importSettingsStatus);
+      if(importSettingsStatus){
+        console.log('SignIn: Settings Imported Successfully');
+        this.ui.showSnack('Loading Channels...','Almost There', {duration:2000});
+        this.jumpToChannels();
+        this.ui.signIn();
+        if(this.q.os.channel.getSelected() == 'NoChannelSelected'){
+          this.ui.updateProcessingStatus(false);
+        }
+      }
+      else{
+              this.ui.updateProcessingStatus(false);
+              this.ui.showSnack('SignIn: No Settings Imported','Oh Ok');
+          }
+    }).catch( (error) => {
+      this.ui.updateProcessingStatus(false);
+      this.ui.showSnack('SignIn: Error Importing Settings!','Oh No');
+      this.DEVMODE && console.log(error);
+    });
+  }
+
   async ngOnInit() {
     //auto login
 
@@ -30,6 +57,8 @@ isElectron = false;
     if (userAgent.indexOf(' electron/') > -1) {
       this.isElectron = true;
     }
+
+    console.log(this.q.os.hasLocalStorage());
 
     if(this.isElectron){
       this.ui.updateProcessingStatus(true);
@@ -40,36 +69,24 @@ isElectron = false;
         await this.ui.delay(1000);
       }
 
-      console.log(this.q.os.hasConfigFile());
       if(this.q.os.hasConfigFile()){
-        console.log('Importing Settings...');
-
-        this.attemptImportSettings({}).then( (importSettingsStatus) => {
-          console.log('Import Settings Status:',importSettingsStatus);
-          console.log(importSettingsStatus);
-          if(importSettingsStatus){
-            console.log('SignIn: Settings Imported Successfully');
-            this.ui.showSnack('Loading Channels...','Almost There', {duration:2000});
-            this.jumpToChannels();
-            this.ui.signIn();
-            if(this.q.os.channels.getSelectedChannel() == 'NoChannelSelected'){
-              this.ui.updateProcessingStatus(false);
-            }
-          }
-          else{
-                  this.ui.updateProcessingStatus(false);
-                  this.ui.showSnack('SignIn: No Settings Imported','Oh Ok');
-              }
-        }).catch( (error) => {
-          this.ui.updateProcessingStatus(false);
-          this.ui.showSnack('SignIn: Error Importing Settings!','Oh No');
-          this.DEVMODE && console.log(error);
-        });
+        this.initLoadConfig();
       }
       else{
         this.ui.updateProcessingStatus(false);
         this.DEVMODE && console.log("SignIn: Not Signed In");
       }
+    }
+    else if(!this.isElectron && this.q.os.hasLocalStorage()){
+      this.ui.updateProcessingStatus(true);
+      //wait for ocean
+      console.log('SignIn: Waiting For Quest OS...');
+      while(!this.q.os.isReady()){
+        console.log('SignIn: Waiting For Quest OS.');
+        await this.ui.delay(1000);
+      }
+
+      this.initLoadConfig();
     }
     else{
       this.ui.updateProcessingStatus(false);
@@ -106,23 +123,23 @@ isElectron = false;
 
 async openFileLoaded(event){
 
-      let parsedStringify;
+      let config;
     try{
-       parsedStringify = JSON.parse(event.target['result']);
+       config = JSON.parse(event.target['result']);
     }catch(error){}
 
-    this.DEVMODE && console.log(parsedStringify);
+    this.DEVMODE && console.log(config);
 
       //this is a quick file and settings save before payment
-    if(typeof(parsedStringify) == 'undefined' || typeof(parsedStringify.version) == 'undefined' || typeof(parsedStringify.appId) == 'undefined' || parsedStringify.appId != "quest-messenger-js"){
+    if(typeof(config) == 'undefined' || typeof(config.version) == 'undefined' || typeof(config.appId) == 'undefined' || config.appId != "quest-messenger-js"){
       //iNVALID FIlE FORMAT
       this.ui.showSnack('Not a valid QuestNetwork Keychain!','Got it!',{duration:2000});
       this.ui.updateProcessingStatus(false);
       return false;
     }
-    else if(typeof(parsedStringify) != 'undefined' && typeof(parsedStringify.version) != 'undefined' && typeof(parsedStringify.appId) != 'undefined' && parsedStringify.appId == "quest-messenger-js"){
+    else if(typeof(config) != 'undefined' && typeof(config.version) != 'undefined' && typeof(config.appId) != 'undefined' && config.appId == "quest-messenger-js"){
       //IMPORTED A .KEYCHAIN FILE
-      let importSettingsStatus = await this.attemptImportSettings(parsedStringify);
+      let importSettingsStatus = await this.attemptImportSettings(config);
       console.log('Sign In: Import Settings Status:',importSettingsStatus);
       if(importSettingsStatus){this.ui.showSnack('Opening Messages...','Almost There',{duration:2000});await this.jumpToChannels();return true;}
       else{this.ui.showSnack('Error Importing Settings!','Oh No');}
@@ -136,7 +153,7 @@ async openFileLoaded(event){
     this.ui.enableTab('channelTab');
     this.ui.disableTab('signInTab');
 
-    if(this.q.os.channels.getSelectedChannel() == 'NoChannelSelected' ){
+    if(this.q.os.channel.getSelected() == 'NoChannelSelected' ){
       this.ui.updateProcessingStatus(false);
     }
 
@@ -147,8 +164,6 @@ async openFileLoaded(event){
     this.ui.updateProcessingStatus(true);
     let importSettingsStatus = await this.attemptImportSettings({});
     console.log('Import Settings Status:',importSettingsStatus);
-    importSettingsStatus = await this.attemptImportSettings({});
-
     if(importSettingsStatus){
       this.ui.showSnack('Default Settings Loaded...','Almost There', {duration: 2000});
       console.log("Default Settings Loaded...");
@@ -160,9 +175,9 @@ async openFileLoaded(event){
   channelNameList = [];
   channelName;
 
-  async attemptImportSettings(parsedStringify){
+  async attemptImportSettings(config = {}){
     try{
-        await this.importSettings(parsedStringify);
+        await this.importSettings(config);
         return true;
     }
     catch(error){
@@ -174,6 +189,7 @@ async openFileLoaded(event){
       }
       else{
         this.ui.showSnack('Swarm Error =(','Start Over', {duration:8000});
+
         console.log(error);
         await this.ui.delay(5000);
       //  window.location.reload();
@@ -182,35 +198,24 @@ async openFileLoaded(event){
     }
   }
 
-  async importSettings(parsedStringify){
+  async importSettings(config = {}){
     console.log('Sign In: Importing Settings ...');
-    this.DEVMODE && console.log(parsedStringify);
+    this.DEVMODE && console.log(config);
       this.ui.setElectronSize('0');
       this.ui.updateProcessingStatus(true);
       this.completeChallengeScreen = false;
 
-
-      this.DEVMODE && console.log('SignIn: Reading Bee Config...')
-      while(!this.q.os.isReady()){
-        await this.ui.delay(2000);
-      }
-      this.q.os.signIn(parsedStringify);
-
-
       //wait for ipfs
-      this.ui.showSnack('Discovering Swarm...','Yeh');
 
-      console.log('SignIn: Waiting for Quest OS...');
       while(!this.q.os.isReady()){
         console.log('SignIn: Waiting for Quest OS...');
         await this.ui.delay(5000);
       }
 
-      this.ui.showSnack('Swarm Discovered...','Cool',{duration:1000});
-
-      let defaultChannel = this.q.os.channels.getSelectedChannel();
-      console.log('SignIn: Selecting Channel: '+defaultChannel+'...');
-      this.q.os.channels.selectChannel(defaultChannel);
+      this.ui.showSnack('Signing In...','Cool',{duration:1000});
+      this.q.os.signIn(config);
+      console.log('SignIn: Selecting Channel: '+this.q.os.channel.getSelected()+'...');
+      this.q.os.channel.select(this.q.os.channel.getSelected());
       return true;
     }
 

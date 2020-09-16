@@ -1,4 +1,5 @@
-
+<nb-layout>
+  <nb-layout-column>
 
 <div class="appSettings">
 
@@ -11,21 +12,21 @@
           <div class="generalSettingsScreenHeader">General Settings</div>
 
           <div fxLayout="row" style="margin-bottom:10px;">
-                <div *ngIf="saveLockActive" class="saveLockTogglerTitle saveLockTogglerTitleActive">
+                <div *ngIf="saveLockInactive" class="saveLockTogglerTitle saveLockTogglerTitleActive">
                   Drive Unlocked
                 </div>
-                <div *ngIf="!saveLockActive" class="saveLockTogglerTitle">
+                <div *ngIf="!saveLockInactive" class="saveLockTogglerTitle">
                   Drive Locked
                 </div>
 
               <div class="saveLockOptions saveLockToggler"  style=" font-size: 20px;    text-align: center;cursor:pointer;" >
-                <mat-slide-toggle  id="saveLockActiveToggle" [(ngModel)]="saveLockActive" (click)="saveLockActiveToggled()">
+                <mat-slide-toggle  id="saveLockInactiveToggle" [(ngModel)]="saveLockInactive" (click)="saveLockInactiveToggled()">
 
                 </mat-slide-toggle>
                 </div>
           </div>
 
-                    <div fxLayout="row" *ngIf="saveLockActive" >
+                    <div fxLayout="row" *ngIf="saveLockInactive" >
                       <div *ngIf="autoSaveActive" class="saveLockTogglerTitle saveLockTogglerTitleActive">
                         AutoSave Enabled
                       </div>
@@ -42,7 +43,7 @@
 
 
 
-            <div fxLayout="row" *ngIf="saveLockActive && autoSaveActive" style="margin-top:10px;" class="autoSaveIntervalSelectWrapper">
+            <div fxLayout="row" *ngIf="saveLockInactive && autoSaveActive" style="margin-top:10px;height:30px" class="autoSaveIntervalSelectWrapper">
                 <div [hidden]="!autoSaveActive" class="autoSaveIntervalTogglerTitle">
                   AutoSave Interval
                 </div>
@@ -77,6 +78,34 @@
 
                   </div>
               </div>
+
+
+
+
+
+              <div fxLayout="row" *ngIf="!isElectron && saveLockInactive" style="margin-top:10px;" class="autoSaveIntervalSelectWrapper">
+                  <div class="autoSaveIntervalTogglerTitle">
+                    Storage Location
+                  </div>
+
+                  <div class="saveLockOptions saveLockToggler "  style="font-size: 20px;    text-align: center;cursor:pointer;" >
+      <mat-form-field style="width: 24%;" name="storageLocationSelectField" id="storageLocationSelectField" >
+                       <mat-select [(value)]="storageLocation"  name="storageLocationSelect" id="storageLocationSelect" (selectionChange)="storageLocationChanged($event.value)" class="saveLockToggler" >
+                                    <mat-option  value="Download" >
+                                       Download
+                                   </mat-option>
+                                   <mat-option  value="LocalStorage"  >
+                                      Browser
+                                  </mat-option>
+                                  <!-- <mat-option  value="ConfigFile" >
+                                    Config
+                                 </mat-option> -->
+
+                         </mat-select>
+      </mat-form-field>
+
+                    </div>
+                </div>
 
 
 
@@ -145,3 +174,6 @@
 
 
 </div>
+
+  </nb-layout-column>
+</nb-layout>

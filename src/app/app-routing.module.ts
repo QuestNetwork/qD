@@ -9,7 +9,9 @@ const routes: Routes = [
   { path: 'signin', component: SignInComponent },
 
   { path: 'settings', component: SettingsComponent },
- { path: 'messages', loadChildren: () => import('../../../quest-messenger-js/src/qd-messages-ts.module').then(m => m.QuestMessengerJSModule) }
+ { path: 'messages', loadChildren: () => import('../../../quest-messenger-js/src/qd-messages-ts.module').then(m => m.QuestMessengerJSModule) },
+ { path: 'social', loadChildren: () => import('../../../qd-social-ts/src/qd-social-ts.module').then(m => m.QDSocialModule) }
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
