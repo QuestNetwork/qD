@@ -169,11 +169,14 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - Badges For Notifications
 - Desktop Notifications
 
-**0.9.9*
+**0.9.9**
 - Ethereum Payment Integration Beta
 
 **1.0.0**
 - Dynamic Swarm Peer List Also On The Web (add and remove bootstrap peers)
+- Third Party Dependencies Audited, Security Issues Fixed
+- Unlimited Custom Emojis
+- Quest Network Calendar App Plugin (for shared calendars)
 
 **2.0.0**
 - Ethereum Payment Integration Finalized
