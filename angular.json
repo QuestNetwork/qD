@@ -40,7 +40,6 @@
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/treeviz/dist/index.js",
               "browserfy/buffer-bundle.js",
-              "node_modules/crypto-js/index.js"
             ]
           },
           "configurations": {

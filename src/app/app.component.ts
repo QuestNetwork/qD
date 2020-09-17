@@ -147,7 +147,7 @@ export class AppComponent {
       this.channelNameList = value;
     });
 
-    this.q.os.ocean.dolphin.selectedChannelSub.subscribe( (value) => {
+    this.q.os.channel.onSelect().subscribe( (value) => {
       this.selectedChannel = value;
       console.log('App: Selected Channel: >>'+this.selectedChannel+'<<');
       console.log('App: noChannelSelected: >>'+this.noChannelSelected+"<<")

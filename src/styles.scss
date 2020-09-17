@@ -798,8 +798,11 @@ nb-layout-column{
   border: 1px solid #673ab6 !important;
 font-family: Ubuntu;
 color: #673ab6 !important;
+}
 
-
+.noOutlineButton{
+  font-family: Ubuntu;
+  border: 0 !important;
 }
 
 .thickOutlineButton.mat-stroked-button:not(.mat-button-disabled) {
