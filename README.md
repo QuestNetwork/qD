@@ -36,6 +36,8 @@ If you want anything else, you'll have to build from sources and probably fix so
 
 ## Web
 
+![PinataLink](https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/pinatalink.png?raw=true)
+
 https://gateway.pinata.cloud/ipfs/QmeQZ1brST9P52prY14Twuqixx4YwKvybEMkAZftK1iJiZ/
 
 https://cloudflare-ipfs.com/ipfs/QmeQZ1brST9P52prY14Twuqixx4YwKvybEMkAZftK1iJiZ/
