@@ -3,10 +3,10 @@
 # qDesk
 > The Quest Network Cross-Platform Window Platform
 
-![Screenshot](https://github.com/QuestNetwork/quest-messenger-js/raw/0.9.2/doc/images/0.9.2.png?raw=true)
+![Screenshot](https://github.com/QuestNetwork/qd-messages-js/raw/0.9.2/doc/images/0.9.2.png?raw=true)
 
 ## Description
-qDesk is a window platform for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js) and [qDesk Social](https://github.com/QuestNetwork/quest-social-js).
+qDesk is a window platform for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like [qDesk Messages](https://github.com/QuestNetwork/qd-messages-js) and [qDesk Social](https://github.com/QuestNetwork/quest-social-js).
 
 This app is built on [Quest OS](https://github.com/QuestNetwork/quest-os-js) which makes use of the [Interplanetary Filesystem](https://ipfs.io) and [IPFS GossipSub](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1/).
 
@@ -53,9 +53,9 @@ qDesk is built with [Bee for Quest OS](https://github.com/QuestNetwork/quest-bee
 
 `cd .. && git clone https://github.com/QuestNetwork/quest-bee-js && cd quest-bee-js && git checkout 0.9.3 && cd ../qDesk`
 
-qDesk comes preloaded with [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js), so until it's published:
+qDesk comes preloaded with [qDesk Messages](https://github.com/QuestNetwork/qd-messages-js), so until it's published:
 
-`cd .. && git clone https://github.com/QuestNetwork/quest-messenger-js && cd quest-messenger-js && git checkout 0.9.3 && cd ../qDesk`
+`cd .. && git clone https://github.com/QuestNetwork/qd-messages-js && cd qd-messages-js && git checkout 0.9.3 && cd ../qDesk`
 
 `npm install`
 
@@ -69,7 +69,7 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 ### Prerequisites
 
 To fully participate in the development, you'll need:
-- [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js)
+- [qDesk Messages](https://github.com/QuestNetwork/qd-messages-js)
 - [qDesk Social](https://github.com/QuestNetwork/quest-social-js)
 - [qDesk UI Service](https://github.com/QuestNetwork/qd-ui-js)
 - [Quest Network Operating System](https://github.com/QuestNetwork/quest-os-js)
@@ -82,13 +82,13 @@ To fully participate in the development, you'll need:
 
 1.) Clone and checkout repositories:
 ```
-git clone https://github.com/QuestNetwork/quest-crypto-js && git clone https://github.com/QuestNetwork/quest-pubsub-js && git clone https://github.com/QuestNetwork/quest-dolphin-js &&  git clone https://github.com/QuestNetwork/quest-ocean-js &&  git clone https://github.com/QuestNetwork/quest-bee-js  && git clone https://github.com/QuestNetwork/quest-social-js  && git clone https://github.com/QuestNetwork/quest-os-js && git clone https://github.com/QuestNetwork/qd-ui-js && git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/quest-messenger-js && git clone https://github.com/QuestNetwork/qDesk && cd quest-crypto-js && git checkout 0.9.3 && cd .. && cd quest-pubsub-js && git checkout 0.9.3 && cd .. &&   cd quest-dolphin-js && git checkout 0.9.3 && cd .. && cd quest-ocean-js && git checkout 0.9.3 && cd .. && cd quest-bee-js && git checkout 0.9.3 && cd ..  &&  cd quest-social-js  && git checkout 0.9.3 && cd ..  && cd quest-os-js   && git checkout 0.9.3 && cd ..  &&  cd qd-ui-js   && git checkout 0.9.3 && cd ..  &&  cd qd-social-ts   && git checkout 0.9.3 && cd ..  &&  cd quest-messenger-js   && git checkout 0.9.3 && cd ..  &&  cd qDesk   && git checkout 0.9.3 && cd ..
+git clone https://github.com/QuestNetwork/quest-crypto-js && git clone https://github.com/QuestNetwork/quest-pubsub-js && git clone https://github.com/QuestNetwork/quest-dolphin-js &&  git clone https://github.com/QuestNetwork/quest-ocean-js &&  git clone https://github.com/QuestNetwork/quest-bee-js  && git clone https://github.com/QuestNetwork/quest-social-js  && git clone https://github.com/QuestNetwork/quest-os-js && git clone https://github.com/QuestNetwork/qd-ui-js && git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-js && git clone https://github.com/QuestNetwork/qDesk && cd quest-crypto-js && git checkout 0.9.3 && cd .. && cd quest-pubsub-js && git checkout 0.9.3 && cd .. &&   cd quest-dolphin-js && git checkout 0.9.3 && cd .. && cd quest-ocean-js && git checkout 0.9.3 && cd .. && cd quest-bee-js && git checkout 0.9.3 && cd ..  &&  cd quest-social-js  && git checkout 0.9.3 && cd ..  && cd quest-os-js   && git checkout 0.9.3 && cd ..  &&  cd qd-ui-js   && git checkout 0.9.3 && cd ..  &&  cd qd-social-ts   && git checkout 0.9.3 && cd ..  &&  cd qd-messages-js   && git checkout 0.9.3 && cd ..  &&  cd qDesk   && git checkout 0.9.3 && cd ..
 ```
 
 
 2.) Install Dependencies:
 ```
-cd quest-crypto-js && npm install && cd .. && cd quest-os-js && npm install && cd .. && cd qDesk && npm run inst && cd .. && cd qd-social-ts && npm run inst && cd .. && cd quest-messenger-js && npm run inst && cd .. 
+cd quest-crypto-js && npm install && cd .. && cd quest-os-js && npm install && cd .. && cd qDesk && npm run inst && cd .. && cd qd-social-ts && npm run inst && cd .. && cd qd-messages-js && npm run inst && cd ..
 ```
 
 3.) Enter qDesk Repository:
@@ -166,7 +166,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - App is now modular, makes building add-ons easy
 - Drive Lock Fixed
 - Offer "LocalStorage" As A Storage Container On The Web To Stay Signed In
-- [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js)
+- [qDesk Messages](https://github.com/QuestNetwork/qd-messages-js)
 - [qDesk Social](https://github.com/QuestNetwork/quest-social-js)
 
 

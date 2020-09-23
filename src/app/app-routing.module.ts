@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'signin', component: SignInComponent },
 
   { path: 'settings', component: SettingsComponent },
- { path: 'messages', canActivate: [AuthGuard], loadChildren: () => import('../../../quest-messenger-js/src/qd-messages-ts.module').then(m => m.QDMessagesModule) },
+ { path: 'messages', canActivate: [AuthGuard], loadChildren: () => import('../../../qd-messages-js/src/qd-messages-ts.module').then(m => m.QDMessagesModule) },
  { path: 'social', canActivate: [AuthGuard], loadChildren: () => import('../../../qd-social-ts/src/qd-social-ts.module').then(m => m.QDSocialModule) }
 
 ];
