@@ -32,7 +32,7 @@ qDesk allows to lazy load modules.
 
 If you want anything else, you'll have to build from sources and probably fix some stuff.
 
-**WARNING:** THIRD PARTY DEPENDENCIES NOT AUDITED YET! APP HAS ACCESS TO FILESYSTEM! USE IN VIRTUAL MACHINE UNTIL 1.0.0!
+**WARNING:** 3rd party dependencies not audited. We recommend to use the downloaded app in a virtual machine until version 1.0.0.
 
 ## Web
 
