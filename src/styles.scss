@@ -6,12 +6,63 @@
 
 // framework component styles
 @import '~@nebular/theme/styles/globals';
+
+
+
 // install the framework styles
 @include nb-install() {
   @include nb-theme-global();
 };
 
+.message-row input{
+  background:#192038;
+  font-weight:normal !important;
+}
+
+.message-row input{
+  border-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius:  0.25rem !important;
+}
+.message-row input.cdk-focused{
+  border:1px solid red !important;
+  background: #151a30;
+}
+
+.emojiPicker{
+  z-index:10;
+}
+
+.emojiPickerTrigger{
+  position: absolute;
+  bottom: 17px;
+  opacity: 1;
+  right: 61px;
+  z-index: 9;
+  padding: 2px;
+  padding-right: 7px;
+  padding-left: 6px;
+  max-height: 38px;
+  cursor: pointer;
+}
+
+.emojiPickerTrigger > .emoji-mart-emoji{
+  position: relative !important;
+  top: 4px !important;
+  opacity:0.3;
+}
+
+.emojiPickerTrigger:hover{
+  opacity: 1;
+  background: #45247d80;
+  .emoji-mart-emoji {
+    opacity:0.7 !important;
+  }
+}
+
+
 @import '~@angular/cdk/overlay-prebuilt.css';
+@import '~@ctrl/ngx-emoji-mart/picker';
 
 @font-face {
   font-family: "Roboto";
@@ -1003,23 +1054,23 @@ border: 0 !important;
    scrollbar-width: 4px;
 }
 
-.peerListBox::-webkit-scrollbar {
+.peerListBox::-webkit-scrollbar, .emoji-mart-scroll::-webkit-scrollbar{
 width: 4px;
 
 }
 
-.peerListBox::-webkit-scrollbar-track {
+.peerListBox::-webkit-scrollbar-track, .emoji-mart-scroll::-webkit-scrollbar-track{
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #4e84e58f;
 
 }
 
-.peerListBox::-webkit-scrollbar-thumb {
+.peerListBox::-webkit-scrollbar-thumb, .emoji-mart-scroll::-webkit-scrollbar-thumb {
   background-color: #4e84e58f;
   outline: 0;
 }
 
-.peerListBox::-webkit-scrollbar-track {
+.peerListBox::-webkit-scrollbar-track, .emoji-mart-scrolll::-webkit-scrollbar-track {
     box-shadow: none !important;
 }
 
@@ -1041,4 +1092,14 @@ width: 4px;
 }
 .mat-select-panel::-webkit-scrollbar-track {
     box-shadow: none !important;
+}
+
+
+.nb-theme-dark nb-chat-message.reply nb-chat-message-text {
+    text-align: right;
+}
+
+
+nb-chat-message-text a{
+  color:red !important;
 }

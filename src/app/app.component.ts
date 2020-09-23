@@ -96,9 +96,7 @@ export class AppComponent {
       this.hidePopups();
     });
 
-    this.ui.toTabIndexSub.subscribe( (value) => {
-      this.toTabIndex(value);
-    });
+
 
     this.ui.tabAccessibilitySub.subscribe( (tabAccessibility) => {
       this.tabAccessibility = tabAccessibility;
@@ -136,6 +134,11 @@ export class AppComponent {
 
     this.swarmPeers = this.q.os.ocean.getPeers();
     this.cd.detectChanges();
+
+
+    this.q.os.ui.onTabChange().subscribe( (value) => {
+      this.toTabIndex(value);
+    });
 
     this.q.os.ocean.swarmPeersSub.subscribe( (value:number) => {
       this.swarmPeers = value;

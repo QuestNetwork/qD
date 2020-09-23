@@ -152,7 +152,7 @@ async openFileLoaded(event){
 
   async jumpToChannels(){
     this.router.navigate(['/messages']);
-    this.ui.toTabIndex(1);
+    this.q.os.ui.toTabIndex(1);
     this.ui.enableTab('channelTab');
     this.ui.disableTab('signInTab');
 

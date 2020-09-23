@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "BlenderFarmFront": {
+    "qDesk": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -76,18 +76,18 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "BlenderFarmFront:build"
+            "browserTarget": "qDesk:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "BlenderFarmFront:build:production"
+              "browserTarget": "qDesk:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "BlenderFarmFront:build"
+            "browserTarget": "qDesk:build"
           }
         },
         "test": {
@@ -125,16 +125,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "BlenderFarmFront:serve"
+            "devServerTarget": "qDesk:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "BlenderFarmFront:serve:production"
+              "devServerTarget": "qDesk:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "BlenderFarmFront"
+  "defaultProject": "qDesk"
 }
