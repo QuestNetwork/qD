@@ -36,7 +36,7 @@ If you want anything else, you'll have to build from sources and probably fix so
 
 ## Web
 
-<img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/cloudflarelink.png?raw=true' width=25%>
+<img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/cloudflarelink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/ipfsiolink.png?raw=true' width=25%>
 
 
 https://gateway.pinata.cloud/ipfs/QmeQZ1brST9P52prY14Twuqixx4YwKvybEMkAZftK1iJiZ/
