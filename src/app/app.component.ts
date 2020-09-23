@@ -96,9 +96,7 @@ export class AppComponent {
       this.hidePopups();
     });
 
-    this.ui.toTabIndexSub.subscribe( (value) => {
-      this.toTabIndex(value);
-    });
+
 
     this.ui.tabAccessibilitySub.subscribe( (tabAccessibility) => {
       this.tabAccessibility = tabAccessibility;
@@ -137,6 +135,11 @@ export class AppComponent {
     this.swarmPeers = this.q.os.ocean.getPeers();
     this.cd.detectChanges();
 
+
+    this.q.os.ui.onTabChange().subscribe( (value) => {
+      this.toTabIndex(value);
+    });
+
     this.q.os.ocean.swarmPeersSub.subscribe( (value:number) => {
       this.swarmPeers = value;
       this.cd.detectChanges();
@@ -147,7 +150,7 @@ export class AppComponent {
       this.channelNameList = value;
     });
 
-    this.q.os.ocean.dolphin.selectedChannelSub.subscribe( (value) => {
+    this.q.os.channel.onSelect().subscribe( (value) => {
       this.selectedChannel = value;
       console.log('App: Selected Channel: >>'+this.selectedChannel+'<<');
       console.log('App: noChannelSelected: >>'+this.noChannelSelected+"<<")

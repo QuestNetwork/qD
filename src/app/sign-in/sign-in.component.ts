@@ -131,25 +131,28 @@ async openFileLoaded(event){
     this.DEVMODE && console.log(config);
 
       //this is a quick file and settings save before payment
-    if(typeof(config) == 'undefined' || typeof(config.version) == 'undefined' || typeof(config.appId) == 'undefined' || config.appId != "quest-messenger-js"){
+    if(typeof(config) == 'undefined' || typeof(config.version) == 'undefined' || typeof(config.appId) == 'undefined' || config.appId != "qDesk"){
       //iNVALID FIlE FORMAT
-      this.ui.showSnack('Not a valid QuestNetwork Keychain!','Got it!',{duration:2000});
+      this.ui.showSnack('Not a valid qDesk Keychain!','Got it!',{duration:2000});
       this.ui.updateProcessingStatus(false);
       return false;
     }
-    else if(typeof(config) != 'undefined' && typeof(config.version) != 'undefined' && typeof(config.appId) != 'undefined' && config.appId == "quest-messenger-js"){
+    else if(typeof(config) != 'undefined' && typeof(config.version) != 'undefined' && typeof(config.appId) != 'undefined' && config.appId == "qDesk"){
       //IMPORTED A .KEYCHAIN FILE
       let importSettingsStatus = await this.attemptImportSettings(config);
       console.log('Sign In: Import Settings Status:',importSettingsStatus);
       if(importSettingsStatus){this.ui.showSnack('Opening Messages...','Almost There',{duration:2000});await this.jumpToChannels();return true;}
       else{this.ui.showSnack('Error Importing Settings!','Oh No');}
     }
-    return false;
+    else{
+      this.ui.updateProcessingStatus(false);
+      return false;
+    }
   }
 
   async jumpToChannels(){
     this.router.navigate(['/messages']);
-    this.ui.toTabIndex(1);
+    this.q.os.ui.toTabIndex(1);
     this.ui.enableTab('channelTab');
     this.ui.disableTab('signInTab');
 

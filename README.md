@@ -3,38 +3,38 @@
 # qDesk
 > The Quest Network Cross-Platform Window Platform
 
-![Screenshot](https://github.com/QuestNetwork/quest-messenger-js/raw/0.9.2/doc/images/0.9.2.png?raw=true)
+![Screenshot](https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/0.9.3.png?raw=true)
 
 ## Description
-qDesk is a window platform for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js) and [qDesk Social](https://github.com/QuestNetwork/quest-social-js).
+qDesk is a window platform for the [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qDesk Social](https://github.com/QuestNetwork/quest-social-js).
 
 This app is built on [Quest OS](https://github.com/QuestNetwork/quest-os-js) which makes use of the [Interplanetary Filesystem](https://ipfs.io) and [IPFS GossipSub](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1/).
 
 Look what other people have built with qDesk: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
 
-qDesk allows to lazy load modules. 
+qDesk allows to lazy load modules.
 
-## Security 
+## Security
 
 ![Completion 1.0.0](https://img.shields.io/badge/OAEP-4096%20Bit-green) ![EC](https://img.shields.io/badge/EC-P&#8208;521-green) ![AES](https://img.shields.io/badge/AES-256%20Bit-yellow)
 
 [Quest OS](https://github.com/QuestNetwork/quest-os-js) uses [4096 Bit RSA-OAEP](https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Operation) encryption, [256 Bit AES-CBC](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) encryption and [NIST P-521 EC](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography#Fast_reduction_(NIST_curves)) signatures.
 
-
 ## Download
 
 | Version | Linux | Mac | Windows |
 |---------:|------------------------------|------------------------------|------------------------------|
+| 0.9.3 | [q-desk-0.9.3.AppImage](https://github.com/QuestNetwork/qDesk/releases/download/0.9.3/q-desk-0.9.3.AppImage)  |  [q-desk-0.9.3.dmg](https://github.com/QuestNetwork/qDesk/releases/download/0.9.3/q-desk-0.9.3.dmg) | No Official Build |
 | 0.9.2 | [quest-messenger-0.9.2.AppImage](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.2/quest-messenger-0.9.2.AppImage) | [quest-messenger-0.9.2.dmg](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.2/quest-messenger-0.9.2.dmg) | No Official Build |
 | 0.9.1 | [quest-messenger-0.9.1.AppImage](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.1/quest-messenger-0.9.1.AppImage) | [quest-messenger-0.9.1.dmg](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.1/quest-messenger-0.9.1.dmg) | No Official Build |
 
-
-
 If you want anything else, you'll have to build from sources and probably fix some stuff.
 
-**WARNING:** THIRD PARTY DEPENDENCIES NOT AUDITED YET! APP HAS ACCESS TO FILESYSTEM! USE IN VIRTUAL MACHINE UNTIL 1.0.0!
+**WARNING:** 3rd party dependencies not audited. We recommend to use the downloaded app in a virtual machine until version 1.0.0.
 
 ## Web
+
+<img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/cloudflarelink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/ipfsiolink.png?raw=true' width=25%>
 
 https://gateway.pinata.cloud/ipfs/QmeQZ1brST9P52prY14Twuqixx4YwKvybEMkAZftK1iJiZ/
 
@@ -60,42 +60,10 @@ This project is a lot of work and unfortunately we need to eat food (ツ)
 
 ## Development
 
-### IPFS Deploy
-**Memory** 3.75GB **Storage** 6GB **NodeJS** 14 **NPM** 6 **IPFS** 0.6
-
-`git clone https://github.com/QuestNetwork/qDesk`
-
-`cd qDesk`
-
-`git checkout 0.9.3`
-
-Configure your favorite modules
-
-qDesk is built for [Quest OS](https://github.com/QuestNetwork/quest-os-js), so until it's published:
-
-`cd .. && git clone https://github.com/QuestNetwork/quest-os-js && cd quest-os-js && git checkout 0.9.3 && cd ../qDesk`
-
-qDesk is built with [Bee for Quest OS](https://github.com/QuestNetwork/quest-bee-js), so until it's published:
-
-`cd .. && git clone https://github.com/QuestNetwork/quest-bee-js && cd quest-bee-js && git checkout 0.9.3 && cd ../qDesk`
-
-qDesk comes preloaded with [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js), so until it's published:
-
-`cd .. && git clone https://github.com/QuestNetwork/quest-messenger-js && cd quest-messenger-js && git checkout 0.9.3 && cd ../qDesk`
-
-`npm install`
-
-`npm run ipfs`
-
-`ipfs pin add <CID>`
-
-If you have trouble getting the directory discovered by gateways, you can try ```./ipfs-propagate.sh``` from the root git folder.
-Keep in mind that the bundled web application is >14MB alone without assets, please be patient until we have a preloader.
-
 ### Prerequisites
 
 To fully participate in the development, you'll need:
-- [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js)
+- [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts)
 - [qDesk Social](https://github.com/QuestNetwork/quest-social-js)
 - [qDesk UI Service](https://github.com/QuestNetwork/qd-ui-js)
 - [Quest Network Operating System](https://github.com/QuestNetwork/quest-os-js)
@@ -105,8 +73,21 @@ To fully participate in the development, you'll need:
 - [Quest Network Dolphin Process](https://github.com/QuestNetwork/quest-dolphin-js)
 - [Quest Network PubSub Process](https://github.com/QuestNetwork/quest-pubsub-js)
 
+
+1.) Clone & Checkout repositories:
 ```
-git clone https://github.com/QuestNetwork/qDesk && git clone https://github.com/QuestNetwork/quest-os-js && git clone https://github.com/QuestNetwork/quest-bee-js && git clone https://github.com/QuestNetwork/quest-ocean-js && git clone https://github.com/QuestNetwork/quest-dolphin-js && git clone https://github.com/QuestNetwork/quest-pubsub-js && git clone https://github.com/QuestNetwork/quest-messenger-js && git clone https://github.com/QuestNetwork/quest-social-js && && git clone https://github.com/QuestNetwork/qd-ui-js && && git clone https://github.com/QuestNetwork/qd-social-js
+git clone https://github.com/QuestNetwork/quest-crypto-js && git clone https://github.com/QuestNetwork/quest-pubsub-js && git clone https://github.com/QuestNetwork/quest-dolphin-js &&  git clone https://github.com/QuestNetwork/quest-ocean-js &&  git clone https://github.com/QuestNetwork/quest-bee-js  && git clone https://github.com/QuestNetwork/quest-social-js  && git clone https://github.com/QuestNetwork/quest-os-js && git clone https://github.com/QuestNetwork/qd-ui-js && git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-ts && git clone https://github.com/QuestNetwork/qDesk && cd quest-crypto-js && git checkout 0.9.3 && cd .. && cd quest-pubsub-js && git checkout 0.9.3 && cd .. &&   cd quest-dolphin-js && git checkout 0.9.3 && cd .. && cd quest-ocean-js && git checkout 0.9.3 && cd .. && cd quest-bee-js && git checkout 0.9.3 && cd ..  &&  cd quest-social-js  && git checkout 0.9.3 && cd ..  && cd quest-os-js   && git checkout 0.9.3 && cd ..  &&  cd qd-ui-js   && git checkout 0.9.3 && cd ..  &&  cd qd-social-ts   && git checkout 0.9.3 && cd ..  &&  cd qd-messages-ts   && git checkout 0.9.3 && cd ..  &&  cd qDesk   && git checkout 0.9.3 && cd ..
+```
+
+
+2.) Install Dependencies:
+```
+cd quest-crypto-js && npm install && cd .. && cd quest-os-js && npm install && cd .. && cd qDesk && npm run inst && cd .. && cd qd-social-ts && npm run inst && cd .. && cd qd-messages-ts && npm run inst && cd ..
+```
+
+3.) Enter qDesk Repository:
+```
+cd qDesk
 ```
 
 ### Commands
@@ -158,6 +139,17 @@ We added an example ```swarm.json``` to the ```src/app``` folder with an example
 
 Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/to/quest-cli/index.js` from any folder on your system. It's much nicer!
 
+**IPFS Deploy**
+
+System Requirements: **Memory** 3.75GB **Storage** 6GB **NodeJS** 14 **NPM** 6 **IPFS** 0.6
+
+`npm run ipfs`
+
+`ipfs pin add <CID>`
+
+If you have trouble getting the directory discovered by gateways, you can try ```./ipfs-propagate.sh``` from the root git folder.
+Keep in mind that the bundled web application is >14MB alone without assets, please be patient until we have a preloader.
+
 
 ## Features
 
@@ -179,7 +171,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - App is now modular, makes building add-ons easy
 - Drive Lock Fixed
 - Offer "LocalStorage" As A Storage Container On The Web To Stay Signed In
-- [qDesk Messages](https://github.com/QuestNetwork/quest-messenger-js)
+- [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts)
 - [qDesk Social](https://github.com/QuestNetwork/quest-social-js)
 
 

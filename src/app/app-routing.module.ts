@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SettingsComponent } from './settings/settings.component';
+import { AuthGuard } from './guards/auth.guard';
 
 
 const routes: Routes = [
@@ -9,8 +10,8 @@ const routes: Routes = [
   { path: 'signin', component: SignInComponent },
 
   { path: 'settings', component: SettingsComponent },
- { path: 'messages', loadChildren: () => import('../../../quest-messenger-js/src/qd-messages-ts.module').then(m => m.QuestMessengerJSModule) },
- { path: 'social', loadChildren: () => import('../../../qd-social-ts/src/qd-social-ts.module').then(m => m.QDSocialModule) }
+ { path: 'messages', canActivate: [AuthGuard], loadChildren: () => import('../../../qd-messages-ts/src/qd-messages-ts.module').then(m => m.QDMessagesModule) },
+ { path: 'social', canActivate: [AuthGuard], loadChildren: () => import('../../../qd-social-ts/src/qd-social-ts.module').then(m => m.QDSocialModule) }
 
 ];
 @NgModule({
