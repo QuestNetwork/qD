@@ -34,38 +34,6 @@ This project is a lot of work and unfortunately we need to eat food (ツ)
 
 ## Development
 
-### IPFS Deploy
-**Memory** 3.75GB **Storage** 6GB **NodeJS** 14 **NPM** 6 **IPFS** 0.6
-
-`git clone https://github.com/QuestNetwork/qDesk`
-
-`cd qDesk`
-
-`git checkout 0.9.3`
-
-Configure your favorite modules
-
-qDesk is built for [Quest OS](https://github.com/QuestNetwork/quest-os-js), so until it's published:
-
-`cd .. && git clone https://github.com/QuestNetwork/quest-os-js && cd quest-os-js && git checkout 0.9.3 && cd ../qDesk`
-
-qDesk is built with [Bee for Quest OS](https://github.com/QuestNetwork/quest-bee-js), so until it's published:
-
-`cd .. && git clone https://github.com/QuestNetwork/quest-bee-js && cd quest-bee-js && git checkout 0.9.3 && cd ../qDesk`
-
-qDesk comes preloaded with [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts), so until it's published:
-
-`cd .. && git clone https://github.com/QuestNetwork/qd-messages-ts && cd qd-messages-ts && git checkout 0.9.3 && cd ../qDesk`
-
-`npm install`
-
-`npm run ipfs`
-
-`ipfs pin add <CID>`
-
-If you have trouble getting the directory discovered by gateways, you can try ```./ipfs-propagate.sh``` from the root git folder.
-Keep in mind that the bundled web application is >14MB alone without assets, please be patient until we have a preloader.
-
 ### Prerequisites
 
 To fully participate in the development, you'll need:
@@ -80,7 +48,7 @@ To fully participate in the development, you'll need:
 - [Quest Network PubSub Process](https://github.com/QuestNetwork/quest-pubsub-js)
 
 
-1.) Clone and checkout repositories:
+1.) Clone & Checkout repositories:
 ```
 git clone https://github.com/QuestNetwork/quest-crypto-js && git clone https://github.com/QuestNetwork/quest-pubsub-js && git clone https://github.com/QuestNetwork/quest-dolphin-js &&  git clone https://github.com/QuestNetwork/quest-ocean-js &&  git clone https://github.com/QuestNetwork/quest-bee-js  && git clone https://github.com/QuestNetwork/quest-social-js  && git clone https://github.com/QuestNetwork/quest-os-js && git clone https://github.com/QuestNetwork/qd-ui-js && git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-ts && git clone https://github.com/QuestNetwork/qDesk && cd quest-crypto-js && git checkout 0.9.3 && cd .. && cd quest-pubsub-js && git checkout 0.9.3 && cd .. &&   cd quest-dolphin-js && git checkout 0.9.3 && cd .. && cd quest-ocean-js && git checkout 0.9.3 && cd .. && cd quest-bee-js && git checkout 0.9.3 && cd ..  &&  cd quest-social-js  && git checkout 0.9.3 && cd ..  && cd quest-os-js   && git checkout 0.9.3 && cd ..  &&  cd qd-ui-js   && git checkout 0.9.3 && cd ..  &&  cd qd-social-ts   && git checkout 0.9.3 && cd ..  &&  cd qd-messages-ts   && git checkout 0.9.3 && cd ..  &&  cd qDesk   && git checkout 0.9.3 && cd ..
 ```
@@ -144,6 +112,25 @@ Builds MacOS DMG and .app files to ``dist/`` and ``dist/mac``
 We added an example ```swarm.json``` to the ```src/app``` folder with an example node to make reproduction easier, but we strongly recommend to use our [Quest CLI](https://github.com/QuestNetwork/quest-cli) to test and build the app.
 
 Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/to/quest-cli/index.js` from any folder on your system. It's much nicer!
+
+
+### IPFS Deploy
+**Memory** 3.75GB **Storage** 6GB **NodeJS** 14 **NPM** 6 **IPFS** 0.6
+
+`git clone https://github.com/QuestNetwork/qDesk`
+
+`cd qDesk`
+
+`git checkout 0.9.3`
+
+`npm install`
+
+`npm run ipfs`
+
+`ipfs pin add <CID>`
+
+If you have trouble getting the directory discovered by gateways, you can try ```./ipfs-propagate.sh``` from the root git folder.
+Keep in mind that the bundled web application is >14MB alone without assets, please be patient until we have a preloader.
 
 
 ## Features
