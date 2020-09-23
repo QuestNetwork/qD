@@ -28,8 +28,6 @@ qDesk allows to lazy load modules.
 | 0.9.2 | [quest-messenger-0.9.2.AppImage](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.2/quest-messenger-0.9.2.AppImage) | [quest-messenger-0.9.2.dmg](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.2/quest-messenger-0.9.2.dmg) | No Official Build |
 | 0.9.1 | [quest-messenger-0.9.1.AppImage](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.1/quest-messenger-0.9.1.AppImage) | [quest-messenger-0.9.1.dmg](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.1/quest-messenger-0.9.1.dmg) | No Official Build |
 
-
-
 If you want anything else, you'll have to build from sources and probably fix some stuff.
 
 **WARNING:** 3rd party dependencies not audited. We recommend to use the downloaded app in a virtual machine until version 1.0.0.
@@ -37,7 +35,6 @@ If you want anything else, you'll have to build from sources and probably fix so
 ## Web
 
 <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/cloudflarelink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/ipfsiolink.png?raw=true' width=25%>
-
 
 https://gateway.pinata.cloud/ipfs/QmeQZ1brST9P52prY14Twuqixx4YwKvybEMkAZftK1iJiZ/
 
@@ -195,6 +192,9 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 
 **1.0.0**
 - Dynamic Swarm Peer List Also On The Web (add and remove bootstrap peers)
+- Third Party Dependencies Audited, Security Issues Fixed
+- Unlimited Custom Emojis
+- Quest Network Calendar App Plugin (for shared calendars)
 
 **2.0.0**
 - Ethereum Payment Integration Finalized
