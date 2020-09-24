@@ -1,4 +1,4 @@
-![Completion](https://img.shields.io/badge/completion-14%25-orange) ![Help Wanted](https://img.shields.io/badge/%20-help--wanted-%23159818) ![Version 0.9.3](https://img.shields.io/badge/version-v0.9.3-green) ![Version 0.9.3](https://img.shields.io/badge/version-v0.9.4-blue) ![Sponsors](https://img.shields.io/badge/sponsors-2-orange)
+![Completion](https://img.shields.io/badge/completion-16%25-orange) ![Help Wanted](https://img.shields.io/badge/%20-help--wanted-%23159818) ![Version 0.9.3](https://img.shields.io/badge/version-v0.9.3-green) ![Version 0.9.3](https://img.shields.io/badge/version-v0.9.4-blue) ![Sponsors](https://img.shields.io/badge/sponsors-2-orange)
 
 # qDesk
 > The Quest Network Cross-Platform Social Network
@@ -76,18 +76,13 @@ To fully participate in the development, you'll need:
 
 1.) Clone & Checkout repositories:
 ```
-git clone https://github.com/QuestNetwork/quest-crypto-js && git clone https://github.com/QuestNetwork/quest-pubsub-js && git clone https://github.com/QuestNetwork/quest-dolphin-js &&  git clone https://github.com/QuestNetwork/quest-ocean-js &&  git clone https://github.com/QuestNetwork/quest-bee-js  && git clone https://github.com/QuestNetwork/quest-social-js  && git clone https://github.com/QuestNetwork/quest-os-js && git clone https://github.com/QuestNetwork/qd-ui-js && git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-ts && git clone https://github.com/QuestNetwork/qDesk && cd quest-crypto-js && git checkout 0.9.3 && cd .. && cd quest-pubsub-js && git checkout 0.9.3 && cd .. &&   cd quest-dolphin-js && git checkout 0.9.3 && cd .. && cd quest-ocean-js && git checkout 0.9.3 && cd .. && cd quest-bee-js && git checkout 0.9.3 && cd ..  &&  cd quest-social-js  && git checkout 0.9.3 && cd ..  && cd quest-os-js   && git checkout 0.9.3 && cd ..  &&  cd qd-ui-js   && git checkout 0.9.3 && cd ..  &&  cd qd-social-ts   && git checkout 0.9.3 && cd ..  &&  cd qd-messages-ts   && git checkout 0.9.3 && cd ..  &&  cd qDesk   && git checkout 0.9.3 && cd ..
+git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-ts && git clone https://github.com/QuestNetwork/qDesk && cd qd-social-ts   && git checkout 0.9.3 && cd ..  &&  cd qd-messages-ts   && git checkout 0.9.3 && cd ..  &&  cd qDesk   && git checkout 0.9.3 && cd ..
 ```
 
 
-2.) Install Dependencies:
+2.) Install Dependencies & Enter qDesk Repository:
 ```
-cd quest-crypto-js && npm install && cd .. && cd quest-os-js && npm install && cd .. && cd qDesk && npm run inst && cd .. && cd qd-social-ts && npm run inst && cd .. && cd qd-messages-ts && npm run inst && cd ..
-```
-
-3.) Enter qDesk Repository:
-```
-cd qDesk
+cd qd-social-ts && npm run inst && cd .. && cd qd-messages-ts && npm run inst && cd .. && cd qDesk && npm run inst
 ```
 
 ### Commands
