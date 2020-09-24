@@ -172,6 +172,8 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 
 **0.9.6**
 - Encrypt Settings/Message History Files
+- [qDesk Market](https://github.com/QuestNetwork/qd-market-ts)
+- [qDesk News](https://github.com/QuestNetwork/qd-news-ts)
 
 **0.9.7**
 - Add Custom Themes By Pasting CSS Into The Built-In Theme Editor
