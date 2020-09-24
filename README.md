@@ -185,6 +185,7 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 - Desktop Notifications
 
 **0.9.9**
+- [qDesk Games](https://github.com/QuestNetwork/qd-games-ts)
 - Ethereum Payment Integration Beta
 
 **1.0.0**
