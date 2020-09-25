@@ -174,6 +174,7 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 - Encrypt Settings/Message History Files
 - [qDesk Market](https://github.com/QuestNetwork/qd-market-ts)
 - [qDesk News](https://github.com/QuestNetwork/qd-news-ts)
+- [Quest Network Coral Process](https://github.com/QuestNetwork/quest-coral-js)
 
 **0.9.7**
 - Add Custom Themes By Pasting CSS Into The Built-In Theme Editor
@@ -189,6 +190,7 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 - Ethereum Payment Integration Beta
 
 **1.0.0**
+- Fork into [Vibenarium](https://github.com/Vibenarium/vibenarium-platform)
 - Dynamic Swarm Peer List Also On The Web (add and remove bootstrap peers)
 - Third Party Dependencies Audited, Security Issues Fixed
 - Unlimited Custom Emojis
