@@ -172,7 +172,7 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 
 **0.9.6**
 - Encrypt Settings/Message History Files
-- [qDesk Market](https://github.com/QuestNetwork/qd-market-ts)
+- [qDesk Markets](https://github.com/QuestNetwork/qd-market-ts)
 - [qDesk News](https://github.com/QuestNetwork/qd-news-ts)
 - [Quest Network Coral Process](https://github.com/QuestNetwork/quest-coral-js)
 
