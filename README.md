@@ -169,6 +169,8 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 - [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts)
 - [qDesk Social](https://github.com/QuestNetwork/quest-social-js)
 
+**0.9.4**
+- Democratically block or mute participants
 
 **0.9.6**
 - Encrypt Settings/Message History Files
