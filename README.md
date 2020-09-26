@@ -100,7 +100,7 @@ To The same directory you're cloning this repository to.
 **Build For Mac**
 ```
 sed -i 's/"@questnetwork\/q-desk"/"q-desk"/g' package.json
-&& npm run mac```
+&& npm run mac && 
 sed -i  's/"q-desk"/"@questnetwork\/q-desk"/g'  package.json
 ```
 Builds MacOS DMG and .app files to ``dist/`` and ``dist/mac``
