@@ -76,7 +76,7 @@ To fully participate in the development, you'll need:
 
 1.) Clone & Checkout repositories:
 ```
-git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-ts && git clone https://github.com/QuestNetwork/qDesk && cd qd-social-ts   && git checkout 0.9.3 && cd ..  &&  cd qd-messages-ts   && git checkout 0.9.3 && cd ..  &&  cd qDesk   && git checkout 0.9.3 && cd ..
+git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-ts && git clone https://github.com/QuestNetwork/qDesk && cd qd-social-ts   && git checkout 0.9.3 && cd ..  &&  cd qd-messages-ts   && git checkout 0.9.3-rc1 && cd ..  &&  cd qDesk   && git checkout 0.9.3-rc1 && cd ..
 ```
 
 
@@ -130,10 +130,6 @@ Builds MacOS DMG and .app files to ``dist/`` and ``dist/mac``
 ``watch-reset`` Cleans the watch list, in case of ```System Limit``` error
 
 
-We added an example ```swarm.json``` to the ```src/app``` folder with an example node to make reproduction easier, but we strongly recommend to use our [Quest CLI](https://github.com/QuestNetwork/quest-cli) to test and build the app.
-
-Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/to/quest-cli/index.js` from any folder on your system. It's much nicer!
-
 **IPFS Deploy**
 
 System Requirements: **Memory** 3.75GB **Storage** 6GB **NodeJS** 14 **NPM** 6 **IPFS** 0.6
@@ -142,8 +138,15 @@ System Requirements: **Memory** 3.75GB **Storage** 6GB **NodeJS** 14 **NPM** 6 *
 
 `ipfs pin add <CID>`
 
-If you have trouble getting the directory discovered by gateways, you can try ```./ipfs-propagate.sh``` from the root git folder.
+If you have trouble getting the directory discovered by gateways, you can try ```./ipfs-propagate.sh``` from the root of this repository.
 Keep in mind that the bundled web application is >14MB alone without assets, please be patient until we have a preloader.
+
+
+
+
+We added an example ```swarm.json``` to the ```src/app``` folder with an example node to make reproduction easier, but we strongly recommend to use our [Quest CLI](https://github.com/QuestNetwork/quest-cli) to test and build the app.
+
+Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/to/quest-cli/index.js` from any folder on your system. It's much nicer!
 
 
 ## Features
