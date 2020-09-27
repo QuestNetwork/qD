@@ -107,7 +107,7 @@ Builds MacOS DMG and .app files to ``dist/`` and ``dist/mac``
 
 **Build For IPFS**
 
-``npm run ipfs``  Creates the bundled application for the web with dynamic base path to ```dist/web```
+``ipfs daemon & npm run ipfs``  Creates the bundled application for the web with dynamic base path to ```dist/web```
 
 **Build For Web**
 
@@ -134,7 +134,7 @@ Builds MacOS DMG and .app files to ``dist/`` and ``dist/mac``
 
 System Requirements: **Memory** 3.75GB **Storage** 6GB **NodeJS** 14 **NPM** 6 **IPFS** 0.6
 
-`npm run ipfs`
+`ipfs daemon & npm run ipfs`
 
 `ipfs pin add <CID>`
 
