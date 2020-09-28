@@ -50,6 +50,7 @@ export class SettingsComponent implements OnInit {
 
     });
 
+    this.ipfsOnline = this.q.os.isReady();
 
 
   }
