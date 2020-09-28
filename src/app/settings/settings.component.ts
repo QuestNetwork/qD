@@ -34,7 +34,7 @@ export class SettingsComponent implements OnInit {
     this.q.os.onReady().subscribe( () => {
       console.log('OS Ready');
       this.ipfsOnline = true;
-      this.bootstrapIpfsPeers = this.q.os.getIpfsBootstrapPeers();
+      this.bootstrapIpfsPeers = this.q.os.getIpfsConfig()['Swarm'];
     });
     this.q.os.onSignIn().subscribe( () => {
 
@@ -45,7 +45,7 @@ export class SettingsComponent implements OnInit {
       }
 
       this.ipfsOnline = this.q.os.isReady();
-      this.bootstrapIpfsPeers = this.q.os.getIpfsBootstrapPeers();``
+      this.bootstrapIpfsPeers = this.q.os.getIpfsConfig()['Swarm'];``
 
 
     });
@@ -93,18 +93,22 @@ autoSaveInterval = 30*10000;
   isElectron = false;
 
   refreshIpfsSwarmPeerList(){
-    this.bootstrapIpfsPeers = this.q.os.getIpfsBootstrapPeers();
+    this.bootstrapIpfsPeers = this.q.os.getIpfsConfig()['Swarm'];
   }
   newPeerField = "";
   addNewPeer(){
     let newPeer = this.newPeerField
-    let peers = this.q.os.getIpfsBootstrapPeers();
+    let config = this.q.os.getIpfsConfig();
+    let peers = config['Swarm'];
     peers.push(newPeer);
-    this.q.os.setIpfsBootstrapPeers(peers);
+    config['Swarm'] = peers;
+    this.q.os.setIpfsConfig(config);
     this.refreshIpfsSwarmPeerList();
   }
   removePeer(peer){
-    this.q.os.setIpfsBootstrapPeers(this.q.os.getIpfsBootstrapPeers().filter(e => e != peer));
+    let config = this.q.os.getIpfsConfig();
+    config['Swarm'] = ['Swarm'].filter(e => e != peer);
+    this.q.os.setIpfsConfig(config);
     this.refreshIpfsSwarmPeerList();
   }
   reboot(){
