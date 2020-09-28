@@ -88,11 +88,17 @@ autoSaveInterval = 30*10000;
     }
 
     this.isElectron = this.q.os.isElectron();
+    if(!this.isElectron){
+      this.isElectron  = this.q.os.isNodeJS();
+    }
+    this.bootstrapIpfsPeers = this.q.os.getIpfsConfig()['Swarm'];
+
 
   }
   isElectron = false;
 
   refreshIpfsSwarmPeerList(){
+    console.log( this.q.os.getIpfsConfig());
     this.bootstrapIpfsPeers = this.q.os.getIpfsConfig()['Swarm'];
   }
   newPeerField = "";
@@ -107,7 +113,7 @@ autoSaveInterval = 30*10000;
   }
   removePeer(peer){
     let config = this.q.os.getIpfsConfig();
-    config['Swarm'] = ['Swarm'].filter(e => e != peer);
+    config['Swarm'] = config['Swarm'].filter(e => e != peer);
     this.q.os.setIpfsConfig(config);
     this.refreshIpfsSwarmPeerList();
   }
