@@ -7,6 +7,7 @@ const webpack = require('webpack')
 module.exports = {
   // target: 'node',
   node: {
+      fs: "empty",
       crypto: false,
       path: true,
       os: true,
