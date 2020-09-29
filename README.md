@@ -82,7 +82,12 @@ git clone https://github.com/QuestNetwork/quest-utilities-js && git clone https:
 
 2.) Install Dependencies & Enter qDesk Repository:
 ```
-cd qd-social-ts && npm install && cd .. && cd qd-messages-ts && npm install && cd .. && cd qDesk && npm install || npm run reinst
+cd qd-social-ts && npm install && cd .. && cd qd-messages-ts && npm install && cd .. && cd qDesk && npm install
+```
+
+2.) In case of errors:
+```
+npm run reinst
 ```
 
 ### Commands
@@ -92,6 +97,12 @@ cd qd-social-ts && npm install && cd .. && cd qd-messages-ts && npm install && c
 To The same directory you're cloning this repository to.
 
 ``npm run inst`` Removes `package-lock.json` and runs ``npm install``
+
+**Reinstall Package**
+
+To The same directory you're cloning this repository to.
+
+``npm run reinst`` Removes `node_modules`, `package-lock.json` and runs ``npm install``
 
 **Build For Linux**
 
