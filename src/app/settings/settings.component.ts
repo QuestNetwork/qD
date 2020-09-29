@@ -88,10 +88,14 @@ autoSaveInterval = 30*10000;
       this.storageLocation = this.q.os.getStorageLocation();
     }
 
-    this.isElectron = this.q.os.isElectron();
-    if(!this.isElectron){
-      this.isElectron  = this.q.os.isNodeJS();
+    if(this.q.os.utilities.engine.detect() == 'electron' || this.q.os.utilities.engine.detect() == 'node'){
+        this.isElectron = true;
     }
+
+    if(this.q.os.utilities.engine.detect() == 'electron' || this.q.os.utilities.engine.detect() == 'node'){
+      this.isElectron = true;
+    } ;
+
     this.bootstrapIpfsPeers = this.q.os.getIpfsConfig()['Swarm'];
 
 
