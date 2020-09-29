@@ -8,6 +8,8 @@
 ## Description
 qDesk is an example app for our JavaScript p2p library [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qDesk Social](https://github.com/QuestNetwork/qd-social-ts), as well as the upcoming [qDesk Markets](https://github.com/QuestNetwork/qd-market-ts), [qDesk News](https://github.com/QuestNetwork/qd-news-ts) and [qDesk Games](https://github.com/QuestNetwork/qd-games-ts).
 
+qDesk makes it possible to build custom, secure and decentralized social networks in less than 20 days.
+
 This app is built on [Quest OS](https://github.com/QuestNetwork/quest-os-js) which makes use of the [Interplanetary Filesystem](https://ipfs.io) and [IPFS GossipSub](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1/).
 
 Look what other people have built with qDesk: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
