@@ -94,13 +94,13 @@ npm run reinst
 
 **Prepare Package**
 
-To The same directory you're cloning this repository to.
+From The same directory you're cloning this repository to.
 
 ``npm run inst`` Removes `package-lock.json` and runs ``npm install``
 
 **Reinstall Package**
 
-To The same directory you're cloning this repository to.
+From The same directory you're cloning this repository to.
 
 ``npm run reinst`` Removes `node_modules`, `package-lock.json` and runs ``npm install``
 
