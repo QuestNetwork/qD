@@ -24,7 +24,7 @@ qDesk allows to lazy load modules.
 
 | Version | Linux | Mac | Windows |
 |---------:|------------------------------|------------------------------|------------------------------|
-| 0.9.3 | [q-desk-0.9.3.AppImage](https://github.com/QuestNetwork/qDesk/releases/download/0.9.3-rc1/q-desk-0.9.3.AppImage)  |  [q-desk-0.9.3.dmg](https://github.com/QuestNetwork/qDesk/releases/download/0.9.3-rc1/q-desk-0.9.3.dmg) | No Official Build |
+| 0.9.3-rc1 | [q-desk-0.9.3.AppImage](https://github.com/QuestNetwork/qDesk/releases/download/0.9.3-rc1/q-desk-0.9.3.AppImage)  |  [q-desk-0.9.3.dmg](https://github.com/QuestNetwork/qDesk/releases/download/0.9.3-rc1/q-desk-0.9.3.dmg) | No Official Build |
 | 0.9.2 | [quest-messenger-0.9.2.AppImage](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.2/quest-messenger-0.9.2.AppImage) | [quest-messenger-0.9.2.dmg](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.2/quest-messenger-0.9.2.dmg) | No Official Build |
 | 0.9.1 | [quest-messenger-0.9.1.AppImage](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.1/quest-messenger-0.9.1.AppImage) | [quest-messenger-0.9.1.dmg](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.1/quest-messenger-0.9.1.dmg) | No Official Build |
 
@@ -33,6 +33,8 @@ If you want anything else, you'll have to build from sources and probably fix so
 **WARNING:** 3rd party dependencies not audited. We recommend to use the downloaded app in a virtual machine until version 1.0.0.
 
 ## Web
+
+**0.9.3-rc1**
 
 <img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/cloudflarelink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/ipfsiolink.png?raw=true' width=25%>
 
@@ -82,16 +84,27 @@ git clone https://github.com/QuestNetwork/quest-utilities-js && git clone https:
 
 2.) Install Dependencies & Enter qDesk Repository:
 ```
-cd qd-social-ts && npm install && cd .. && cd qd-messages-ts && npm install && cd .. && cd qDesk && npm install || npm run reinst
+cd qd-social-ts && npm install && cd .. && cd qd-messages-ts && npm install && cd .. && cd qDesk && npm install
+```
+
+2.) In case of errors:
+```
+npm run reinst
 ```
 
 ### Commands
 
 **Prepare Package**
 
-To The same directory you're cloning this repository to.
+From The same directory you're cloning this repository to.
 
 ``npm run inst`` Removes `package-lock.json` and runs ``npm install``
+
+**Reinstall Package**
+
+From The same directory you're cloning this repository to.
+
+``npm run reinst`` Removes `node_modules`, `package-lock.json` and runs ``npm install``
 
 **Build For Linux**
 
