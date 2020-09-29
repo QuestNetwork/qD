@@ -88,13 +88,9 @@ autoSaveInterval = 30*10000;
       this.storageLocation = this.q.os.getStorageLocation();
     }
 
-    if(this.q.os.utilities.engine.detect() == 'electron' || this.q.os.utilities.engine.detect() == 'node'){
+    if(this.q.os.utilities.engine.detect() == 'electron'){
         this.isElectron = true;
     }
-
-    if(this.q.os.utilities.engine.detect() == 'electron' || this.q.os.utilities.engine.detect() == 'node'){
-      this.isElectron = true;
-    } ;
 
     this.bootstrapIpfsPeers = this.q.os.getIpfsConfig()['Swarm'];
 
