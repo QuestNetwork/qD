@@ -36,7 +36,7 @@ If you want anything else, you'll have to build from sources and probably fix so
 
 ## Web 
 
-**0.9.3 RC1**
+**0.9.3-rc1**
 
 <img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/cloudflarelink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/ipfsiolink.png?raw=true' width=25%>
 
