@@ -82,7 +82,7 @@ git clone https://github.com/QuestNetwork/quest-utilities-js && git clone https:
 
 2.) Install Dependencies & Enter qDesk Repository:
 ```
-cd qd-social-ts && npm install && cd .. && cd qd-messages-ts && npm install && cd .. && cd qDesk && npm install || rm -rf node_modules && npm run inst
+cd qd-social-ts && npm install && cd .. && cd qd-messages-ts && npm install && cd .. && cd qDesk && npm install || npm run reinst
 ```
 
 ### Commands
