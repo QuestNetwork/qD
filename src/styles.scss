@@ -1074,6 +1074,22 @@ width: 4px;
     box-shadow: none !important;
 }
 
+
+.social-search-results::-webkit-scrollbar{
+  width: 8px;
+}
+
+.social-search-results::-webkit-scrollbar-track{
+  // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #4e84e58f;
+}
+
+.social-search-results::-webkit-scrollbar-thumb{
+  background-color: #4e84e58f;
+  outline: 0;
+}
+
+
 .mat-select-panel{
   scrollbar-width: 4px;
 }
