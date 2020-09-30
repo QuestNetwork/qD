@@ -64,6 +64,10 @@ This project is a lot of work and unfortunately we need to eat food (ツ)
 
 ## Development
 
+### Planning 
+
+See our [Kanban](https://github.com/orgs/QuestNetwork/projects/1) for the development of 0.9.4, feel free to add or pick up features!
+
 ### Prerequisites
 
 To fully participate in the development, you'll need:
