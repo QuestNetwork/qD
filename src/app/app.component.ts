@@ -84,7 +84,15 @@ export class AppComponent {
         this.showSnack(object.left, object.right, object.object);
     });
 
+    this.q.os.ui.snackBar.subscribe( (object) => {
+        this.showSnack(object.left, object.right, object.object);
+    });
+
     this.ui.snackBarDismissedSub.subscribe( (value) => {
+      this.snackBar.dismiss();
+    });
+
+    this.q.os.ui.snackBarDismissedSub.subscribe( (value) => {
       this.snackBar.dismiss();
     });
 
