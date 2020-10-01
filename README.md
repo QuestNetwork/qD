@@ -187,7 +187,9 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - [qDesk Social](https://github.com/QuestNetwork/quest-social-js)
 
 **0.9.4**
-- Module Upgrades Only
+- Module Upgrades
+- Native Audio/Video
+- Complies with privacy laws
 
 ## Roadmap
 
