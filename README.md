@@ -186,12 +186,12 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts)
 - [qDesk Social](https://github.com/QuestNetwork/quest-social-js)
 
+## Roadmap
+
 **0.9.4**
 - Module Upgrades
 - Native Audio/Video
 - Complies with privacy laws
-
-## Roadmap
 
 **0.9.6**
 - Encrypt Settings/Message History Files
