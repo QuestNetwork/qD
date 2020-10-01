@@ -195,7 +195,9 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 - [qDesk Social](https://github.com/QuestNetwork/quest-social-js)
 
 **0.9.4**
-- Module Upgrades Only
+- Module Upgrades
+- Native Audio/Video
+- Complies with privacy laws
 
 ## Roadmap
 
