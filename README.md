@@ -1,6 +1,6 @@
 ![Completion](https://img.shields.io/badge/completion-16%25-orange) ![Help Wanted](https://img.shields.io/badge/%20-help--wanted-%23159818) ![Version 0.9.3](https://img.shields.io/badge/stable-v0.9.3-green) ![Version 0.9.3](https://img.shields.io/badge/dev-v0.9.4-blue) ![Sponsors](https://img.shields.io/badge/sponsors-2-orange)
 
-# qDesk
+## qDesk
 > Cross-Platform Trustless Social Network
 
 ![Screenshot](https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/0.9.3.png?raw=true)
