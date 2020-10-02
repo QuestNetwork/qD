@@ -40,7 +40,7 @@ If you want anything else, you'll have to build from sources and probably fix so
 
 **WARNING:** 3rd party dependencies not audited. We recommend to use the downloaded app in a virtual machine until version 1.0.0.
 
-## Web 
+## Web Demo
 
 **0.9.3-rc1**
 
