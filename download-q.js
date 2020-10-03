@@ -5,16 +5,22 @@ const axios = require('axios').default;
 const fs = require('fs');
 
 async function start(){
-  let repositories = JSON.parse(fs.readFileSync('repositories.json'));
+  let repositories = [];
   try{
-    repositories = await axios.get('https://api.github.com/users/QuestNetwork/repos');
+    repositories = JSON.parse(fs.readFileSync('repositories.json'));
+  }catch(e){console.log(e)}
+  try{
+    repositoriesData = await axios.get('https://api.github.com/users/QuestNetwork/repos');
+    repositories = repositoriesData['data'];
   fs.writeFileSync('repositories.json',JSON.stringify(repositories),{encoding:'utf8',flag:'w'});
-}catch(e){console.log()}
+}catch(e){console.log(e)}
 
-
+  if(typeof repositories['length'] == 'undefined' || repositories.length == 0){
+    return false;
+  }
 
   let apiPackages = [];
-  for( let repo of repositories['data']){
+  for( let repo of repositories){
     // checkout the repository as a sibling if it's not this reposito
     if(repo['full_name'] != "QuestNetwork/qDesk"){
       try{
