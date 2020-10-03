@@ -108,7 +108,7 @@ OR
 
 Clone & Checkout all repositories on the latest dev branch:
 ``` 
-git clone https://github.com/QuestNetwork/qDesk && cd qDesk && git checkout 0.9.4 && npm run q-dev
+git clone https://github.com/QuestNetwork/qDesk && cd qDesk && git checkout 0.9.4 && npm run q-dev && cd ..
 ````
 
 
