@@ -5,10 +5,17 @@ const axios = require('axios').default;
 const fs = require('fs');
 
 async function start(){
-  let repositories = await axios.get('https://api.github.com/users/QuestNetwork/repos');
+  let repositories = JSON.parse(fs.readFileSync('repositories.json'));
+  try{
+    repositories = await axios.get('https://api.github.com/users/QuestNetwork/repos');
+  fs.writeFileSync('repositories.json',JSON.stringify(repositories),{encoding:'utf8',flag:'w'});
+}catch(e){console.log()}
+
+
+
   let apiPackages = [];
   for( let repo of repositories['data']){
-    // checkout the repository as a sibling if it's not this repository
+    // checkout the repository as a sibling if it's not this reposito
     if(repo['full_name'] != "QuestNetwork/qDesk"){
       try{
       require('child_process').execSync('(cd .. && git clone https://github.com/'+repo['full_name']+')');
