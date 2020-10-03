@@ -85,18 +85,6 @@ See our [Kanban](https://github.com/orgs/QuestNetwork/projects/1) for the develo
 
 ### Prerequisites
 
-To fully participate in the development, you'll need:
-- [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts)
-- [qDesk Social](https://github.com/QuestNetwork/quest-social-js)
-- [qDesk UI Service](https://github.com/QuestNetwork/qd-ui-js)
-- [Quest Network Operating System](https://github.com/QuestNetwork/quest-os-js)
-- [Quest Network Social Process](https://github.com/QuestNetwork/quest-social-js)
-- [Quest Network Bee Process](https://github.com/QuestNetwork/quest-bee-js)
-- [Quest Network Ocean Process](https://github.com/QuestNetwork/quest-ocean-js)
-- [Quest Network Dolphin Process](https://github.com/QuestNetwork/quest-dolphin-js)
-- [Quest Network PubSub Process](https://github.com/QuestNetwork/quest-pubsub-js)
-
-
 1.) 
 
 Clone & Checkout essential repositories:
