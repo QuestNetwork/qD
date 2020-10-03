@@ -1,7 +1,7 @@
 try{
   require('child_process').execSync('npm run inst');
 }catch(e){console.log(e)}
-const axios = require('axios').default;
+// const axios = require('axios').default;
 const fs = require('fs');
 
 async function start(){
@@ -10,9 +10,9 @@ async function start(){
     repositories = JSON.parse(fs.readFileSync('repositories.json'));
   }catch(e){console.log(e)}
   try{
-    repositoriesData = await axios.get('https://api.github.com/users/QuestNetwork/repos');
-    repositories = repositoriesData['data'];
-  fs.writeFileSync('repositories.json',JSON.stringify(repositories),{encoding:'utf8',flag:'w'});
+    // repositoriesData = await axios.get('https://api.github.com/users/QuestNetwork/repos');
+    // repositories = repositoriesData['data'];
+  // fs.writeFileSync('repositories.json',JSON.stringify(repositories),{encoding:'utf8',flag:'w'});
 }catch(e){console.log(e)}
 
   if(typeof repositories['length'] == 'undefined' || repositories.length == 0){
