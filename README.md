@@ -111,7 +111,6 @@ Clone & Checkout all repositories on the latest dev branch:
 git clone https://github.com/QuestNetwork/qDesk && cd qDesk && git checkout 0.9.4 && npm run q-dev && cd ..
 ````
 
-
 2.) Install Dependencies & Enter qDesk Repository:
 ```
 cd qd-social-ts && npm run inst && cd .. && cd qd-messages-ts && npm run inst && cd .. && cd qDesk && npm run inst
