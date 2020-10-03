@@ -44,7 +44,7 @@
     "prepare": "",
     "inst": "rm -rf package-lock.json && npm install",
     "reinst": "rm -rf node_modules && npm run inst",
-    "q-dev": "npm run inst && node download-q.js",
+    "q-dev": "node download-q.js",
     "web": "npm run prepare && rm -rf dist/web && rsync --exclude 'dist/' --exclude '.git/' --exclude 'recoveryWEB/' --exclude 'recoveryAPP/' --exclude 'node_modules/' -auv * recoveryWEB/ && ng build --prod --base-href ./ && angular-http-server --path ./dist/web -p 4200",
     "ipfs": "rm -rf dist/web & mv src/index.html src/index-web.html && mv src/index-ipfs.html src/index.html && ng build --prod --aot && mv src/index.html src/index-ipfs.html && mv src/index-web.html src/index.html && cp -R src/ipfs/* dist/web/ && ipfs add -rQ dist/web",
     "serve": "angular-http-server --path ./dist/web -p 4200",

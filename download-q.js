@@ -1,3 +1,4 @@
+require('child_process').execSync('npm install axios');
 const axios = require('axios').default;
 const fs = require('fs');
 
