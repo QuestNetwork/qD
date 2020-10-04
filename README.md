@@ -23,10 +23,8 @@ Look what other people have built with qDesk: [Awesome Quest Network dApps](http
 
 qDesk allows to lazy load modules.
 
-:warning: **Attention**
-
-
-If you're experiencing connectivity issues, on the app you can try using different star node configurations in Settings > IPFS. The web demo unfortunately intermittently breaks because it doesn't have that feature yet.
+>:warning: **Attention**<br>
+>If you're experiencing connectivity issues, on the app you can try using different star node configurations in Settings > IPFS. The web demo unfortunately intermittently breaks because it doesn't have that feature yet.
 
 
 ## Security
