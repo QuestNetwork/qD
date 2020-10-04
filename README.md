@@ -5,7 +5,7 @@
 
 ![Screenshot](https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/0.9.3.png?raw=true)
 
-## :warning: Attention 
+:warning: Attention 
 If you're experiencing connectivity issues, on the app you can try using different star node configurations in Settings > IPFS. The web demo unfortunately intermittently breaks because it doesn't have that feature yet.
 
 ## Description
