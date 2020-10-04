@@ -5,10 +5,6 @@
 
 ![Screenshot](https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/0.9.3.png?raw=true)
 
-:warning: **Attention**
-
-
-If you're experiencing connectivity issues, on the app you can try using different star node configurations in Settings > IPFS. The web demo unfortunately intermittently breaks because it doesn't have that feature yet.
 
 ## Description
 qDesk is an example app for our JavaScript p2p library [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qDesk Social](https://github.com/QuestNetwork/qd-social-ts), as well as the upcoming [qDesk Markets](https://github.com/QuestNetwork/qd-market-ts), [qDesk News](https://github.com/QuestNetwork/qd-news-ts) and [qDesk Games](https://github.com/QuestNetwork/qd-games-ts).
@@ -26,6 +22,12 @@ This app is built on [Quest OS](https://github.com/QuestNetwork/quest-os-js) whi
 Look what other people have built with qDesk: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
 
 qDesk allows to lazy load modules.
+
+:warning: **Attention**
+
+
+If you're experiencing connectivity issues, on the app you can try using different star node configurations in Settings > IPFS. The web demo unfortunately intermittently breaks because it doesn't have that feature yet.
+
 
 ## Security
 
