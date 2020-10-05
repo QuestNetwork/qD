@@ -173,12 +173,6 @@ If you have trouble getting the directory discovered by gateways, you can try ``
 Keep in mind that the bundled web application is >14MB alone without assets, please be patient until we have a preloader.
 
 
-## Troubleshooting 
-
-### Star Node Configuration
-In qDesk ``^0.9.4`` go to ``Settings > IPFS`` and either download a swarm peer list from GitHub (https://github.com/QuestNetwork/qDesk/blob/0.9.4/src/app/swarm.json) or enter your own.
-
-
 ## Features
 
 **0.9.3**
@@ -245,6 +239,13 @@ In qDesk ``^0.9.4`` go to ``Settings > IPFS`` and either download a swarm peer l
 
 **5.0.0**
 - Modular Crypto Currency Integration (presets for Bitcoin, Monero and Chainlink)
+
+
+## Troubleshooting 
+
+### Star Node Configuration
+In qDesk ``^0.9.4`` go to ``Settings > IPFS`` and either download a swarm peer list from GitHub (https://github.com/QuestNetwork/qDesk/blob/0.9.4/src/app/swarm.json) or enter your own.
+
 
 ## License
 
