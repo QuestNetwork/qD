@@ -14,6 +14,8 @@ We have chosen Angular/Electron as an example environment because we believe it 
 
 qDesk makes it possible to build custom, secure and decentralized social networks in less than 20 days.
 
+Our Quest Network aims to allow the creation and (distributed) completion of quests supported by a feature rich decentralized social network.
+
 0.9.5+ allow to connect qDesk Social profiles to Twitter without sharing information with Twitter as an additional layer of verification. It is planned to add passive verification for a custom list of external networks to verify the peer identities.
 
 1.0.0+ complies with privacy regulations and can be used for confidential information as a production social network for enterprises worldwide. 
