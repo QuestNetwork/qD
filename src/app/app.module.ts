@@ -17,7 +17,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 
 import { NbSidebarModule, NbLayoutModule, NbSidebarService, NbTabsetModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { NbIconModule,    NbCardModule } from '@nebular/theme';
+import { NbIconModule,    NbCardModule, NbTooltipModule } from '@nebular/theme';
 import { NbThemeModule, NbContextMenuModule, NbMenuService, NbMenuModule,     NbDialogModule} from '@nebular/theme';
 
 import { MatTabsModule,MatTabNav } from '@angular/material/tabs';
@@ -114,7 +114,9 @@ import { HttpClientModule } from '@angular/common/http';
      MatFormFieldModule,
      ZXingScannerModule,
      MatSliderModule,
-     FlexLayoutModule
+     FlexLayoutModule,
+     NbTooltipModule
+
 
   ],
   exports: [
