@@ -141,7 +141,7 @@
                     </div>
               </div>
               <div style="margin-top:10px;" class="peerListWrapper">
-                  <div class="peerListHeader">config.addresses.swarm  <nb-icon (click)="refreshIpfsSwarmPeerList()" icon="swap-outline"   nbTooltip="Hard Refresh" [nbTooltipIcon]="{icon: 'alert-triangle-outline'}" nbTooltipStatus="danger"  class="refreshIpfsSwarmPeerListIcon"></nb-icon> <nb-icon (click)="downloadIpfsSwarmPeerList()"   nbTooltip="Download from GitHub" [nbTooltipIcon]="{icon: 'alert-triangle-outline'}" nbTooltipStatus="danger"  icon="cloud-download-outline" class="downloadIpfsSwarmPeerListIcon"></nb-icon>
+                  <div class="peerListHeader">config.addresses.swarm  <nb-icon (click)="refreshIpfsSwarmPeerList()" icon="swap-outline"   nbTooltip="Hard Refresh" [nbTooltipIcon]="{icon: 'alert-triangle-outline'}" nbTooltipStatus="warning"  class="refreshIpfsSwarmPeerListIcon"></nb-icon> <nb-icon (click)="downloadIpfsSwarmPeerList()"   nbTooltip="Download from GitHub" [nbTooltipIcon]="{icon: 'alert-triangle-outline'}" nbTooltipStatus="danger"  icon="cloud-download-outline" class="downloadIpfsSwarmPeerListIcon"></nb-icon>
 </div>
                   <div class="peerListBox">
                     <div *ngFor="let peer of bootstrapIpfsPeers" class="peer">{{peer}}  <nb-icon icon="close-outline" class="removePeerButton"   nbTooltip="Remove Peer" [nbTooltipIcon]="{icon: 'alert-triangle-outline'}" nbTooltipStatus="danger"  (click)="removePeer(peer)"></nb-icon></div>
@@ -153,7 +153,7 @@
     font-size: 15px;">
                        <input matInput placeholder="New Swarm Peer" (input)="newPeerFieldChanged($event)">
                     </mat-form-field>
-                    <nb-icon icon="file-add-outline" class="newPeerButton" (click)="addNewPeer()"   nbTooltip="Add Peer" [nbTooltipIcon]="{icon: 'alert-triangle-outline'}" nbTooltipStatus="danger" ></nb-icon>
+                    <nb-icon icon="file-add-outline" class="newPeerButton" (click)="addNewPeer()"   nbTooltip="Add Peer" [nbTooltipIcon]="{icon: 'plus-outline'}" nbTooltipStatus="success" ></nb-icon>
                     <nb-icon icon="log-in-outline" class="newPeerButton" (click)="reboot()"   nbTooltip="Exit & Reboot" [nbTooltipIcon]="{icon: 'alert-triangle-outline'}" nbTooltipStatus="danger" ></nb-icon>
 
 
