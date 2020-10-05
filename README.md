@@ -172,11 +172,6 @@ We added an example ```swarm.json``` to the ```src/app``` folder with an example
 
 Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/to/quest-cli/index.js` from any folder on your system. It's much nicer!
 
-## Troubleshooting 
-
-### Star Node Configuration
-In qDesk ``^0.9.4`` go to ``Settings > IPFS`` and either download a swarm peer list from GitHub (https://github.com/QuestNetwork/qDesk/blob/0.9.4/src/app/swarm.json) or enter your own.
-
 ## Features
 
 **0.9.3**
@@ -243,6 +238,13 @@ In qDesk ``^0.9.4`` go to ``Settings > IPFS`` and either download a swarm peer l
 
 **5.0.0**
 - Modular Crypto Currency Integration (presets for Bitcoin, Monero and Chainlink)
+
+
+## Troubleshooting 
+
+### Star Node Configuration
+In qDesk ``^0.9.4`` go to ``Settings > IPFS`` and either download a swarm peer list from GitHub (https://github.com/QuestNetwork/qDesk/blob/0.9.4/src/app/swarm.json) or enter your own.
+
 
 ## License
 
