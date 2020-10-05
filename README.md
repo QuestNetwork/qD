@@ -5,6 +5,8 @@
 
 ![Screenshot](https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/0.9.3.png?raw=true)
 
+>In case you are experiencing connectivity issues, on the app you can try using different [star node configurations](#star-node-configuration) in Settings > IPFS. The web demo unfortunately intermittently breaks because it doesn't have that feature yet.
+
 ## Description
 qDesk is an example app for our JavaScript p2p library [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qDesk Social](https://github.com/QuestNetwork/qd-social-ts), as well as the upcoming [qDesk Markets](https://github.com/QuestNetwork/qd-market-ts), [qDesk News](https://github.com/QuestNetwork/qd-news-ts) and [qDesk Games](https://github.com/QuestNetwork/qd-games-ts).
 
@@ -169,6 +171,12 @@ System Requirements: **Memory** 3.75GB **Storage** 6GB **NodeJS** 14 **NPM** 6 *
 
 If you have trouble getting the directory discovered by gateways, you can try ```./ipfs-propagate.sh``` from the root git folder.
 Keep in mind that the bundled web application is >14MB alone without assets, please be patient until we have a preloader.
+
+
+## Troubleshooting 
+
+### Star Node Configuration
+In qDesk ``^0.9.4`` go to ``Settings > IPFS`` and either download a swarm peer list from GitHub (https://github.com/QuestNetwork/qDesk/blob/0.9.4/src/app/swarm.json) or enter your own.
 
 
 ## Features
