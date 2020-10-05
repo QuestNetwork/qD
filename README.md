@@ -242,7 +242,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 # Troubleshooting
 ## Star Node Configuration
->**Messages are not being delivered, participantlist doesn't update**<br>
+>**Messages are not being delivered || Participants won't update || Can't join channels**<br>
 Solution: qDesk ``^0.9.4`` go to ``Settings > IPFS`` and either download an example swarm peer list from GitHub (https://github.com/QuestNetwork/qDesk/blob/0.9.4/src/app/swarm.json) or enter your own.
 
 
