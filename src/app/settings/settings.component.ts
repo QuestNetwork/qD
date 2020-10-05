@@ -3,6 +3,7 @@ import { UiService} from '../services/ui.service';
 import { QuestOSService } from '../services/quest-os.service';
 import { NbMenuItem } from '@nebular/theme';
 import { NbMenuService } from '@nebular/theme';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-settings',
@@ -11,7 +12,7 @@ import { NbMenuService } from '@nebular/theme';
 })
 export class SettingsComponent implements OnInit {
 
-  constructor(private menu: NbMenuService, private ui: UiService, private q: QuestOSService) {
+  constructor(private http: HttpClient, private menu: NbMenuService, private ui: UiService, private q: QuestOSService) {
 
     this.menu.onItemClick().subscribe((e) => {
       if(e['item']['title'] == 'Export'){
@@ -75,6 +76,10 @@ autoSaveInterval = 30*10000;
 
   ngOnInit(){
 
+    setTimeout( () => {
+      this.ui.updateProcessingStatus(false);
+    },10000)
+
     if(this.q.os.getSaveLock()){
       this.saveLockInactive = false;
     }else{
@@ -101,6 +106,15 @@ autoSaveInterval = 30*10000;
   refreshIpfsSwarmPeerList(){
     console.log( this.q.os.getIpfsConfig());
     this.bootstrapIpfsPeers = this.q.os.getIpfsConfig()['Swarm'];
+  }
+
+   downloadIpfsSwarmPeerList(){
+    this.http.get('https://raw.githubusercontent.com/QuestNetwork/qDesk/0.9.4/src/app/swarm.json').subscribe( (data) => {
+      let config = this.q.os.getIpfsConfig();
+      config['Swarm'] = data['ipfs']['Swarm'];
+      this.q.os.setIpfsConfig(config);
+      this.refreshIpfsSwarmPeerList();
+    });
   }
   newPeerField = "";
   addNewPeer(){

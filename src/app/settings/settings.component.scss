@@ -224,7 +224,7 @@ font-family: Ubuntu;
       padding-bottom: 1px;
 }
 // REVIEW:
-.refreshIpfsSwarmPeerListIcon{
+.refreshIpfsSwarmPeerListIcon, .downloadIpfsSwarmPeerListIcon{
   font-size: 23px;
       font-weight: bold;
       margin-left: 10px;
@@ -234,7 +234,7 @@ font-family: Ubuntu;
       color: #2f74f8;
       cursor: pointer;
 }
-.refreshIpfsSwarmPeerListIcon:hover{
+.refreshIpfsSwarmPeerListIcon:hover, .downloadIpfsSwarmPeerListIcon:hover{
   color:#2f5de1;
 }
 .peer{
