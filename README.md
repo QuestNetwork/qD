@@ -245,7 +245,7 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 **:warning: Messages are not being delivered || Participants won't update || Can't join channels**<br>
 >Solution: qDesk ``^0.9.4`` go to ``Settings > IPFS`` and either download an example swarm peer list from GitHub (https://github.com/QuestNetwork/qDesk/blob/0.9.4/src/app/swarm.json) or enter your own.
 
-
+If your problem is not solved here, please file an [issue](https://github.com/QuestNetwork/qDesk/issues/new) on GitHub.
 
 
 ## License
