@@ -244,7 +244,7 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 ## Troubleshooting 
 
 ### Star Node Configuration
-In qDesk ``^0.9.4`` go to ``Settings > IPFS`` and either download a swarm peer list from GitHub (https://github.com/QuestNetwork/qDesk/blob/0.9.4/src/app/swarm.json) or enter your own.
+In qDesk ``^0.9.4`` go to ``Settings > IPFS`` and either download an example swarm peer list from GitHub (https://github.com/QuestNetwork/qDesk/blob/0.9.4/src/app/swarm.json) or enter your own.
 
 
 ## License
