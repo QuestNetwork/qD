@@ -1124,3 +1124,12 @@ nb-chat-message-text a{
 .nb-theme-dark p, .nb-theme-dark .paragraph {
   color:#9bbdd9 !important;
 }
+
+.postContent a[target='_blank']{
+  color:#d51010cf !important;
+}
+
+nb-layout-column.profileLayoutColumn{
+  overflow: hidden;
+overflow-y: scroll;
+}
