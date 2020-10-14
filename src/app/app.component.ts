@@ -154,7 +154,8 @@ export class AppComponent {
     });
 
     this.q.os.ocean.dolphin.channelNameListSub.subscribe( (value) => {
-      this.ui.showSnack('Channel Update ','Dismiss', {duration:2000});
+      // this.ui.showSnack('Channel Update ','Dismiss', {duration:2000});
+      // this.q.os.sendBootMessage('Feeding The DAG...');
       this.channelNameList = value;
     });
 

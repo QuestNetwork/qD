@@ -14,7 +14,12 @@
                      <div class="file-drop" style="background:transparent;    text-align: center;">
                          <button mat-stroked-button color="primary" (click)="generateDefaultSettings()" class="defaultSettingsButton">New Profile</button>
                     </div>
-                
+
+
+                    <div *ngIf="passwordDialog">
+                        Enter Password
+                      </div>
+
 
                      </div>
 

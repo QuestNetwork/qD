@@ -1132,6 +1132,13 @@ nb-chat-message-text a{
 
 //qd-social-ts
 
-.sideBarLocked .search {
+.sideBarLockedtrue .profileSearch {
     left: 248px !important;
+}
+
+
+qdesk-settings-ipfs, qdesk-settings-general, qdesk-settings-account{
+  width: 100% !important;
+    background: #2a2626 !important;
+    z-index:5;
 }

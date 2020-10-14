@@ -153,7 +153,7 @@ padding: 0px;
   z-index: 11;
 }
 
-.generalSettingsScreen{
+.settingsScreen{
   flex-grow: 3;
   background-color: #2a2626;
 
@@ -299,12 +299,42 @@ cursor:pointer;
 }
 
 
-nb-menu{
-    width:30vw;
-max-width: 300px;
-    z-index:5;
+
+.settingsSubHeader{
+  font-size:18px;
 }
 
-.settings-outlet{
-  width:100%;
+.settingsSubContainer{
+  background: #61555521;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.mat-form-field-appearance-legacy .mat-hint {
+    color: red;
+}
+
+
+.changePasswordButton{
+  border: 1px solid #d9cd79 !important;
+color: #d5cb7c !important;
+margin-top:30px;
+    font-weight: 800;
+}
+
+.changePasswordButton:hover{
+      background: #ffff0014 !important;
+}
+
+
+.error{
+  margin-top: 30px;
+    color: red;
+    font-size: 22px;
+}
+.settingsSubHeaderInfo{
+  color:red;
+  font-size:16px;
+      margin-top: 10px;
 }
