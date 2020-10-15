@@ -393,8 +393,8 @@ mat-tab-header{
   padding:0;
   margin:0;
   font-weight: 400 !important;
-  border: 1px dotted #46267259 !important;
-}
+    border: 2px dotted #743af1f0 !important;
+  }
 
 
 .ngx-file-drop__content{
@@ -404,8 +404,8 @@ mat-tab-header{
 }
 
 .file-drop{
-  background-color: #d63230;
-  background-image: linear-gradient(319deg, #d63230 0%, #f39237 37%, #97cc04 100%);
+  background-color: #352d2d;
+  background-image: linear-gradient(318deg, #dace7733 0%, #240e5d 37%, #050503 100%);
 padding: 5%;
 }
 
@@ -1141,4 +1141,40 @@ qdesk-settings-ipfs, qdesk-settings-general, qdesk-settings-account{
   width: 100% !important;
     background: #2a2626 !important;
     z-index:5;
+    overflow-y: auto;
+padding-bottom: 60px;
+max-height: 100vh;
+}
+
+
+qdesk-settings-ipfs, qdesk-settings-general, qdesk-settings-account{
+   scrollbar-width: 4px;
+}
+
+qdesk-settings-ipfs::-webkit-scrollbar, qdesk-settings-general::-webkit-scrollbar, qdesk-settings-account::-webkit-scrollbar{
+  width: 4px;
+}
+
+qdesk-settings-ipfs::-webkit-scrollbar-track, qdesk-settings-general::-webkit-scrollbar-track, qdesk-settings-account::-webkit-scrollbar-track{
+  background-color: #4e84e58f;
+  box-shadow: none !important;
+
+}
+
+qdesk-settings-ipfs::-webkit-scrollbar-thumb, qdesk-settings-general::-webkit-scrollbar-thumb, qdesk-settings-account::-webkit-scrollbar-thumb{
+  background-color: #4e84e58f;
+  outline: 0;
+}
+
+
+
+.ngx-file-drop__content{
+  font-family: Ubuntu !important;
+      font-size: 16px !important;
+          color: #457fe9 !important;
+}
+
+
+.accountSettingsScreen .mat-form-field-infix{
+  font-family: Ubuntu, MONOSPACE
 }

@@ -1,4 +1,4 @@
-<div class="settingsScreen" >
+<div class="settingsScreen accountSettingsScreen" >
 
 <div class="generalSettingsScreenHeader">Account Settings</div>
 
@@ -13,7 +13,7 @@
     </div>
 
   </div>
-  <div fxLayout="column">
+  <div fxLayout="column ">
 
     <mat-form-field style="width: 100%;margin-top: 20px;color:#598adb;font-size:18px;position:fixed;z-index:0;bottom:-200px;">
         <input matInput placeholder="Current Username"  fullWidth value='qDesk User' id="username">
@@ -56,5 +56,8 @@
 
 </div>
 
+<div style="text-align:center;">
+<button mat-stroked-button color="primary" (click)="q.os.signOut()" class="deleteAccountButton" *ngIf="oldPasswordSet">Delete Account From This Machine</button>
+</div>
 
 </div>

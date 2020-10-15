@@ -25,6 +25,12 @@ export class SignInComponent implements OnInit {
 isElectron = false;
 
 
+  pwdInput(event){
+    if (event.keyCode === 13) {
+      this.signIn(this.pwd);
+    }
+
+  }
 
 
    DEVMODE = true;
@@ -52,6 +58,7 @@ isElectron = false;
     }
 
 
+     fileOpen;
 
 async openFileLoaded(event){
 
@@ -74,7 +81,17 @@ async openFileLoaded(event){
     }
     else{
       //IMPORTED A .KEYCHAIN FILE
-      let importSettingsStatus = await this.attemptImportSettings(config);
+      this.fileOpen = config;
+
+      let importSettingsStatus = false;
+      try{
+           importSettingsStatus = await this.attemptImportSettings(config);
+      }catch(e){
+        this.ui.updateProcessingStatus(false);
+        // this.pwdFail = true;
+        this.pwd = "";
+         throw('pwd');
+      }
       console.log('Sign In: Import Settings Status:',importSettingsStatus);
       if(importSettingsStatus)
       {
@@ -117,8 +134,14 @@ async openFileLoaded(event){
   async generateDefaultSettings(){
     this.q.os.bee.config.deleteConfig()
     this.ui.updateProcessingStatus(true);
-    let importSettingsStatus = await this.attemptImportSettings({});
-    console.log('Import Settings Status:',importSettingsStatus);
+    let importSettingsStatus = false;
+    try{
+         importSettingsStatus = await this.attemptImportSettings({});
+    }catch(e){
+      this.ui.updateProcessingStatus(false);
+this.pwd = "";
+       throw('pwd');
+    }    console.log('Import Settings Status:',importSettingsStatus);
     if(importSettingsStatus){
       this.ui.showSnack('Default Settings Loaded...','Almost There', {duration: 2000});
       console.log("Default Settings Loaded...");
@@ -145,11 +168,12 @@ async openFileLoaded(event){
       }
       else if(error == 'pwd'){
         this.passwordDialog = true;
-        this.ui.showSnack('Bad Password!','Start Enter',{duration:8000});
-        this.ui.delay(2000);
+        // this.ui.showSnack('Bad Password!','Start Enter',{duration:8000});
+        // this.ui.delay(2000);
+        this.ui.updateProcessingStatus(false);
+        this.pwd = "";
         throw('pwd');
         //window.location.reload();
-        return false;
       }
       else{
         this.ui.showSnack('Swarm Error =(','Start Over', {duration:8000});
@@ -188,6 +212,7 @@ async openFileLoaded(event){
       }catch(e){
         console.log(e);
         if(e == 'pwd'){
+          this.pwd = "";
           throw('pwd');
         }
 
@@ -214,14 +239,15 @@ async openFileLoaded(event){
   }
 
 
-  initLoadConfig(){
+  initLoadConfig(config = {}){
     console.log('Importing Settings...');
 
-    this.attemptImportSettings({}).then( (importSettingsStatus) => {
+    this.attemptImportSettings(config).then( (importSettingsStatus) => {
       console.log('Import Settings Status:',importSettingsStatus);
       console.log(importSettingsStatus);
       if(importSettingsStatus){
         console.log('SignIn: Settings Imported Successfully');
+        this.fileOpen = undefined;
         this.jumpToChannels();
       }
       else{
@@ -229,9 +255,19 @@ async openFileLoaded(event){
               this.ui.showSnack('SignIn: No Settings Imported','Oh Ok');
           }
     }).catch( (error) => {
-      this.ui.updateProcessingStatus(false);
-      this.ui.showSnack('SignIn: Error Importing Settings!','Oh No');
-      this.DEVMODE && console.log(error);
+
+      if(error == 'pwd'){
+
+          this.ui.updateProcessingStatus(false);
+
+           throw('pwd');
+
+      }else{
+        this.ui.updateProcessingStatus(false);
+        this.ui.showSnack('SignIn: Error Importing Settings!','Oh No');
+        this.DEVMODE && console.log(error);
+      }
+
     });
   }
 
@@ -252,7 +288,27 @@ async openFileLoaded(event){
     return Math.round(timeDiff);
   }
 
+  pwd = "";
+  async signIn(pwd){
 
+    this.ui.updateProcessingStatus(true);
+
+    console.log('SignIn: Waiting For Quest OS...');
+    this.q.os.sendBootMessage('Waiting For Peers...');
+    this.start();
+    while(!this.q.os.isReady()){
+      this.q.os.sendBootMessage('Waiting For Peers... '+this.end()+'s');
+      await this.ui.delay(1000);
+    }
+
+    this.q.os.setPwd(pwd);
+    console.log(pwd);
+    await this.ui.delay(2000);
+    this.ngOnInit();
+
+  }
+
+  hide = true;
     async ngOnInit() {
       //auto login
 
@@ -263,26 +319,7 @@ async openFileLoaded(event){
 
       console.log(this.q.os.hasLocalStorage());
 
-      if(this.isElectron){
-        this.ui.updateProcessingStatus(true);
-        //wait for ocean
-        console.log('SignIn: Waiting For Quest OS...');
-        this.q.os.sendBootMessage('Waiting For Peers...');
-        this.start();
-        while(!this.q.os.isReady()){
-          this.q.os.sendBootMessage('Waiting For Peers... '+this.end()+'s');
-          await this.ui.delay(1000);
-        }
-
-        if(this.q.os.hasConfigFile()){
-          this.initLoadConfig();
-        }
-        else{
-          this.ui.updateProcessingStatus(false);
-          this.DEVMODE && console.log("SignIn: Not Signed In");
-        }
-      }
-      else if(!this.isElectron && this.q.os.hasLocalStorage()){
+      if((this.isElectron && this.q.os.hasConfigFile()) || typeof this.fileOpen != 'undefined' || (!this.isElectron && this.q.os.hasLocalStorage())){
         this.ui.updateProcessingStatus(true);
         //wait for ocean
         console.log('SignIn: Waiting For Quest OS...');
@@ -294,9 +331,16 @@ async openFileLoaded(event){
           await this.ui.delay(1000);
         }
 
-        this.initLoadConfig();
+        if(typeof this.fileOpen != 'undefined'){
+            this.initLoadConfig( this.fileOpen);
+        }
+        // !this.isElectron && this.q.os.hasLocalStorage())
+        else{
+          this.initLoadConfig();
+        }
       }
       else{
+        this.DEVMODE && console.log("SignIn: Not Signed In");
         this.ui.updateProcessingStatus(false);
       }
 

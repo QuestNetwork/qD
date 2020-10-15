@@ -43,10 +43,12 @@ export class SettingsAccountComponent implements OnInit {
     }
     catch(e){
       console.log(e);
-      this.error = "setPassword() Failed"
+      this.error = "Current Password Incorrect!"
       return false;
     }
 
+    this.q.os.ui.showSnack('Password Changed','Yeah!',{duration: 2000});
+    this.oldPasswordSet = true;
     this.error = "";
 
 

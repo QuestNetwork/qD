@@ -313,6 +313,7 @@ cursor:pointer;
 
 .mat-form-field-appearance-legacy .mat-hint {
     color: red;
+        font-family: Ubuntu;
 }
 
 
@@ -321,6 +322,22 @@ cursor:pointer;
 color: #d5cb7c !important;
 margin-top:30px;
     font-weight: 800;
+        font-family: Ubuntu;
+}
+
+
+.deleteAccountButton{
+  border: 1px solid #f14f2f !important;
+  color: #f14f2f !important;
+margin-top:30px;
+    font-weight: 800;
+        font-family: Ubuntu;
+}
+
+
+.deleteAccountButton:hover{
+    background: #ff000059 !important;
+
 }
 
 .changePasswordButton:hover{
@@ -337,4 +354,8 @@ margin-top:30px;
   color:red;
   font-size:16px;
       margin-top: 10px;
+}
+
+
+.mat-form-field-infix{
 }
