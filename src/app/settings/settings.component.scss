@@ -274,6 +274,11 @@ margin: auto;
 
 }
 
+.appSettings{
+  background: #2a2626;
+min-height: 100vh;
+}
+
 .removePeerButton{
   font-size: 1.25rem;
 line-height: 1;
@@ -307,4 +312,24 @@ max-width: 300px;
 
 .settings-outlet{
   width:100%;
+}
+
+
+.backButton{
+  position: absolute;
+  right: 31px;
+  top: 41px;
+  color: yellow;
+  cursor:pointer;
+  z-index: 5;
+}
+
+@media only screen and (max-width: 724px) {
+  .settingsSection{
+    display:none;
+  }
+
+  .settingsMenu{
+    min-width:100vw;
+  }
 }

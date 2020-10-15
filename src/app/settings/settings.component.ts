@@ -29,6 +29,8 @@ export class SettingsComponent implements OnInit {
 
 
   }
+
+  menuClass = "settingsMenu";
   // @ViewChild('driveLockStatusField') driveLockStatusField;
 sideBarFixed = { left:false}
   items: NbMenuItem[] = [
@@ -44,6 +46,10 @@ sideBarFixed = { left:false}
 
   ];
 
+  goToMenu(){
+    this.menuClass = 'settingsMenu';
+  }
+
   DEVMODE = true;
   bootstrapIpfsPeers = [];
 
@@ -55,6 +61,8 @@ sideBarFixed = { left:false}
   ngOnInit(){
 
     this.itemClickSub = this.menu.onItemClick().subscribe((e) => {
+
+
       if(e['item']['title'] == 'Backup'){
           this.q.os.exportConfig();
       }
@@ -62,6 +70,8 @@ sideBarFixed = { left:false}
         this.q.os.reboot();
       }
       else if(typeof e['item']['title'] != 'undefined'){
+          this.menuClass = "settingsSection";
+
         console.log('navigating to: '+'/settings/'+e['item']['title'].toLowerCase());
 
         this.ngZone.run(() => this.router.navigate(['/settings/'+e['item']['title'].toLowerCase()]));

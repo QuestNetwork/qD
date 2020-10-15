@@ -5,13 +5,16 @@
 
     <div  fxLayout="row">
 
-        <nb-menu [items]="items" autoCollapse="true" class="settingsMenu  mat-elevation-z12"  >
+        <nb-menu [items]="items" autoCollapse="true" class="settingsMenu  mat-elevation-z12 {{menuClass}}"  >
         </nb-menu>
 
         <router-outlet></router-outlet>
 
     </div>
 
+    <div class="backButton" (click)="goToMenu();" *ngIf="menuClass == 'settingsSection'">
+      <nb-icon icon="more-vertical-outline"></nb-icon>
+    </div>
 
 </div>
 
