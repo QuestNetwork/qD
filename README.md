@@ -219,6 +219,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 ## Roadmap
 
 **0.9.5**
+- More Message Types And Inline Previews
 - Native Audio/Video
 
 **0.9.6**
