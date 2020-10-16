@@ -3,9 +3,20 @@
 
 <nb-layout>
   <nb-layout-column>
-    <mat-tab-group #menuTabGroup (selectedTabChange)="selectedTabChanged($event);" dynamicHeight animationDuration="0ms"   (selectedTabChange)="tabClicked($event);">
+    <nav mat-tab-navbar #menuTabGroup dynamicHeight animationDuration="0ms" >
 
-      <mat-tab label="Sign In"  class="signInTab" [disabled]="!tabAccessibility['signInTab']" >
+      <a mat-tab-link routerLink="/settings" [hidden]="!tabAccessibility['settingsTab']"  class="navTab settingsTab" [routerLinkActive]="['nav-active']"><nb-icon icon='settings-outline'></nb-icon></a>
+
+
+      <a mat-tab-link routerLink="/signin" [hidden]="!tabAccessibility['signInTab']"  class="navTab signInTab" [routerLinkActive]="['nav-active']"><nb-icon icon='log-in-outline'></nb-icon></a>
+
+      <a mat-tab-link routerLink="/messages" [hidden]="!tabAccessibility['channelTab']"  class="navTab channelTab" [routerLinkActive]="['nav-active']"><nb-icon icon='message-circle-outline'></nb-icon></a>
+
+
+      <a mat-tab-link routerLink="/social" [hidden]="!tabAccessibility['channelTab']"  class="navTab profilesTab"  [routerLinkActive]="['nav-active']"><nb-icon icon='message-square-outline'></nb-icon></a>
+
+
+      <!-- <div  label="Sign In"  class="signInTab"
       </mat-tab>
 
       <mat-tab label="Messages"  class="channelTab" [disabled]="!tabAccessibility['channelTab']">
@@ -16,9 +27,10 @@
 
 
         <mat-tab label="Settings"  class="settingsTab" [disabled]="!tabAccessibility['settingsTab']">
-        </mat-tab>
+        </mat-tab> -->
 
-      </mat-tab-group>
+      </nav>
+      <div style="min-height:48px;height:48px;" class="nav-spacer">&nbsp;</div>
       <router-outlet></router-outlet>
 
       </nb-layout-column>

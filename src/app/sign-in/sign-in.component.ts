@@ -302,7 +302,7 @@ this.pwd = "";
     }
 
     this.q.os.setPwd(pwd);
-    console.log(pwd);
+    // console.log(pwd);
     await this.ui.delay(2000);
     this.ngOnInit();
 
@@ -313,12 +313,12 @@ this.pwd = "";
       //auto login
 
       var userAgent = navigator.userAgent.toLowerCase();
-      if (userAgent.indexOf(' electron/') > -1) {
+      if (userAgent.indexOf('electron') > -1) {
         this.isElectron = true;
       }
-
-      console.log(this.q.os.hasLocalStorage());
-
+//
+      // console.log('hasLocalStorage:',this.q.os.hasLocalStorage());
+      // console.log('hasConfigFile:',this.isElectron && this.q.os.hasConfigFile())
       if((this.isElectron && this.q.os.hasConfigFile()) || typeof this.fileOpen != 'undefined' || (!this.isElectron && this.q.os.hasLocalStorage())){
         this.ui.updateProcessingStatus(true);
         //wait for ocean
