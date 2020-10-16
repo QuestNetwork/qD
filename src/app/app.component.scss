@@ -74,7 +74,7 @@ font-size: 17px;
 
 }
 
-.nav-active nb-icon{
+.nav-active nb-icon,.navTab mat-icon {
 border: 1px solid #e2d47014;
   border-radius: 5px;
   outline:0 !important;
@@ -99,7 +99,7 @@ nav{
 
 }
 
-.navTab nb-icon {
+.navTab nb-icon,.navTab mat-icon  {
   outline:0 !important;
 
     font-size: 33px;

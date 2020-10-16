@@ -13,7 +13,9 @@
       <a mat-tab-link routerLink="/messages" [hidden]="!tabAccessibility['channelTab']"  class="navTab channelTab" [routerLinkActive]="['nav-active']"><nb-icon icon='message-circle-outline'></nb-icon></a>
 
 
-      <a mat-tab-link routerLink="/social" [hidden]="!tabAccessibility['channelTab']"  class="navTab profilesTab"  [routerLinkActive]="['nav-active']"><nb-icon icon='message-square-outline'></nb-icon></a>
+      <a mat-tab-link routerLink="/social" [hidden]="!tabAccessibility['channelTab']"  class="navTab profilesTab"  [routerLinkActive]="['nav-active']">
+        <nb-icon icon='shake-outline'></nb-icon>
+      </a>
 
 
       <!-- <div  label="Sign In"  class="signInTab"
