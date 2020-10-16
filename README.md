@@ -220,6 +220,7 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 ## Roadmap
 
 **0.9.5**
+- More Message Types And Inline Previews
 - Native Audio/Video
 
 **0.9.6**
