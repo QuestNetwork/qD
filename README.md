@@ -211,18 +211,20 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 - [qDesk Social](https://github.com/QuestNetwork/quest-social-js)
 
 **0.9.4**
-- Module Upgrades
-- Native Audio/Video
-- Additional Peering, option to pull from GitHub.
+- Encrypt Settings/Message History Files
 - Change Swarm Peers In The Browser
+- [Quest Network Coral Process](https://github.com/QuestNetwork/quest-coral-js)
+- Additional Peering, option to pull from GitHub.
+- Module Upgrades
 
 ## Roadmap
 
+**0.9.5**
+- Native Audio/Video
+
 **0.9.6**
-- Encrypt Settings/Message History Files
 - [qDesk Markets](https://github.com/QuestNetwork/qd-market-ts)
 - [qDesk News](https://github.com/QuestNetwork/qd-news-ts)
-- [Quest Network Coral Process](https://github.com/QuestNetwork/quest-coral-js)
 
 **0.9.7**
 - Add Custom Themes By Pasting CSS Into The Built-In Theme Editor
