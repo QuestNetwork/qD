@@ -204,8 +204,8 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - App is now modular, makes building add-ons easy
 - Drive Lock Fixed
 - Offer "LocalStorage" As A Storage Container On The Web To Stay Signed In
-- [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts)
-- [qDesk Social](https://github.com/QuestNetwork/quest-social-js)
+- [qDesk Messages \[Beta\]](https://github.com/QuestNetwork/qd-messages-ts)
+- [qDesk Social \[Beta\]](https://github.com/QuestNetwork/quest-social-js)
 
 **0.9.4**
 - Encrypt Settings/Message History Files
@@ -249,7 +249,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - [qDesk Calendar \[Beta\]](https://github.com/QuestNetwork/qd-calendar-ts) personal & shared calendars. Add events from other modules on qDesk.
 - [qDesk Messages \[Stable\]](https://github.com/QuestNetwork/qd-messages-ts)
 - [qDesk Social \[Stable\]](https://github.com/QuestNetwork/quest-social-js)
-- [qDesk Apps \[Stable\]](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
+- [qDesk Apps \[Stable\]](https://github.com/QuestNetwork/qd-market-ts)
 - Fork into [Vibenarium](https://github.com/Vibenarium/vibenarium-platform)
 - Third Party Dependencies Audited, Security Issues Fixed
 - Complies with global privacy laws
@@ -263,7 +263,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 **3.0.0**
 - [qDesk Quests \[Stable\]](https://github.com/QuestNetwork/qd-calendar-ts)
-- [qDesk Games \[Stable\]](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
+- [qDesk Games \[Stable\]](https://github.com/QuestNetwork/qd-market-ts)
 
 **4.0.0**
 - [OpenAI GPT3](https://en.wikipedia.org/wiki/GPT-3) Integration For Suggestions, AutoRespond And Completion
