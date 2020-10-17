@@ -226,10 +226,10 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - [qDesk Apps \[Beta\]](https://github.com/QuestNetwork/qd-apps-ts) (for paid items)
 - [qDesk Games \[Beta\]](https://github.com/QuestNetwork/qd-games-ts) (for paid items)
 - [qDesk Market \[Beta\]](https://github.com/QuestNetwork/qd-market-ts)
-- [qDesk News \[Beta\]](https://github.com/QuestNetwork/qd-news-ts)
 - Ethereum Payment Integration Beta
 
 **0.9.7**
+- [qDesk News \[Beta\]](https://github.com/QuestNetwork/qd-news-ts)
 - Add Custom Themes By Pasting CSS Into The Built-In Theme Editor
 - Import/Export Themes
 - Light Mode
