@@ -217,12 +217,17 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 ## Roadmap
 
 **0.9.5**
+- [qDesk Games](https://github.com/QuestNetwork/qd-market-ts) (for free items)
+- [qDesk Apps](https://github.com/QuestNetwork/qd-market-ts) (for free items)
 - More Message Types And Inline Previews
 - Native Audio/Video
 
-**0.9.6**
+**0.9.6**- 
+- [qDesk Apps](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
+- [qDesk Games](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
 - [qDesk Markets](https://github.com/QuestNetwork/qd-market-ts)
 - [qDesk News](https://github.com/QuestNetwork/qd-news-ts)
+- Ethereum Payment Integration Beta
 
 **0.9.7**
 - Add Custom Themes By Pasting CSS Into The Built-In Theme Editor
@@ -234,8 +239,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - Desktop Notifications
 
 **0.9.9**
-- [qDesk Games](https://github.com/QuestNetwork/qd-games-ts)
-- Ethereum Payment Integration Beta
+- Additional Patch
 
 **1.0.0**
 - Fork into [Vibenarium](https://github.com/Vibenarium/vibenarium-platform)
