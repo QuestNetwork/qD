@@ -48,6 +48,8 @@ If you want anything else, you'll have to build from sources and probably fix so
 
 ## Web Demo
 
+**0.9.4**
+
 Try our example application live in your browser. We recommend Chrome & Firefox.
 
 <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/cloudflarelink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/ipfsiolink.png?raw=true' width=25%>
