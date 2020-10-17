@@ -222,7 +222,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - More Message Types And Inline Previews
 - Native Audio/Video
 
-**0.9.6**- 
+**0.9.6**
 - [qDesk Apps](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
 - [qDesk Games](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
 - [qDesk Market Beta](https://github.com/QuestNetwork/qd-market-ts)
