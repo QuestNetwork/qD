@@ -22,7 +22,7 @@ async function start(){
       require('child_process').execSync('(cd .. && git clone https://github.com/'+repo['full_name']+')');
       }catch(e){}
       try{
-      require('child_process').execSync('(cd .. && cd '+repo['full_name'].split('/')[1]+' && git checkout 0.9.4)');
+        require('child_process').execSync('(cd .. && cd '+repo['full_name'].split('/')[1]+' && git checkout 0.9.5-dev)');
       }catch(e){}
     }
 
