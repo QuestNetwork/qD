@@ -241,8 +241,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 **0.9.9**
 - Additional Patch
-- [qDesk Music \[Beta\]](https://github.com/QuestNetwork/qd-music-ts) 
-- [qDesk Video \[Beta\]](https://github.com/QuestNetwork/qd-video-ts)
+- [qDesk Vibes \[Beta\]](https://github.com/QuestNetwork/qd-vibes-ts) 
 
 **1.0.0**
 - [qDesk Quests \[Beta\]](https://github.com/QuestNetwork/qd-quest-ts)
@@ -257,8 +256,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 **2.0.0**
 - [qDesk Calendar \[Stable\]](https://github.com/QuestNetwork/qd-calendar-ts)
 - [qDesk Market \[Stable\]](https://github.com/QuestNetwork/qd-market-ts)
-- [qDesk Music \[Stable\]](https://github.com/QuestNetwork/qd-music-ts) 
-- [qDesk Video \[Stable\]](https://github.com/QuestNetwork/qd-video-ts)
+- [qDesk Vibes \[Stable\]](https://github.com/QuestNetwork/qd-vibes-ts) 
 - Ethereum Payment Integration Finalized
 
 **3.0.0**
