@@ -225,7 +225,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 **0.9.6**
 - [qDesk Apps](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
 - [qDesk Games](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
-- [qDesk Market Beta](https://github.com/QuestNetwork/qd-market-ts)
+- [qDesk Market \[Beta\]](https://github.com/QuestNetwork/qd-market-ts)
 - [qDesk News](https://github.com/QuestNetwork/qd-news-ts)
 - Ethereum Payment Integration Beta
 
