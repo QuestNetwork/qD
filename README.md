@@ -26,9 +26,6 @@ Look what other people have built with qDesk: [Awesome Quest Network dApps](http
 
 qDesk allows to lazy load modules.
 
-
-
-
 ## Security
 
 ![Completion 1.0.0](https://img.shields.io/badge/OAEP-4096%20Bit-green) ![EC](https://img.shields.io/badge/EC-P&#8208;521-green) ![AES](https://img.shields.io/badge/AES-256%20Bit-yellow)
@@ -119,7 +116,7 @@ git clone https://github.com/QuestNetwork/qDesk && cd qDesk && git checkout 0.9.
 
 2.) Install Dependencies & Enter qDesk Repository:
 ```
-cd qd-social-ts && npm run inst && cd .. && cd qd-messages-ts && npm run inst && cd .. && cd qDesk && npm run inst
+cd quest-utilities-js && npm install && cd .. && cd quest-crypto-js && npm install && cd .. && cd quest-os-js && npm install && cd .. && cd qd-social-ts && npm run inst && cd .. && cd qd-messages-ts && npm run inst && cd .. && cd qDesk && npm run inst
 ```
 
 ### Commands
