@@ -50,18 +50,6 @@ If you want anything else, you'll have to build from sources and probably fix so
 
 Try our example application live in your browser. We recommend Chrome & Firefox.
 
-**0.9.4**
-
-<img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/cloudflarelink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/ipfsiolink.png?raw=true' width=25%>
-
-https://gateway.pinata.cloud/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
-
-## Web Demo
-
-Try our example application live in your browser. We recommend Chrome & Firefox.
-
-**0.9.4**
-
 <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/cloudflarelink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/ipfsiolink.png?raw=true' width=25%>
 
 https://gateway.pinata.cloud/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
