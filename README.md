@@ -217,14 +217,14 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 ## Roadmap
 
 **0.9.5**
-- [qDesk Games \[Beta\]](https://github.com/QuestNetwork/qd-market-ts) (for free items)
+- [qDesk Games \[Beta\]](https://github.com/QuestNetwork/qd-games-ts) (for free items)
 - [qDesk Apps \[Beta\]](https://github.com/QuestNetwork/qd-market-ts) (for free items)
 - More Message Types And Inline Previews
 - Native Audio/Video
 
 **0.9.6**
-- [qDesk Apps \[Beta\]](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
-- [qDesk Games \[Beta\]](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
+- [qDesk Apps \[Beta\]](https://github.com/QuestNetwork/qd-apps-ts) (for paid items)
+- [qDesk Games \[Beta\]](https://github.com/QuestNetwork/qd-games-ts) (for paid items)
 - [qDesk Market \[Beta\]](https://github.com/QuestNetwork/qd-market-ts)
 - [qDesk News \[Beta\]](https://github.com/QuestNetwork/qd-news-ts)
 - Ethereum Payment Integration Beta
@@ -245,11 +245,11 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - [qDesk Video \[Beta\]](https://github.com/QuestNetwork/qd-video-ts)
 
 **1.0.0**
-- [qDesk Quests \[Beta\]](https://github.com/QuestNetwork/qd-calendar-ts)
+- [qDesk Quests \[Beta\]](https://github.com/QuestNetwork/qd-quest-ts)
 - [qDesk Calendar \[Beta\]](https://github.com/QuestNetwork/qd-calendar-ts) personal & shared calendars. Add events from other modules on qDesk.
 - [qDesk Messages \[Stable\]](https://github.com/QuestNetwork/qd-messages-ts)
 - [qDesk Social \[Stable\]](https://github.com/QuestNetwork/quest-social-js)
-- [qDesk Apps \[Stable\]](https://github.com/QuestNetwork/qd-market-ts)
+- [qDesk Apps \[Stable\]](https://github.com/QuestNetwork/qd-apps-ts)
 - Fork into [Vibenarium](https://github.com/Vibenarium/vibenarium-platform)
 - Third Party Dependencies Audited, Security Issues Fixed
 - Complies with global privacy laws
@@ -262,8 +262,8 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - Ethereum Payment Integration Finalized
 
 **3.0.0**
-- [qDesk Quests \[Stable\]](https://github.com/QuestNetwork/qd-calendar-ts)
-- [qDesk Games \[Stable\]](https://github.com/QuestNetwork/qd-market-ts)
+- [qDesk Quests \[Stable\]](https://github.com/QuestNetwork/qd-quest-ts)
+- [qDesk Games \[Stable\]](https://github.com/QuestNetwork/qd-games-ts)
 
 **4.0.0**
 - [OpenAI GPT3](https://en.wikipedia.org/wiki/GPT-3) Integration For Suggestions, AutoRespond And Completion
