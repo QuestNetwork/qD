@@ -48,23 +48,15 @@ If you want anything else, you'll have to build from sources and probably fix so
 
 ## Web Demo
 
-Try our example application live in your browser. We recommend Chrome & Firefox.
-
 **0.9.4**
+
+Try our example application live in your browser. We recommend Chrome & Firefox.
 
 <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/cloudflarelink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/ipfsiolink.png?raw=true' width=25%>
 
 https://gateway.pinata.cloud/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
 
-## Web Demo
-
-Try our example application live in your browser. We recommend Chrome & Firefox.
-
-**0.9.4**
-
-<img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/cloudflarelink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.4/doc/images/ipfsiolink.png?raw=true' width=25%>
-
-https://gateway.pinata.cloud/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
+https://cloudflare-ipfs.com/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
 
 https://ipfs.eternum.io/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
 
@@ -76,14 +68,15 @@ http://ipfs.infura.io/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
 
 <img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/cloudflarelink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/ipfsiolink.png?raw=true' width=25%>
 
-=======
-https://cloudflare-ipfs.com/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
+https://gateway.pinata.cloud/ipfs/QmTSuYWm2LXyYndEq2W62raSpjjUioSoSW3otSJRFQ1wra/
 
-https://ipfs.eternum.io/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
+https://cloudflare-ipfs.com/ipfs/QmTSuYWm2LXyYndEq2W62raSpjjUioSoSW3otSJRFQ1wra/
 
-https://ipfs.io/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
+https://ipfs.eternum.io/ipfs/QmTSuYWm2LXyYndEq2W62raSpjjUioSoSW3otSJRFQ1wra/
 
-http://ipfs.infura.io/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
+https://ipfs.io/ipfs/QmTSuYWm2LXyYndEq2W62raSpjjUioSoSW3otSJRFQ1wra/
+
+http://ipfs.infura.io/ipfs/QmTSuYWm2LXyYndEq2W62raSpjjUioSoSW3otSJRFQ1wra/
 
 ## Manual & Documentation
 
@@ -109,17 +102,17 @@ See our [Kanban](https://github.com/orgs/QuestNetwork/projects/1) for the develo
 
 ### Prerequisites
 
-1.)
+1.) 
 
 Clone & Checkout essential repositories:
 ```
 git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-ts && git clone https://github.com/QuestNetwork/qDesk && cd qd-social-ts   && git checkout 0.9.4 && cd ..  &&  cd qd-messages-ts   && git checkout 0.9.4 && cd ..  &&  cd qDesk   && git checkout 0.9.4 && cd ..
 ```
 
-OR
+OR 
 
 Clone & Checkout all repositories on the latest dev branch:
-```
+``` 
 git clone https://github.com/QuestNetwork/qDesk && cd qDesk && git checkout 0.9.5-dev && npm run q-dev && cd ..
 ````
 
@@ -143,7 +136,7 @@ To The same directory you're cloning this repository to.
 **Build For Mac**
 ```
 sed -i 's/"@questnetwork\/q-desk"/"q-desk"/g' package.json
-&& npm run mac &&
+&& npm run mac && 
 sed -i  's/"q-desk"/"@questnetwork\/q-desk"/g'  package.json
 ```
 Builds MacOS DMG and .app files to ``dist/`` and ``dist/mac``
@@ -184,6 +177,9 @@ System Requirements: **Memory** 3.75GB **Storage** 6GB **NodeJS** 14 **NPM** 6 *
 If you have trouble getting the directory discovered by gateways, you can try ```./ipfs-propagate.sh``` from the root of this repository.
 Keep in mind that the bundled web application is >14MB alone without assets, please be patient until we have a preloader.
 
+
+
+
 We added an example ```swarm.json``` to the ```src/app``` folder with an example node to make reproduction easier, but we strongly recommend to use our [Quest CLI](https://github.com/QuestNetwork/quest-cli) to test and build the app.
 
 Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/to/quest-cli/index.js` from any folder on your system. It's much nicer!
@@ -221,36 +217,53 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 ## Roadmap
 
 **0.9.5**
+- [qDesk Games](https://github.com/QuestNetwork/qd-market-ts) (for free items)
+- [qDesk Apps](https://github.com/QuestNetwork/qd-market-ts) (for free items)
 - More Message Types And Inline Previews
 - Native Audio/Video
 
-**0.9.6**
-- [qDesk Markets](https://github.com/QuestNetwork/qd-market-ts)
+**0.9.6**- 
+- [qDesk Apps](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
+- [qDesk Games](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
+- [qDesk Market Beta](https://github.com/QuestNetwork/qd-market-ts)
 - [qDesk News](https://github.com/QuestNetwork/qd-news-ts)
+- Ethereum Payment Integration Beta
 
 **0.9.7**
 - Add Custom Themes By Pasting CSS Into The Built-In Theme Editor
 - Import/Export Themes
 - Light Mode
+- Unlimited Custom Emojis
 
 **0.9.8**
 - Badges For Notifications
 - Desktop Notifications
 
 **0.9.9**
-- [qDesk Games](https://github.com/QuestNetwork/qd-games-ts)
-- Ethereum Payment Integration Beta
+- Additional Patch
+- [qDesk Music Beta](https://github.com/QuestNetwork/qd-music-ts) 
+- [qDesk Video Beta](https://github.com/QuestNetwork/qd-video-ts)
 
 **1.0.0**
+- [qDesk Quests Beta](https://github.com/QuestNetwork/qd-calendar-ts)
+- [qDesk Calendar Beta](https://github.com/QuestNetwork/qd-calendar-ts) personal & shared calendars. Add events from other modules on qDesk.
+- [qDesk Messages Stable](https://github.com/QuestNetwork/qd-messages-ts)
+- [qDesk Social Stable](https://github.com/QuestNetwork/quest-social-js)
+- [qDesk Apps Stable](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
 - Fork into [Vibenarium](https://github.com/Vibenarium/vibenarium-platform)
-- Dynamic Swarm Peer List Also On The Web (add and remove bootstrap peers)
 - Third Party Dependencies Audited, Security Issues Fixed
-- Complies with privacy laws
-- Unlimited Custom Emojis
-- Quest Network Calendar App Plugin (for shared calendars)
+- Complies with global privacy laws
 
 **2.0.0**
+- [qDesk Calendar Stable](https://github.com/QuestNetwork/qd-calendar-ts)
+- [qDesk Market Stable](https://github.com/QuestNetwork/qd-market-ts)
+- [qDesk Music Stable](https://github.com/QuestNetwork/qd-music-ts) 
+- [qDesk Video Stable](https://github.com/QuestNetwork/qd-video-ts)
 - Ethereum Payment Integration Finalized
+
+**3.0.0**
+- [qDesk Quests Stable](https://github.com/QuestNetwork/qd-calendar-ts)
+- [qDesk Games Stable](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
 
 **4.0.0**
 - [OpenAI GPT3](https://en.wikipedia.org/wiki/GPT-3) Integration For Suggestions, AutoRespond And Completion
