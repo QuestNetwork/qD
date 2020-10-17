@@ -5,7 +5,7 @@
 
 ![Screenshot](https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/0.9.3.png?raw=true)
 
->In case you are experiencing connectivity issues, on the app you can try using different [star node configurations](#troubleshooting) in Settings > IPFS. The web demo unfortunately intermittently breaks because it doesn't have that feature yet.
+>In case you are experiencing connectivity issues, on the app you can try using different [star node configurations](#troubleshooting) in Settings > IPFS.
 
 ## Description
 qDesk is an example app for our JavaScript p2p library [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qDesk Social](https://github.com/QuestNetwork/qd-social-ts), as well as the upcoming [qDesk Markets](https://github.com/QuestNetwork/qd-market-ts), [qDesk News](https://github.com/QuestNetwork/qd-news-ts) and [qDesk Games](https://github.com/QuestNetwork/qd-games-ts).
@@ -44,6 +44,20 @@ If you want anything else, you'll have to build from sources and probably fix so
 
 ## Web
 
+## Web Demo
+
+Try our example application live in your browser. We recommend Chrome & Firefox.
+
+**0.9.4**
+
+https://gateway.pinata.cloud/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
+
+https://ipfs.eternum.io/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
+
+https://ipfs.io/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
+
+http://ipfs.infura.io/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
+
 **0.9.3-rc1**
 
 <img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/cloudflarelink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/ipfsiolink.png?raw=true' width=25%>
@@ -74,7 +88,7 @@ This project is a lot of work and unfortunately we need to eat food (ツ)
 
 ### Planning 
 
-See our [Kanban](https://github.com/orgs/QuestNetwork/projects/1) for the development of 0.9.4, feel free to add or pick up features!
+See our [Kanban](https://github.com/orgs/QuestNetwork/projects/1) for the development of 0.9.5, feel free to add or pick up features!
 
 ### Prerequisites
 
@@ -197,18 +211,21 @@ Keep in mind that the bundled web application is >14MB alone without assets, ple
 - [qDesk Social](https://github.com/QuestNetwork/quest-social-js)
 
 **0.9.4**
-- Module Upgrades
-- Native Audio/Video
-- Additional Peering, option to pull from GitHub.
+- Encrypt Settings/Message History Files
 - Change Swarm Peers In The Browser
+- [Quest Network Coral Process](https://github.com/QuestNetwork/quest-coral-js)
+- Additional Peering, option to pull from GitHub.
+- Module Upgrades
 
 ## Roadmap
 
+**0.9.5**
+- More Message Types And Inline Previews
+- Native Audio/Video
+
 **0.9.6**
-- Encrypt Settings/Message History Files
 - [qDesk Markets](https://github.com/QuestNetwork/qd-market-ts)
 - [qDesk News](https://github.com/QuestNetwork/qd-news-ts)
-- [Quest Network Coral Process](https://github.com/QuestNetwork/quest-coral-js)
 
 **0.9.7**
 - Add Custom Themes By Pasting CSS Into The Built-In Theme Editor
