@@ -13,11 +13,15 @@ import { UiService} from './services/ui.service';
 import { QuestOSService } from './services/quest-os.service';
 import { LoadHexComponent } from './load-hex/load-hex.component';
 import { SettingsComponent } from './settings/settings.component';
+import { SettingsAccountComponent } from './settings-account/settings-account.component';
+import { SettingsGeneralComponent } from './settings-general/settings-general.component';
+import { SettingsIPFSComponent } from './settings-ipfs/settings-ipfs.component';
+
 import { SignInComponent } from './sign-in/sign-in.component';
 
 import { NbSidebarModule, NbLayoutModule, NbSidebarService, NbTabsetModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { NbIconModule,    NbCardModule } from '@nebular/theme';
+import { NbIconModule,    NbCardModule, NbTooltipModule } from '@nebular/theme';
 import { NbThemeModule, NbContextMenuModule, NbMenuService, NbMenuModule,     NbDialogModule} from '@nebular/theme';
 
 import { MatTabsModule,MatTabNav } from '@angular/material/tabs';
@@ -64,7 +68,9 @@ import { HttpClientModule } from '@angular/common/http';
     LoadHexComponent,
     SettingsComponent,
     SignInComponent,
-
+SettingsAccountComponent,
+SettingsGeneralComponent,
+SettingsIPFSComponent
   ],
   imports: [
     NbTabsetModule,
@@ -114,7 +120,8 @@ import { HttpClientModule } from '@angular/common/http';
      MatFormFieldModule,
      ZXingScannerModule,
      MatSliderModule,
-     FlexLayoutModule
+     FlexLayoutModule,
+     NbTooltipModule
 
   ],
   exports: [

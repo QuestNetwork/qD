@@ -14,12 +14,11 @@ export class QuestOSService {
   config;
   constructor() {
     this.config = {
-      ipfs: {
-        swarm: swarmJson['ipfs']['swarm']
-      },
+      ipfs: swarmJson['ipfs'],
       version: version,
       dev: swarmJson['dev']
     };
+
     this.os = qOS;
   }
   async boot(){

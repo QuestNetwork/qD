@@ -1,177 +1,20 @@
 <nb-layout>
   <nb-layout-column>
 
-<div class="appSettings">
+<div class="appSettings" style="">
 
     <div  fxLayout="row">
 
-        <nb-menu [items]="items" autoCollapse="true" class="settingsMenu  mat-elevation-z12"  >
+        <nb-menu [items]="items" autoCollapse="true" class="settingsMenu  mat-elevation-z12 {{menuClass}}"  >
         </nb-menu>
 
-        <div class="generalSettingsScreen" *ngIf="selectedSetting == 'General'">
-          <div class="generalSettingsScreenHeader">General Settings</div>
-
-          <div fxLayout="row" style="margin-bottom:10px;">
-                <div *ngIf="saveLockInactive" class="saveLockTogglerTitle saveLockTogglerTitleActive">
-                  Drive Unlocked
-                </div>
-                <div *ngIf="!saveLockInactive" class="saveLockTogglerTitle">
-                  Drive Locked
-                </div>
-
-              <div class="saveLockOptions saveLockToggler"  style=" font-size: 20px;    text-align: center;cursor:pointer;" >
-                <mat-slide-toggle  id="saveLockInactiveToggle" [(ngModel)]="saveLockInactive" (click)="saveLockInactiveToggled()">
-
-                </mat-slide-toggle>
-                </div>
-          </div>
-
-                    <div fxLayout="row" *ngIf="saveLockInactive" >
-                      <div *ngIf="autoSaveActive" class="saveLockTogglerTitle saveLockTogglerTitleActive">
-                        AutoSave Enabled
-                      </div>
-                      <div *ngIf="!autoSaveActive" class="saveLockTogglerTitle">
-                        AutoSave Disabled
-                      </div>
-
-                      <div class="saveLockOptions saveLockToggler"  style="font-size: 20px;    text-align: center;cursor:pointer;z-index:99999999999999999999999" >
-                        <mat-slide-toggle id="autoSaveActivoggle" [(ngModel)]="autoSaveActive" (toggleChange)="autoSaveActiveToggled()">
-
-                          </mat-slide-toggle>
-                          </div>
-                    </div>
-
-
-
-            <div fxLayout="row" *ngIf="saveLockInactive && autoSaveActive" style="margin-top:10px;height:30px" class="autoSaveIntervalSelectWrapper">
-                <div [hidden]="!autoSaveActive" class="autoSaveIntervalTogglerTitle">
-                  AutoSave Interval
-                </div>
-
-                <div [hidden]="!autoSaveActive" class="saveLockOptions saveLockToggler "  style="font-size: 20px;    text-align: center;cursor:pointer;" >
- <mat-form-field style="width: 24%;" name="autoSaveIntervalFormField" id="autoSaveIntervalSelect">
-                     <mat-select [(value)]="autoSaveInterval"  name="autoSaveIntervalSelect" id="autoSaveIntervalSelect" (selectionChange)="autoSaveIntervalChanged($event.value)" class="saveLockToggler" >
-                                  <mat-option  [value]="10000" >
-                                     10s
-                                 </mat-option>
-                                 <mat-option  [value]="30000">
-                                    30s
-                                </mat-option>
-                                <mat-option  [value]="60000" >
-                                   60s
-                               </mat-option>
-                               <mat-option  [value]="300000" >
-                                  5m
-                              </mat-option>
-                              <mat-option  [value]="600000" >
-                                 10m
-                             </mat-option>
-                             <mat-option  [value]="1800000" >
-                                30m
-                            </mat-option>
-                            <mat-option  [value]="3600000" >
-                               60m
-                           </mat-option>
-
-                       </mat-select>
-</mat-form-field>
-
-                  </div>
-              </div>
-
-
-
-
-
-              <div fxLayout="row" *ngIf="!isElectron && saveLockInactive" style="margin-top:10px;" class="autoSaveIntervalSelectWrapper">
-                  <div class="autoSaveIntervalTogglerTitle">
-                    Storage Location
-                  </div>
-
-                  <div class="saveLockOptions saveLockToggler "  style="font-size: 20px;    text-align: center;cursor:pointer;" >
-      <mat-form-field style="width: 24%;" name="storageLocationSelectField" id="storageLocationSelectField" >
-                       <mat-select [(value)]="storageLocation"  name="storageLocationSelect" id="storageLocationSelect" (selectionChange)="storageLocationChanged($event.value)" class="saveLockToggler" >
-                                    <mat-option  value="Download" >
-                                       Download
-                                   </mat-option>
-                                   <mat-option  value="LocalStorage"  >
-                                      Browser
-                                  </mat-option>
-                                  <!-- <mat-option  value="ConfigFile" >
-                                    Config
-                                 </mat-option> -->
-
-                         </mat-select>
-      </mat-form-field>
-
-                    </div>
-                </div>
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-            <div class="ipfsSettingsScreen generalSettingsScreen" *ngIf="selectedSetting == 'IPFS'">
-              <div class="generalSettingsScreenHeader">IPFS Settings</div>
-
-              <div fxLayout="row" style="margin-bottom:10px;">
-                    <div *ngIf="ipfsOnline" class="saveLockTogglerTitle saveLockTogglerTitleActive" style="color:#907d40;">
-                      IPFS Online
-                    </div>
-                    <div *ngIf="!ipfsOnline" class="saveLockTogglerTitle" style="color:#787777;">
-                      IPFS Offline
-                    </div>
-
-                  <div class="saveLockOptions saveLockToggler"  style=" font-size: 20px;    text-align: center;cursor:pointer;" >
-                    <mat-slide-toggle  id="ipfsOnlineToggle" [(ngModel)]="ipfsOnline" disabled=true>
-
-                    </mat-slide-toggle>
-                    </div>
-              </div>
-              <div style="margin-top:10px;" class="peerListWrapper">
-                  <div class="peerListHeader" (click)="refreshIpfsSwarmPeerList()">config.addresses.swarm  <nb-icon icon="swap-outline" class="refreshIpfsSwarmPeerListIcon"></nb-icon></div>
-                  <div class="peerListBox">
-                    <div *ngFor="let peer of bootstrapIpfsPeers" class="peer">{{peer}}  <nb-icon icon="close-outline" class="removePeerButton" (click)="removePeer(peer)"></nb-icon></div>
-                  </div>
-                  <div class="peerListFooter">
-                    <mat-form-field style="    color: #598adb;
-    width: 50%;
-    margin-top: 20px;
-    font-size: 15px;">
-                       <input matInput placeholder="New Swarm Peer" (input)="newPeerFieldChanged($event)">
-                    </mat-form-field>
-                    <nb-icon icon="file-add-outline" class="newPeerButton" (click)="addNewPeer()"></nb-icon>
-                    <nb-icon icon="log-in-outline" class="newPeerButton" (click)="reboot()"></nb-icon>
-
-
-
-                  </div>
-              </div>
-
-
-
-
-
-
-
-                </div>
-
-
+        <router-outlet></router-outlet>
 
     </div>
 
+    <div class="backButton" (click)="goToMenu();" *ngIf="menuClass == 'settingsSection'">
+      <nb-icon icon="more-vertical-outline"></nb-icon>
+    </div>
 
 </div>
 

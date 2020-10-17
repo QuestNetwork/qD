@@ -212,6 +212,8 @@ font-family: Ubuntu;
   min-height: 30vh;
   padding-bottom: 10px;
   margin-top: 20px !important;
+  margin-bottom: 30px;
+
 }
 
 .peerListHeader{
@@ -224,7 +226,7 @@ font-family: Ubuntu;
       padding-bottom: 1px;
 }
 // REVIEW:
-.refreshIpfsSwarmPeerListIcon{
+.refreshIpfsSwarmPeerListIcon, .downloadIpfsSwarmPeerListIcon{
   font-size: 23px;
       font-weight: bold;
       margin-left: 10px;
@@ -234,7 +236,7 @@ font-family: Ubuntu;
       color: #2f74f8;
       cursor: pointer;
 }
-.refreshIpfsSwarmPeerListIcon:hover{
+.refreshIpfsSwarmPeerListIcon:hover, .downloadIpfsSwarmPeerListIcon:hover{
   color:#2f5de1;
 }
 .peer{
@@ -272,6 +274,11 @@ margin: auto;
 
 }
 
+.appSettings{
+  background: #2a2626;
+min-height: 100vh;
+}
+
 .removePeerButton{
   font-size: 1.25rem;
 line-height: 1;
@@ -294,4 +301,41 @@ cursor:pointer;
     .mat-form-field-underline {
         background-color: #f14f2f4a;
     }
+}
+
+
+nb-menu{
+    width:30vw;
+max-width: 300px;
+    z-index:5;
+}
+
+.settings-outlet{
+  width:100%;
+}
+
+
+.backButton{
+  position: absolute;
+  right: 31px;
+  top: 41px;
+  color: yellow;
+  cursor:pointer;
+  z-index: 5;
+}
+
+@media only screen and (max-width: 724px) {
+  .settingsSection{
+    display:none;
+  }
+
+  .settingsMenu{
+    min-width:100vw;
+  }
+}
+
+@media only screen and (min-width: 724px) {
+  .backButton{
+    display:none;
+  }
 }

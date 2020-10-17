@@ -1,7 +1,8 @@
 .browse-files-button{
-    border-radius:3px;
-  padding:5px;
-  color:purple;
+  border-radius: 3px;
+  padding: 5px;
+  color: #ffff00f0;
+  font-weight: bold;
 }
 
 
@@ -16,5 +17,58 @@
 }
 
 .defaultSettingsButton{
-  margin-top: 20px;
+  border: 2px solid #ff000078 !important;
+  color: #ff000078;
+  font-weight: 800;
+  font-size: 15px;
+  font-family: Ubuntu, MONOSPACE;
+
+}
+
+.defaultSettingsButton:hover{
+      background: #ff00002e !important;
+}
+
+
+.passwordDialog{
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+background: #2b2727bf;
+}
+
+.passwordHeader{
+  color: #e5d56d;
+    font-family: Ubuntu;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+.signInButton{
+  background: yellow;
+  font-weight:bold;
+  font-family: Ubuntu;
+  color:blue;
+  font-family: Ubuntu;
+color: #256dff;
+font-size: 16px;
+    margin-top: 10px;
+}
+
+.mat-form-field-appearance-legacy .mat-hint {
+    color: #ff3d71;
+        font-family: Ubuntu;
+}
+
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+
+.sign-in-drop-zone{
+  position: relative;
+top: -15px;
 }
