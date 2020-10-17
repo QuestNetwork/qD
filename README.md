@@ -208,7 +208,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - [qDesk Social \[Beta\]](https://github.com/QuestNetwork/quest-social-js)
 
 **0.9.4**
-- Encrypt Settings/Message History Files
+- Encrypt Account
 - Change Swarm Peers In The Browser
 - [Quest Network Coral Process](https://github.com/QuestNetwork/quest-coral-js)
 - Additional Peering, option to pull from GitHub.
