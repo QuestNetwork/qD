@@ -84,7 +84,15 @@ export class AppComponent {
         this.showSnack(object.left, object.right, object.object);
     });
 
+    this.q.os.ui.snackBar.subscribe( (object) => {
+        this.showSnack(object.left, object.right, object.object);
+    });
+
     this.ui.snackBarDismissedSub.subscribe( (value) => {
+      this.snackBar.dismiss();
+    });
+
+    this.q.os.ui.snackBarDismissedSub.subscribe( (value) => {
       this.snackBar.dismiss();
     });
 
@@ -146,7 +154,8 @@ export class AppComponent {
     });
 
     this.q.os.ocean.dolphin.channelNameListSub.subscribe( (value) => {
-      this.ui.showSnack('Channel Update ','Dismiss', {duration:2000});
+      // this.ui.showSnack('Channel Update ','Dismiss', {duration:2000});
+      // this.q.os.sendBootMessage('Feeding The DAG...');
       this.channelNameList = value;
     });
 

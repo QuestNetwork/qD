@@ -1,11 +1,12 @@
 <div class="signInScreen" style="min-width: 300px;">
 
-                       <div class="file-drop file-drop-zone sign-in-drop-zone" style="    min-height: 99vh;">
+                       <div class="file-drop file-drop-zone sign-in-drop-zone" style="     margin-top: 12px;   min-height: 99vh;padding-top: 0;" fxLayout="column" fxLayoutAlign="center">
+                         <div>
                        <ngx-file-drop dropZoneLabel="Drop files here" (onFileDrop)="dropped($event)"
                      (onFileOver)="fileOver($event)">
                      <!-- (onFileOver)="fileOver($event)" (onFileLeave)="fileLeave($event)"> -->
 
-                         <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
+                         <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector" style='color: #ffffffb0 !important;'>
                            &nbsp;&nbsp;drop .qcprofile here or
                            <mat-button class="browse-files-button" color="primary" (click)="openFileSelector()">Browse Files</mat-button>
                          </ng-template>
@@ -14,7 +15,25 @@
                      <div class="file-drop" style="background:transparent;    text-align: center;">
                          <button mat-stroked-button color="primary" (click)="generateDefaultSettings()" class="defaultSettingsButton">New Profile</button>
                     </div>
-                
+
+
+                    <div *ngIf="passwordDialog" class="passwordDialog mat-elevation-z8" >
+
+                      <div class="passwordHeader">
+                      Resume Previous Session
+                      </div>
+
+
+                      <mat-form-field style="width: 100%;margin-top: 20px;color:#598adb;font-size:18px;      font-family: Ubuntu, MONOSPACE;">
+                          <input matInput placeholder="Current Password" [type]="hide ? 'password' : 'text'" required fullWidth [(ngModel)]= "pwd" id="password" autocomplete="current-password" (keydown)="pwdInput($event)">
+                            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            <mat-hint *ngIf="pwd.length < 1">Enter your current password</mat-hint>
+                      </mat-form-field>
+
+                      <button mat-stroked-button color="primary" (click)="signIn(pwd)" class="signInButton mat-elevation-z12">Sign In</button>
+
+                      </div>
+</div>
 
                      </div>
 

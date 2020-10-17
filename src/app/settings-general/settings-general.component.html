@@ -1,0 +1,98 @@
+<div class="generalSettingsScreen" >
+  <div class="generalSettingsScreenHeader">General Settings</div>
+
+  <div fxLayout="row" style="margin-bottom:10px;">
+        <div *ngIf="saveLockInactive" class="saveLockTogglerTitle saveLockTogglerTitleActive">
+          Drive Unlocked
+        </div>
+        <div *ngIf="!saveLockInactive" class="saveLockTogglerTitle">
+          Drive Locked
+        </div>
+
+      <div class="saveLockOptions saveLockToggler"  style=" font-size: 20px;    text-align: center;cursor:pointer;" >
+        <mat-slide-toggle  id="saveLockInactiveToggle" [(ngModel)]="saveLockInactive" (click)="saveLockInactiveToggled()">
+
+        </mat-slide-toggle>
+        </div>
+  </div>
+
+            <div fxLayout="row" *ngIf="saveLockInactive" >
+              <div *ngIf="autoSaveActive" class="saveLockTogglerTitle saveLockTogglerTitleActive">
+                AutoSave Enabled
+              </div>
+              <div *ngIf="!autoSaveActive" class="saveLockTogglerTitle">
+                AutoSave Disabled
+              </div>
+
+              <div class="saveLockOptions saveLockToggler"  style="font-size: 20px;    text-align: center;cursor:pointer;z-index:99999999999999999999999" >
+                <mat-slide-toggle id="autoSaveActivoggle" [(ngModel)]="autoSaveActive" (toggleChange)="autoSaveActiveToggled()">
+
+                  </mat-slide-toggle>
+                  </div>
+            </div>
+
+
+
+    <div fxLayout="row" *ngIf="saveLockInactive && autoSaveActive" style="margin-top:10px;height:30px" class="autoSaveIntervalSelectWrapper">
+        <div [hidden]="!autoSaveActive" class="autoSaveIntervalTogglerTitle">
+          AutoSave Interval
+        </div>
+
+        <div [hidden]="!autoSaveActive" class="saveLockOptions saveLockToggler "  style="font-size: 20px;    text-align: center;cursor:pointer;" >
+<mat-form-field style="width: 24%;" name="autoSaveIntervalFormField" id="autoSaveIntervalSelect">
+             <mat-select [(value)]="autoSaveInterval"  name="autoSaveIntervalSelect" id="autoSaveIntervalSelect" (selectionChange)="autoSaveIntervalChanged($event.value)" class="saveLockToggler" >
+                          <mat-option  [value]="10000" >
+                             10s
+                         </mat-option>
+                         <mat-option  [value]="30000">
+                            30s
+                        </mat-option>
+                        <mat-option  [value]="60000" >
+                           60s
+                       </mat-option>
+                       <mat-option  [value]="300000" >
+                          5m
+                      </mat-option>
+                      <mat-option  [value]="600000" >
+                         10m
+                     </mat-option>
+                     <mat-option  [value]="1800000" >
+                        30m
+                    </mat-option>
+                    <mat-option  [value]="3600000" >
+                       60m
+                   </mat-option>
+
+               </mat-select>
+</mat-form-field>
+
+          </div>
+      </div>
+
+
+      <div fxLayout="row" *ngIf="!isElectron && saveLockInactive" style="margin-top:10px;" class="autoSaveIntervalSelectWrapper">
+       <div class="autoSaveIntervalTogglerTitle">
+       Storage Location
+       </div>
+
+      <div class="saveLockOptions saveLockToggler " style="font-size: 20px; text-align: center;cursor:pointer;" >
+       <mat-form-field style="width: 24%;" name="storageLocationSelectField" id="storageLocationSelectField" >
+       <mat-select [(value)]="storageLocation" name="storageLocationSelect" id="storageLocationSelect" (selectionChange)="storageLocationChanged($event.value)" class="saveLockToggler" >
+       <mat-option value="Download" >
+       Download
+       </mat-option>
+       <mat-option value="LocalStorage" >
+       Browser
+       </mat-option>
+       <!-- <mat-option value="ConfigFile" >
+       Config
+       </mat-option> -->
+
+      </mat-select>
+       </mat-form-field>
+
+      </div>
+       </div>
+
+
+</div>

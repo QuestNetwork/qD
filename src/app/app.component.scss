@@ -9,7 +9,9 @@
 // //
 
 
-
+.profileLayoutColumn{
+  background: linear-gradient(-10deg, #1d1a38, #3a0e0e);
+}
 
 .centerButtonWrapper{
   position: fixed;
@@ -64,4 +66,45 @@ font-size: 17px;
   .web-top-links {
     display:none;
   }
+}
+
+
+.nav-tab{
+  outline:0 !important;
+
+}
+
+.nav-active nb-icon,.navTab mat-icon {
+border: 1px solid #e2d47014;
+  border-radius: 5px;
+  outline:0 !important;
+  color: #c71e1ea8 !important;
+
+
+}
+
+nav{
+    color: rgba(255,255,255,0.85);
+    font-size:13pt !important;
+    background-color: #fce055;
+    background-image: linear-gradient(319deg, #fce055 0%, #256eff 37%, #46237a 100%);
+        position: fixed;
+        width: 100vw;
+        z-index: 12;
+        height: 48px;
+}
+
+.mat-tab-link{
+  outline:0 !important;
+
+}
+
+.navTab nb-icon,.navTab mat-icon  {
+  outline:0 !important;
+
+    font-size: 33px;
+    padding: 4px;
+    margin-left: 10px;
+    margin-top: 7px;
+    background: transparent;
 }

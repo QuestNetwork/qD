@@ -1,0 +1,75 @@
+
+            <div class="ipfsSettingsScreen generalSettingsScreen" >
+              <div class="generalSettingsScreenHeader">IPFS Settings</div>
+
+              <div fxLayout="row" style="margin-bottom:10px;">
+                    <div *ngIf="ipfsOnline" class="saveLockTogglerTitle saveLockTogglerTitleActive" style="color:#907d40;">
+                      IPFS Online
+                    </div>
+                    <div *ngIf="!ipfsOnline" class="saveLockTogglerTitle" style="color:#787777;">
+                      IPFS Offline
+                    </div>
+
+                  <div class="saveLockOptions saveLockToggler"  style=" font-size: 20px;    text-align: center;cursor:pointer;" >
+                    <mat-slide-toggle  id="ipfsOnlineToggle" [(ngModel)]="ipfsOnline" disabled=true>
+
+                    </mat-slide-toggle>
+                    </div>
+              </div>
+
+
+                                                      <div fxLayout="row" *ngIf="pinFrom != undefined" style="margin-top:10px;" class="autoSaveIntervalSelectWrapper">
+                                                          <div class="autoSaveIntervalTogglerTitle">
+                                                            Pin Content From
+                                                          </div>
+
+                                                        <div class="saveLockOptions saveLockToggler "  style="font-size: 20px;    text-align: center;cursor:pointer;" >
+                                              <mat-form-field style="width: 24%;" name="pinFromSelectField" id="pinFromSelectField" >
+                                                               <mat-select [(value)]="pinFrom"  name="pinFromSelect" id="pinFromSelect" (selectionChange)="pinFromChanged($event.value)" class="saveLockToggler" >
+                                                                            <mat-option  value="Everyone" >
+                                                                               Everyone
+                                                                           </mat-option>
+                                                                           <mat-option  value="Favorites"  >
+                                                                              Favorites
+                                                                          </mat-option>
+                                                                          <!-- <mat-option  value="ConfigFile" >
+                                                                            Config
+                                                                         </mat-option> -->
+
+                                                                 </mat-select>
+                                              </mat-form-field>
+
+                                                            </div>
+                                                        </div>
+
+
+
+
+              <div style="margin-top:10px;" class="peerListWrapper">
+                  <div class="peerListHeader">config.addresses.swarm  <nb-icon (click)="refreshIpfsSwarmPeerList()" icon="swap-outline"   nbTooltip="Hard Refresh" [nbTooltipIcon]="{icon: 'alert-triangle-outline'}" nbTooltipStatus="warning"  class="refreshIpfsSwarmPeerListIcon"></nb-icon> <nb-icon (click)="downloadIpfsSwarmPeerList()"   nbTooltip="Download from GitHub" [nbTooltipIcon]="{icon: 'alert-triangle-outline'}" nbTooltipStatus="danger"  icon="cloud-download-outline" class="downloadIpfsSwarmPeerListIcon"></nb-icon>
+</div>
+                  <div class="peerListBox">
+                    <div *ngFor="let peer of bootstrapIpfsPeers" class="peer">{{peer}}  <nb-icon icon="close-outline" class="removePeerButton"   nbTooltip="Remove Peer" [nbTooltipIcon]="{icon: 'alert-triangle-outline'}" nbTooltipStatus="danger"  (click)="removePeer(peer)"></nb-icon></div>
+                  </div>
+                  <div class="peerListFooter">
+                    <mat-form-field style="    color: #598adb;
+    width: 50%;
+    margin-top: 20px;
+    font-size: 15px;">
+                       <input matInput placeholder="New Swarm Peer" (input)="newPeerFieldChanged($event)">
+                    </mat-form-field>
+                    <nb-icon icon="file-add-outline" class="newPeerButton" (click)="addNewPeer()"   nbTooltip="Add Peer" [nbTooltipIcon]="{icon: 'plus-outline'}" nbTooltipStatus="success" ></nb-icon>
+                    <nb-icon icon="log-in-outline" class="newPeerButton" (click)="reboot()"   nbTooltip="Exit & Reboot" [nbTooltipIcon]="{icon: 'alert-triangle-outline'}" nbTooltipStatus="danger" ></nb-icon>
+
+
+
+                  </div>
+              </div>
+
+
+
+
+
+
+
+                </div>

@@ -17,14 +17,11 @@
 			}
 
 			.socket{
-				width: 200px;
-				// height: 200px;
-				// position: absolute;
-				left: 50%;
-				margin-left: -100px;
-				// top: 50%;
+        width: 200px;
+        left: 32%;
+        margin-left: -100px;
         top: 58%;
-				margin-top: -100px;
+        margin-top: -100px;
         opacity: 0.6;
 			}
 
@@ -386,3 +383,20 @@
 					background: #ABF8FF;
 				}
 			}
+
+
+      .bootMessage{
+        position: fixed;
+  z-index: 1000;
+  bottom: 20vh;
+  color: #ffffffb0;
+  font-size: 16px;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  width: 100vw;
+  font-family: Ubuntu, MONOSPACE;
+  width: 88vw;
+  left: 6vw;
+
+      }

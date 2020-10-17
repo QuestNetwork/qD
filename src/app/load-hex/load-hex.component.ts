@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { UiService } from '../services/ui.service';
+import { QuestOSService } from '../services/quest-os.service';
 
 @Component({
   selector: 'app-load-hex',
@@ -7,9 +8,12 @@ import { UiService } from '../services/ui.service';
   styleUrls: ['./load-hex.component.scss']
 })
 export class LoadHexComponent implements OnInit {
+  @Input() bootMessage = "";
+  constructor( private q: QuestOSService, private ui: UiService) {
+    this.q.os.onBootMessage().subscribe( (m) => {
+      this.bootMessage = m;
 
-  constructor( private ui: UiService) {
-
+    })
 
     this.ui.processingSub.subscribe( (data) => {
       if(data){console.log('Fetching amazing processing screen...'); } else{ console.log('Removing amazing processing screen...'); }
