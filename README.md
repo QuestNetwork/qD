@@ -217,14 +217,14 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 ## Roadmap
 
 **0.9.5**
-- [qDesk Games \[Beta\](https://github.com/QuestNetwork/qd-market-ts) (for free items)
-- [qDesk Apps \[Beta\](https://github.com/QuestNetwork/qd-market-ts) (for free items)
+- [qDesk Games \[Beta\]](https://github.com/QuestNetwork/qd-market-ts) (for free items)
+- [qDesk Apps \[Beta\]](https://github.com/QuestNetwork/qd-market-ts) (for free items)
 - More Message Types And Inline Previews
 - Native Audio/Video
 
 **0.9.6**
-- [qDesk Apps \[Beta\](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
-- [qDesk Games \[Beta\](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
+- [qDesk Apps \[Beta\]](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
+- [qDesk Games \[Beta\]](https://github.com/QuestNetwork/qd-market-ts) (for paid items)
 - [qDesk Market \[Beta\]](https://github.com/QuestNetwork/qd-market-ts)
 - [qDesk News \[Beta\]](https://github.com/QuestNetwork/qd-news-ts)
 - Ethereum Payment Integration Beta
