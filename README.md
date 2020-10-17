@@ -1,4 +1,4 @@
-![Completion](https://img.shields.io/badge/completion-16%25-orange) ![Help Wanted](https://img.shields.io/badge/%20-help--wanted-%23159818) ![Version 0.9.3](https://img.shields.io/badge/stable-v0.9.3-green) ![Version 0.9.3](https://img.shields.io/badge/dev-v0.9.4-blue) ![Sponsors](https://img.shields.io/badge/sponsors-2-orange)
+![Completion](https://img.shields.io/badge/completion-23%25-orange) ![Help Wanted](https://img.shields.io/badge/%20-help--wanted-%23159818) ![Version 0.9.3](https://img.shields.io/badge/stable-v0.9.4-green) ![Version 0.9.3](https://img.shields.io/badge/dev-v0.9.5-blue) ![Sponsors](https://img.shields.io/badge/sponsors-1-orange)
 
 # qDesk
 > Cross-Platform Trustless Social Network
@@ -10,13 +10,13 @@
 ## Description
 qDesk is an example app for our JavaScript p2p library [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qDesk Social](https://github.com/QuestNetwork/qd-social-ts), as well as the upcoming [qDesk Markets](https://github.com/QuestNetwork/qd-market-ts), [qDesk News](https://github.com/QuestNetwork/qd-news-ts) and [qDesk Games](https://github.com/QuestNetwork/qd-games-ts).
 
-We have chosen Angular/Electron as an example environment because we believe it offers the best accessibility for developers coming from any other language/framework. It is already being used in Python on PyQt5 and we aim to provide the underlying library in Go and wherever possible in Rust as well. 
+We have chosen Angular/Electron as an example environment because we believe it offers the best accessibility for developers coming from any other language/framework. It is already being used in Python on PyQt5 and we aim to provide the underlying library in Go and wherever possible in Rust as well.
 
 qDesk makes it possible to build custom, secure and decentralized social networks in less than 20 days.
 
 0.9.5+ allow to connect qDesk Social profiles to Twitter without sharing information with Twitter as an additional layer of verification. It is planned to add passive verification for a custom list of external networks to verify the peer identities.
 
-1.0.0+ complies with privacy regulations and can be used for confidential information as a production social network for enterprises worldwide. 
+1.0.0+ complies with privacy regulations and can be used for confidential information as a production social network for enterprises worldwide.
 
 This app is built on [Quest OS](https://github.com/QuestNetwork/quest-os-js) which makes use of the [Interplanetary Filesystem](https://ipfs.io), [IPFS GossipSub](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1/) and [IPFS DAGs](https://docs.ipfs.io/concepts/merkle-dag/).
 
@@ -34,6 +34,7 @@ qDesk allows to lazy load modules.
 
 | Version | Linux | Mac | Windows |
 |---------:|------------------------------|------------------------------|------------------------------|
+| 0.9.4 | [qDesk-0.9.4.AppImage](https://github.com/QuestNetwork/qDesk/releases/download/0.9.4/qDesk-0.9.4.dmg) | [qDesk-0.9.4.dmg](https://github.com/QuestNetwork/qDesk/releases/download/0.9.4/qDesk-0.9.4.dmg) | No Official Build |
 | 0.9.3-rc1 | [q-desk-0.9.3.AppImage](https://github.com/QuestNetwork/qDesk/releases/download/0.9.3-rc1/q-desk-0.9.3.AppImage)  |  [q-desk-0.9.3.dmg](https://github.com/QuestNetwork/qDesk/releases/download/0.9.3-rc1/q-desk-0.9.3.dmg) | No Official Build |
 | 0.9.2 | [quest-messenger-0.9.2.AppImage](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.2/quest-messenger-0.9.2.AppImage) | [quest-messenger-0.9.2.dmg](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.2/quest-messenger-0.9.2.dmg) | No Official Build |
 | 0.9.1 | [quest-messenger-0.9.1.AppImage](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.1/quest-messenger-0.9.1.AppImage) | [quest-messenger-0.9.1.dmg](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.1/quest-messenger-0.9.1.dmg) | No Official Build |
@@ -86,7 +87,7 @@ This project is a lot of work and unfortunately we need to eat food (ツ)
 
 ## Development
 
-### Planning 
+### Planning
 
 See our [Kanban](https://github.com/orgs/QuestNetwork/projects/1) for the development of 0.9.5, feel free to add or pick up features!
 
@@ -106,7 +107,7 @@ To fully participate in the development, you'll need:
 
 1.) Clone Repositories & Checkout Branches:
 ```
-git clone https://github.com/QuestNetwork/quest-utilities-js && git clone https://github.com/QuestNetwork/quest-crypto-js && git clone https://github.com/QuestNetwork/quest-pubsub-js && git clone https://github.com/QuestNetwork/quest-social-js && git clone https://github.com/QuestNetwork/quest-dolphin-js && git clone https://github.com/QuestNetwork/quest-ocean-js && git clone https://github.com/QuestNetwork/quest-bee-js && git clone https://github.com/QuestNetwork/qd-ui-js && git clone https://github.com/QuestNetwork/quest-os-js  && git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-ts && git clone https://github.com/QuestNetwork/qDesk  && cd quest-utilities-js   && git checkout 0.9.4 && cd .. && cd quest-crypto-js   && git checkout 0.9.4 && cd ..  && cd quest-pubsub-js   && git checkout 0.9.4 && cd .. && cd quest-social-js   && git checkout 0.9.4 && cd ..   && cd quest-dolphin-js   && git checkout 0.9.4 && cd .. && cd quest-ocean-js   && git checkout 0.9.4 && cd .. && cd quest-bee-js   && git checkout 0.9.4 && cd .. && cd qd-ui-js   && git checkout 0.9.4 && cd .. &&  cd quest-os-js   && git checkout 0.9.4 && cd .. && cd qd-social-ts   && git checkout 0.9.4 && cd ..  &&  cd qd-messages-ts   && git checkout 0.9.4 && cd ..  &&  cd qDesk   && git checkout 0.9.4 && cd .. 
+git clone https://github.com/QuestNetwork/quest-utilities-js && git clone https://github.com/QuestNetwork/quest-crypto-js && git clone https://github.com/QuestNetwork/quest-pubsub-js && git clone https://github.com/QuestNetwork/quest-social-js && git clone https://github.com/QuestNetwork/quest-dolphin-js && git clone https://github.com/QuestNetwork/quest-ocean-js && git clone https://github.com/QuestNetwork/quest-bee-js && git clone https://github.com/QuestNetwork/qd-ui-js && git clone https://github.com/QuestNetwork/quest-os-js  && git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-ts && git clone https://github.com/QuestNetwork/qDesk  && cd quest-utilities-js   && git checkout 0.9.4 && cd .. && cd quest-crypto-js   && git checkout 0.9.4 && cd ..  && cd quest-pubsub-js   && git checkout 0.9.4 && cd .. && cd quest-social-js   && git checkout 0.9.4 && cd ..   && cd quest-dolphin-js   && git checkout 0.9.4 && cd .. && cd quest-ocean-js   && git checkout 0.9.4 && cd .. && cd quest-bee-js   && git checkout 0.9.4 && cd .. && cd qd-ui-js   && git checkout 0.9.4 && cd .. &&  cd quest-os-js   && git checkout 0.9.4 && cd .. && cd qd-social-ts   && git checkout 0.9.4 && cd ..  &&  cd qd-messages-ts   && git checkout 0.9.4 && cd ..  &&  cd qDesk   && git checkout 0.9.4 && cd ..
 ```
 
 
@@ -141,7 +142,7 @@ From The same directory you're cloning this repository to.
 **Build For Mac**
 ```
 sed -i 's/"@questnetwork\/q-desk"/"q-desk"/g' package.json
-&& npm run mac && 
+&& npm run mac &&
 sed -i  's/"q-desk"/"@questnetwork\/q-desk"/g'  package.json
 ```
 Builds MacOS DMG and .app files to ``dist/`` and ``dist/mac``
