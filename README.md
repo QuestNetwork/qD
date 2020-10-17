@@ -87,53 +87,38 @@ This project is a lot of work and unfortunately we need to eat food (ツ)
 
 ## Development
 
-### Planning
+### Planning 
 
 See our [Kanban](https://github.com/orgs/QuestNetwork/projects/1) for the development of 0.9.5, feel free to add or pick up features!
 
 ### Prerequisites
 
-To fully participate in the development, you'll need:
-- [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts)
-- [qDesk Social](https://github.com/QuestNetwork/quest-social-js)
-- [qDesk UI Service](https://github.com/QuestNetwork/qd-ui-js)
-- [Quest Network Operating System](https://github.com/QuestNetwork/quest-os-js)
-- [Quest Network Social Process](https://github.com/QuestNetwork/quest-social-js)
-- [Quest Network Bee Process](https://github.com/QuestNetwork/quest-bee-js)
-- [Quest Network Ocean Process](https://github.com/QuestNetwork/quest-ocean-js)
-- [Quest Network Dolphin Process](https://github.com/QuestNetwork/quest-dolphin-js)
-- [Quest Network PubSub Process](https://github.com/QuestNetwork/quest-pubsub-js)
+1.) 
 
-
-1.) Clone Repositories & Checkout Branches:
+Clone & Checkout essential repositories:
 ```
-git clone https://github.com/QuestNetwork/quest-utilities-js && git clone https://github.com/QuestNetwork/quest-crypto-js && git clone https://github.com/QuestNetwork/quest-pubsub-js && git clone https://github.com/QuestNetwork/quest-social-js && git clone https://github.com/QuestNetwork/quest-dolphin-js && git clone https://github.com/QuestNetwork/quest-ocean-js && git clone https://github.com/QuestNetwork/quest-bee-js && git clone https://github.com/QuestNetwork/qd-ui-js && git clone https://github.com/QuestNetwork/quest-os-js  && git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-ts && git clone https://github.com/QuestNetwork/qDesk  && cd quest-utilities-js   && git checkout 0.9.4 && cd .. && cd quest-crypto-js   && git checkout 0.9.4 && cd ..  && cd quest-pubsub-js   && git checkout 0.9.4 && cd .. && cd quest-social-js   && git checkout 0.9.4 && cd ..   && cd quest-dolphin-js   && git checkout 0.9.4 && cd .. && cd quest-ocean-js   && git checkout 0.9.4 && cd .. && cd quest-bee-js   && git checkout 0.9.4 && cd .. && cd qd-ui-js   && git checkout 0.9.4 && cd .. &&  cd quest-os-js   && git checkout 0.9.4 && cd .. && cd qd-social-ts   && git checkout 0.9.4 && cd ..  &&  cd qd-messages-ts   && git checkout 0.9.4 && cd ..  &&  cd qDesk   && git checkout 0.9.4 && cd ..
+git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-ts && git clone https://github.com/QuestNetwork/qDesk && cd qd-social-ts   && git checkout 0.9.3 && cd ..  &&  cd qd-messages-ts   && git checkout 0.9.3-rc1 && cd ..  &&  cd qDesk   && git checkout 0.9.3-rc1 && cd ..
 ```
 
+OR 
+
+Clone & Checkout all repositories on the latest dev branch:
+``` 
+git clone https://github.com/QuestNetwork/qDesk && cd qDesk && git checkout 0.9.4 && npm run q-dev && cd ..
+````
 
 2.) Install Dependencies & Enter qDesk Repository:
 ```
-cd qd-social-ts && npm install && cd .. && cd qd-messages-ts && npm install && cd .. && cd qDesk && npm install
-```
-
-2.) In case of errors:
-```
-npm run reinst
+cd quest-utilities-js && npm install && cd .. && cd quest-crypto-js && npm install && cd .. && cd quest-os-js && npm install && cd .. && cd qd-social-ts && npm run inst && cd .. && cd qd-messages-ts && npm run inst && cd .. && cd qDesk && npm run inst
 ```
 
 ### Commands
 
 **Prepare Package**
 
-From The same directory you're cloning this repository to.
+To The same directory you're cloning this repository to.
 
 ``npm run inst`` Removes `package-lock.json` and runs ``npm install``
-
-**Reinstall Package**
-
-From The same directory you're cloning this repository to.
-
-``npm run reinst`` Removes `node_modules`, `package-lock.json` and runs ``npm install``
 
 **Build For Linux**
 
@@ -142,14 +127,14 @@ From The same directory you're cloning this repository to.
 **Build For Mac**
 ```
 sed -i 's/"@questnetwork\/q-desk"/"q-desk"/g' package.json
-&& npm run mac &&
+&& npm run mac && 
 sed -i  's/"q-desk"/"@questnetwork\/q-desk"/g'  package.json
 ```
 Builds MacOS DMG and .app files to ``dist/`` and ``dist/mac``
 
 **Build For IPFS**
 
-``npm run ipfs``  Creates the bundled application for the web with dynamic base path to ```dist/web```
+``ipfs daemon & npm run ipfs``  Creates the bundled application for the web with dynamic base path to ```dist/web```
 
 **Build For Web**
 
@@ -172,21 +157,23 @@ Builds MacOS DMG and .app files to ``dist/`` and ``dist/mac``
 ``watch-reset`` Cleans the watch list, in case of ```System Limit``` error
 
 
-We added an example ```swarm.json``` to the ```src/app``` folder with an example node to make reproduction easier, but we strongly recommend to use our [Quest CLI](https://github.com/QuestNetwork/quest-cli) to test and build the app.
-
-Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/to/quest-cli/index.js` from any folder on your system. It's much nicer!
-
 **IPFS Deploy**
 
 System Requirements: **Memory** 3.75GB **Storage** 6GB **NodeJS** 14 **NPM** 6 **IPFS** 0.6
 
-`npm run ipfs`
+`ipfs daemon & npm run ipfs`
 
 `ipfs pin add <CID>`
 
-If you have trouble getting the directory discovered by gateways, you can try ```./ipfs-propagate.sh``` from the root git folder.
+If you have trouble getting the directory discovered by gateways, you can try ```./ipfs-propagate.sh``` from the root of this repository.
 Keep in mind that the bundled web application is >14MB alone without assets, please be patient until we have a preloader.
 
+
+
+
+We added an example ```swarm.json``` to the ```src/app``` folder with an example node to make reproduction easier, but we strongly recommend to use our [Quest CLI](https://github.com/QuestNetwork/quest-cli) to test and build the app.
+
+Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/to/quest-cli/index.js` from any folder on your system. It's much nicer!
 
 ## Features
 
