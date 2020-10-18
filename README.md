@@ -205,7 +205,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - Drive Lock Fixed
 - Offer "LocalStorage" As A Storage Container On The Web To Stay Signed In
 - [qDesk Messages \[Beta\]](https://github.com/QuestNetwork/qd-messages-ts)
-- [qDesk Social \[Beta\]](https://github.com/QuestNetwork/quest-social-js)
+- [qDesk Social \[Beta\]](https://github.com/QuestNetwork/qd-social-js)
 
 **0.9.4**
 - Encrypt Account
@@ -247,7 +247,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - [qDesk Quests \[Beta\]](https://github.com/QuestNetwork/qd-quest-ts)
 - [qDesk Calendar \[Beta\]](https://github.com/QuestNetwork/qd-calendar-ts) personal & shared calendars. Add events from other modules on qDesk.
 - [qDesk Messages \[Stable\]](https://github.com/QuestNetwork/qd-messages-ts)
-- [qDesk Social \[Stable\]](https://github.com/QuestNetwork/quest-social-js)
+- [qDesk Social \[Stable\]](https://github.com/QuestNetwork/qd-social-js)
 - [qDesk Apps \[Stable\]](https://github.com/QuestNetwork/qd-apps-ts)
 - Fork into [Vibenarium](https://github.com/Vibenarium/vibenarium-platform)
 - Third Party Dependencies Audited, Security Issues Fixed
