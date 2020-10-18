@@ -10,7 +10,7 @@
 ## Description
 qDesk is an example app for our JavaScript p2p library [Quest OS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules like [qDesk Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qDesk Social](https://github.com/QuestNetwork/qd-social-ts), as well as the upcoming [qDesk Markets](https://github.com/QuestNetwork/qd-market-ts), [qDesk News](https://github.com/QuestNetwork/qd-news-ts) and [qDesk Games](https://github.com/QuestNetwork/qd-games-ts).
 
-We have chosen Angular/Electron as an example environment because we believe it offers the best accessibility for developers coming from any other language/framework. It is already being used in Python on PyQt5 and we aim to provide the underlying library in Go and wherever possible in Rust as well. 
+We have chosen Angular/Electron as an example environment because we believe it offers the best accessibility for developers coming from any other language/framework. The Quest Network is already being used in Python on PyQt5 and we aim to provide the underlying library in Go and wherever possible in Rust as well.
 
 qDesk makes it possible to build custom, secure and decentralized social networks in less than 20 days.
 
@@ -205,10 +205,10 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - Drive Lock Fixed
 - Offer "LocalStorage" As A Storage Container On The Web To Stay Signed In
 - [qDesk Messages \[Beta\]](https://github.com/QuestNetwork/qd-messages-ts)
-- [qDesk Social \[Beta\]](https://github.com/QuestNetwork/quest-social-js)
+- [qDesk Social \[Beta\]](https://github.com/QuestNetwork/qd-social-js)
 
 **0.9.4**
-- Encrypt Settings/Message History Files
+- Encrypt Account
 - Change Swarm Peers In The Browser
 - [Quest Network Coral Process](https://github.com/QuestNetwork/quest-coral-js)
 - Additional Peering, option to pull from GitHub.
@@ -218,7 +218,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 **0.9.5**
 - [qDesk Games \[Beta\]](https://github.com/QuestNetwork/qd-games-ts) (for free items)
-- [qDesk Apps \[Beta\]](https://github.com/QuestNetwork/qd-market-ts) (for free items)
+- [qDesk Apps \[Beta\]](https://github.com/QuestNetwork/qd-apps-ts) (for free items)
 - More Message Types And Inline Previews
 - Native Audio/Video
 
@@ -226,10 +226,10 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - [qDesk Apps \[Beta\]](https://github.com/QuestNetwork/qd-apps-ts) (for paid items)
 - [qDesk Games \[Beta\]](https://github.com/QuestNetwork/qd-games-ts) (for paid items)
 - [qDesk Market \[Beta\]](https://github.com/QuestNetwork/qd-market-ts)
-- [qDesk News \[Beta\]](https://github.com/QuestNetwork/qd-news-ts)
 - Ethereum Payment Integration Beta
 
 **0.9.7**
+- [qDesk News \[Beta\]](https://github.com/QuestNetwork/qd-news-ts)
 - Add Custom Themes By Pasting CSS Into The Built-In Theme Editor
 - Import/Export Themes
 - Light Mode
@@ -241,14 +241,13 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 **0.9.9**
 - Additional Patch
-- [qDesk Music \[Beta\]](https://github.com/QuestNetwork/qd-music-ts) 
-- [qDesk Video \[Beta\]](https://github.com/QuestNetwork/qd-video-ts)
+- [qDesk Vibes \[Beta\]](https://github.com/QuestNetwork/qd-vibes-ts) 
 
 **1.0.0**
 - [qDesk Quests \[Beta\]](https://github.com/QuestNetwork/qd-quest-ts)
 - [qDesk Calendar \[Beta\]](https://github.com/QuestNetwork/qd-calendar-ts) personal & shared calendars. Add events from other modules on qDesk.
 - [qDesk Messages \[Stable\]](https://github.com/QuestNetwork/qd-messages-ts)
-- [qDesk Social \[Stable\]](https://github.com/QuestNetwork/quest-social-js)
+- [qDesk Social \[Stable\]](https://github.com/QuestNetwork/qd-social-js)
 - [qDesk Apps \[Stable\]](https://github.com/QuestNetwork/qd-apps-ts)
 - Fork into [Vibenarium](https://github.com/Vibenarium/vibenarium-platform)
 - Third Party Dependencies Audited, Security Issues Fixed
@@ -257,8 +256,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 **2.0.0**
 - [qDesk Calendar \[Stable\]](https://github.com/QuestNetwork/qd-calendar-ts)
 - [qDesk Market \[Stable\]](https://github.com/QuestNetwork/qd-market-ts)
-- [qDesk Music \[Stable\]](https://github.com/QuestNetwork/qd-music-ts) 
-- [qDesk Video \[Stable\]](https://github.com/QuestNetwork/qd-video-ts)
+- [qDesk Vibes \[Stable\]](https://github.com/QuestNetwork/qd-vibes-ts) 
 - Ethereum Payment Integration Finalized
 
 **3.0.0**
