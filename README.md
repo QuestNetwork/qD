@@ -10,8 +10,6 @@
 ## Description
 qDesk is an example app for our JavaScript p2p library [Quest OS](quest-os-js) with cool open source modules such as [qD Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qD Social](https://github.com/QuestNetwork/qd-social-ts) and the upcoming  [qD Vibes](https://github.com/QuestNetwork/qd-vibes-ts), [qD Markets](https://github.com/QuestNetwork/qd-market-ts), [qD News](https://github.com/QuestNetwork/qd-news-ts), [qD Apps](qd-apps-ts), [qD Games](https://github.com/QuestNetwork/qd-games-ts) and [qD Calendar](https://github.com/QuestNetwork/qd-calendar-ts).
 
-We have chosen Angular/Electron as an example environment because we believe it offers the best accessibility for developers coming from any other language/framework. The Quest Network is already being used in Python on PyQt5 and we aim to provide the underlying library in Go and wherever possible in Rust as well.
-
 qDesk makes it possible to build custom, secure and decentralized social networks in less than 20 days.
 
 Our quest network aims to allow the creation and (distributed) completion of quests supported by a feature rich decentralized social network.
@@ -19,6 +17,8 @@ Our quest network aims to allow the creation and (distributed) completion of que
 0.9.5+ allow to connect qDesk Social profiles to Twitter without sharing information with Twitter as an additional layer of verification. It is planned to add passive verification for a custom list of external networks to verify the peer identities.
 
 1.0.0+ complies with privacy regulations and can be used for confidential information as a production social network for enterprises worldwide. 
+
+We have chosen Angular/Electron as an example environment because we believe it offers the best accessibility for developers coming from any other language/framework. The Quest Network is already being used in Python on PyQt5 and we aim to provide the underlying library in Go and wherever possible in Rust as well.
 
 This app is built on [Quest OS](https://github.com/QuestNetwork/quest-os-js) which makes use of the [Interplanetary Filesystem](https://ipfs.io), [IPFS GossipSub](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1/) and [IPFS DAGs](https://docs.ipfs.io/concepts/merkle-dag/).
 
