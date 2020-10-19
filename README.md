@@ -8,7 +8,7 @@
 >In case you are experiencing connectivity issues, on the app you can try using different [star node configurations](#troubleshooting) in Settings > IPFS.
 
 ## Description
-qDesk is an example app for our JavaScript p2p library [qOS](quest-os-js) with cool open source modules such as [qD Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qD Social](https://github.com/QuestNetwork/qd-social-ts) and the upcoming  [qD Vibes](https://github.com/QuestNetwork/qd-vibes-ts), [qD Markets](https://github.com/QuestNetwork/qd-market-ts), [qD News](https://github.com/QuestNetwork/qd-news-ts), [qD Apps](qd-apps-ts), [qD Games](https://github.com/QuestNetwork/qd-games-ts) and [qD Calendar](https://github.com/QuestNetwork/qd-calendar-ts).
+qDesk is an example app for our JavaScript p2p library [qOS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules such as [qD Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qD Social](https://github.com/QuestNetwork/qd-social-ts) and the upcoming  [qD Vibes](https://github.com/QuestNetwork/qd-vibes-ts), [qD Markets](https://github.com/QuestNetwork/qd-market-ts), [qD News](https://github.com/QuestNetwork/qd-news-ts), [qD Apps](qd-apps-ts), [qD Games](https://github.com/QuestNetwork/qd-games-ts) and [qD Calendar](https://github.com/QuestNetwork/qd-calendar-ts).
 
 qDesk makes it possible to build custom, secure and decentralized social networks in less than 20 days.
 
