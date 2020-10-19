@@ -8,7 +8,7 @@
 >In case you are experiencing connectivity issues, on the app you can try using different [star node configurations](#troubleshooting) in Settings > IPFS.
 
 ## Description
-qDesk is an example app for our JavaScript p2p library [Quest OS](quest-os-js) with cool open source modules such as [qD Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qD Social](https://github.com/QuestNetwork/qd-social-ts) and the upcoming  [qD Vibes](https://github.com/QuestNetwork/qd-vibes-ts), [qD Markets](https://github.com/QuestNetwork/qd-market-ts), [qD News](https://github.com/QuestNetwork/qd-news-ts), [qD Apps](qd-apps-ts), [qD Games](https://github.com/QuestNetwork/qd-games-ts) and [qD Calendar](https://github.com/QuestNetwork/qd-calendar-ts).
+qDesk is an example app for our JavaScript p2p library [qOS](quest-os-js) with cool open source modules such as [qD Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qD Social](https://github.com/QuestNetwork/qd-social-ts) and the upcoming  [qD Vibes](https://github.com/QuestNetwork/qd-vibes-ts), [qD Markets](https://github.com/QuestNetwork/qd-market-ts), [qD News](https://github.com/QuestNetwork/qd-news-ts), [qD Apps](qd-apps-ts), [qD Games](https://github.com/QuestNetwork/qd-games-ts) and [qD Calendar](https://github.com/QuestNetwork/qd-calendar-ts).
 
 qDesk makes it possible to build custom, secure and decentralized social networks in less than 20 days.
 
@@ -20,7 +20,7 @@ Our quest network aims to allow the creation and (distributed) completion of que
 
 We have chosen Angular/Electron as an example environment because we believe it offers the best accessibility for developers coming from any other language/framework. The Quest Network is already being used in Python on PyQt5 and we aim to provide the underlying library in Go and wherever possible in Rust as well.
 
-This app is built on [Quest OS](https://github.com/QuestNetwork/quest-os-js) which makes use of the [Interplanetary Filesystem](https://ipfs.io), [IPFS GossipSub](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1/) and [IPFS DAGs](https://docs.ipfs.io/concepts/merkle-dag/).
+This app is built on [qOS](https://github.com/QuestNetwork/quest-os-js) which makes use of the [Interplanetary Filesystem](https://ipfs.io), [IPFS GossipSub](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1/) and [IPFS DAGs](https://docs.ipfs.io/concepts/merkle-dag/).
 
 Look what other people have built with qDesk: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
 
@@ -30,7 +30,7 @@ qDesk allows to lazy load modules.
 
 ![Completion 1.0.0](https://img.shields.io/badge/OAEP-4096%20Bit-green) ![EC](https://img.shields.io/badge/EC-P&#8208;521-green) ![AES](https://img.shields.io/badge/AES-256%20Bit-yellow)
 
-[Quest OS](https://github.com/QuestNetwork/quest-os-js) uses [4096 Bit RSA-OAEP](https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Operation) encryption, [256 Bit AES-CBC](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) encryption and [NIST P-521 EC](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography#Fast_reduction_(NIST_curves)) signatures.
+[qOS](https://github.com/QuestNetwork/quest-os-js) uses [4096 Bit RSA-OAEP](https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Operation) encryption, [256 Bit AES-CBC](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) encryption and [NIST P-521 EC](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography#Fast_reduction_(NIST_curves)) signatures.
 
 
 ## Download
