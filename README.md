@@ -8,7 +8,7 @@
 >In case you are experiencing connectivity issues, on the app you can try using different [star node configurations](#troubleshooting) in Settings > IPFS.
 
 ## Description
-qDesk is an example app for our JavaScript p2p library [qOS](quest-os-js) with cool open source modules such as [qD Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qD Social](https://github.com/QuestNetwork/qd-social-ts) and the upcoming  [qD Vibes](https://github.com/QuestNetwork/qd-vibes-ts), [qD Markets](https://github.com/QuestNetwork/qd-market-ts), [qD News](https://github.com/QuestNetwork/qd-news-ts), [qD Apps](qd-apps-ts), [qD Games](https://github.com/QuestNetwork/qd-games-ts) and [qD Calendar](https://github.com/QuestNetwork/qd-calendar-ts).
+qDesk is an example app for our JavaScript p2p library [qOS](https://github.com/QuestNetwork/quest-os-js) with cool open source modules such as [qD Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qD Social](https://github.com/QuestNetwork/qd-social-ts) and the upcoming  [qD Vibes](https://github.com/QuestNetwork/qd-vibes-ts), [qD Markets](https://github.com/QuestNetwork/qd-market-ts), [qD News](https://github.com/QuestNetwork/qd-news-ts), [qD Apps](qd-apps-ts), [qD Games](https://github.com/QuestNetwork/qd-games-ts) and [qD Calendar](https://github.com/QuestNetwork/qd-calendar-ts).
 
 qDesk makes it possible to build custom, secure and decentralized social networks in less than 20 days.
 
@@ -16,7 +16,7 @@ Our quest network aims to allow the creation and (distributed) completion of que
 
 0.9.5+ allow to connect qDesk Social profiles to Twitter without sharing information with Twitter as an additional layer of verification. It is planned to add passive verification for a custom list of external networks to verify the peer identities.
 
-1.0.0+ complies with privacy regulations and can be used for confidential information as a production social network worldwide. 
+1.0.0+ complies with privacy regulations and can be used for confidential information as a production social network worldwide.
 
 We have chosen Angular/Electron as an example environment because we believe it offers the best accessibility for developers coming from any other language/framework. The Quest Network is already being used in Python on PyQt5 and we aim to provide the underlying library in Go and wherever possible in Rust as well.
 
@@ -96,23 +96,23 @@ Please consider supporting us, so that we can build a non-profit for this projec
 
 ## Development
 
-### Planning 
+### Planning
 
 See our [Kanban](https://github.com/orgs/QuestNetwork/projects/1) for the development of 0.9.5, feel free to add or pick up features!
 
 ### Prerequisites
 
-1.) 
+1.)
 
 Clone & Checkout essential repositories:
 ```
 git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-ts && git clone https://github.com/QuestNetwork/qDesk && cd qd-social-ts   && git checkout 0.9.4 && cd ..  &&  cd qd-messages-ts   && git checkout 0.9.4 && cd ..  &&  cd qDesk   && git checkout 0.9.4 && cd ..
 ```
 
-OR 
+OR
 
 Clone & Checkout all repositories on the latest dev branch:
-``` 
+```
 git clone https://github.com/QuestNetwork/qDesk && cd qDesk && git checkout 0.9.5-dev && npm run q-dev && cd ..
 ````
 
@@ -136,7 +136,7 @@ To The same directory you're cloning this repository to.
 **Build For Mac**
 ```
 sed -i 's/"@questnetwork\/q-desk"/"q-desk"/g' package.json
-&& npm run mac && 
+&& npm run mac &&
 sed -i  's/"q-desk"/"@questnetwork\/q-desk"/g'  package.json
 ```
 Builds MacOS DMG and .app files to ``dist/`` and ``dist/mac``
@@ -204,8 +204,8 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - App is now modular, makes building add-ons easy
 - Drive Lock Fixed
 - Offer "LocalStorage" As A Storage Container On The Web To Stay Signed In
-- [qDesk Messages \[Beta\]](https://github.com/QuestNetwork/qd-messages-ts)
-- [qDesk Social \[Beta\]](https://github.com/QuestNetwork/qd-social-js)
+- [qD Messages \[Beta\]](https://github.com/QuestNetwork/qd-messages-ts)
+- [qD Social \[Beta\]](https://github.com/QuestNetwork/qd-social-js)
 
 **0.9.4**
 - Encrypt Account
@@ -218,15 +218,15 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 **0.9.5**
 - [Quest Quorum Module](https://github.com/QuestNetwork/quest-quorum-js)
-- [qDesk Games \[Beta\]](https://github.com/QuestNetwork/qd-games-ts) (for free items)
-- [qDesk Apps \[Beta\]](https://github.com/QuestNetwork/qd-apps-ts) (for free items)
+- [qD Games \[Beta\]](https://github.com/QuestNetwork/qd-games-ts) (for free items)
+- [qD Apps \[Beta\]](https://github.com/QuestNetwork/qd-apps-ts) (for free items)
 - More Message Types And Inline Previews
 - Native Audio/Video
 
 **0.9.6**
-- [qDesk Apps \[Beta\]](https://github.com/QuestNetwork/qd-apps-ts) (for paid items)
-- [qDesk Games \[Beta\]](https://github.com/QuestNetwork/qd-games-ts) (for paid items)
-- [qDesk Market \[Beta\]](https://github.com/QuestNetwork/qd-market-ts)
+- [qD Apps \[Beta\]](https://github.com/QuestNetwork/qd-apps-ts) (for paid items)
+- [qD Games \[Beta\]](https://github.com/QuestNetwork/qd-games-ts) (for paid items)
+- [qD Market \[Beta\]](https://github.com/QuestNetwork/qd-market-ts)
 - Ethereum Payment Integration Beta
 
 **0.9.7**
@@ -242,27 +242,27 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 **0.9.9**
 - Additional Patch
-- [qDesk Vibes \[Beta\]](https://github.com/QuestNetwork/qd-vibes-ts) 
+- [qD Vibes \[Beta\]](https://github.com/QuestNetwork/qd-vibes-ts)
 
 **1.0.0**
-- [qDesk Quests \[Beta\]](https://github.com/QuestNetwork/qd-quest-ts)
-- [qDesk Calendar \[Beta\]](https://github.com/QuestNetwork/qd-calendar-ts) personal & shared calendars. Add events from other modules on qDesk.
-- [qDesk Messages \[Stable\]](https://github.com/QuestNetwork/qd-messages-ts)
-- [qDesk Social \[Stable\]](https://github.com/QuestNetwork/qd-social-js)
-- [qDesk Apps \[Stable\]](https://github.com/QuestNetwork/qd-apps-ts)
+- [qD Quests \[Beta\]](https://github.com/QuestNetwork/qd-quest-ts)
+- [qD Calendar \[Beta\]](https://github.com/QuestNetwork/qd-calendar-ts) personal & shared calendars. Add events from other modules on qDesk.
+- [qD Messages \[Stable\]](https://github.com/QuestNetwork/qd-messages-ts)
+- [qD Social \[Stable\]](https://github.com/QuestNetwork/qd-social-js)
+- [qD Apps \[Stable\]](https://github.com/QuestNetwork/qd-apps-ts)
 - Fork into [Vibenarium](https://github.com/Vibenarium/vibenarium-platform)
 - Third Party Dependencies Audited, Security Issues Fixed
 - Complies with global privacy laws
 
 **2.0.0**
-- [qDesk Calendar \[Stable\]](https://github.com/QuestNetwork/qd-calendar-ts)
-- [qDesk Market \[Stable\]](https://github.com/QuestNetwork/qd-market-ts)
-- [qDesk Vibes \[Stable\]](https://github.com/QuestNetwork/qd-vibes-ts) 
+- [qD Calendar \[Stable\]](https://github.com/QuestNetwork/qd-calendar-ts)
+- [qD Market \[Stable\]](https://github.com/QuestNetwork/qd-market-ts)
+- [qD Vibes \[Stable\]](https://github.com/QuestNetwork/qd-vibes-ts)
 - Ethereum Payment Integration Finalized
 
 **3.0.0**
-- [qDesk Quests \[Stable\]](https://github.com/QuestNetwork/qd-quest-ts)
-- [qDesk Games \[Stable\]](https://github.com/QuestNetwork/qd-games-ts)
+- [qD Quests \[Stable\]](https://github.com/QuestNetwork/qd-quest-ts)
+- [qD Games \[Stable\]](https://github.com/QuestNetwork/qd-games-ts)
 
 **4.0.0**
 - [OpenAI GPT3](https://en.wikipedia.org/wiki/GPT-3) Integration For Suggestions, AutoRespond And Completion
