@@ -204,8 +204,8 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - App is now modular, makes building add-ons easy
 - Drive Lock Fixed
 - Offer "LocalStorage" As A Storage Container On The Web To Stay Signed In
-- [qDesk Messages \[Beta\]](https://github.com/QuestNetwork/qd-messages-ts)
-- [qDesk Social \[Beta\]](https://github.com/QuestNetwork/qd-social-js)
+- [qD Messages \[Beta\]](https://github.com/QuestNetwork/qd-messages-ts)
+- [qD Social \[Beta\]](https://github.com/QuestNetwork/qd-social-js)
 
 **0.9.4**
 - Encrypt Account
@@ -218,15 +218,15 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 **0.9.5**
 - [Quest Quorum Module](https://github.com/QuestNetwork/quest-quorum-js)
-- [qDesk Games \[Beta\]](https://github.com/QuestNetwork/qd-games-ts) (for free items)
-- [qDesk Apps \[Beta\]](https://github.com/QuestNetwork/qd-apps-ts) (for free items)
+- [qD Games \[Beta\]](https://github.com/QuestNetwork/qd-games-ts) (for free items)
+- [qD Apps \[Beta\]](https://github.com/QuestNetwork/qd-apps-ts) (for free items)
 - More Message Types And Inline Previews
 - Native Audio/Video
 
 **0.9.6**
-- [qDesk Apps \[Beta\]](https://github.com/QuestNetwork/qd-apps-ts) (for paid items)
-- [qDesk Games \[Beta\]](https://github.com/QuestNetwork/qd-games-ts) (for paid items)
-- [qDesk Market \[Beta\]](https://github.com/QuestNetwork/qd-market-ts)
+- [qD Apps \[Beta\]](https://github.com/QuestNetwork/qd-apps-ts) (for paid items)
+- [qD Games \[Beta\]](https://github.com/QuestNetwork/qd-games-ts) (for paid items)
+- [qD Market \[Beta\]](https://github.com/QuestNetwork/qd-market-ts)
 - Ethereum Payment Integration Beta
 
 **0.9.7**
@@ -242,27 +242,27 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 **0.9.9**
 - Additional Patch
-- [qDesk Vibes \[Beta\]](https://github.com/QuestNetwork/qd-vibes-ts) 
+- [qD Vibes \[Beta\]](https://github.com/QuestNetwork/qd-vibes-ts) 
 
 **1.0.0**
-- [qDesk Quests \[Beta\]](https://github.com/QuestNetwork/qd-quest-ts)
-- [qDesk Calendar \[Beta\]](https://github.com/QuestNetwork/qd-calendar-ts) personal & shared calendars. Add events from other modules on qDesk.
-- [qDesk Messages \[Stable\]](https://github.com/QuestNetwork/qd-messages-ts)
-- [qDesk Social \[Stable\]](https://github.com/QuestNetwork/qd-social-js)
-- [qDesk Apps \[Stable\]](https://github.com/QuestNetwork/qd-apps-ts)
+- [qD Quests \[Beta\]](https://github.com/QuestNetwork/qd-quest-ts)
+- [qD Calendar \[Beta\]](https://github.com/QuestNetwork/qd-calendar-ts) personal & shared calendars. Add events from other modules on qDesk.
+- [qD Messages \[Stable\]](https://github.com/QuestNetwork/qd-messages-ts)
+- [qD Social \[Stable\]](https://github.com/QuestNetwork/qd-social-js)
+- [qD Apps \[Stable\]](https://github.com/QuestNetwork/qd-apps-ts)
 - Fork into [Vibenarium](https://github.com/Vibenarium/vibenarium-platform)
 - Third Party Dependencies Audited, Security Issues Fixed
 - Complies with global privacy laws
 
 **2.0.0**
-- [qDesk Calendar \[Stable\]](https://github.com/QuestNetwork/qd-calendar-ts)
-- [qDesk Market \[Stable\]](https://github.com/QuestNetwork/qd-market-ts)
-- [qDesk Vibes \[Stable\]](https://github.com/QuestNetwork/qd-vibes-ts) 
+- [qD Calendar \[Stable\]](https://github.com/QuestNetwork/qd-calendar-ts)
+- [qD Market \[Stable\]](https://github.com/QuestNetwork/qd-market-ts)
+- [qD Vibes \[Stable\]](https://github.com/QuestNetwork/qd-vibes-ts) 
 - Ethereum Payment Integration Finalized
 
 **3.0.0**
-- [qDesk Quests \[Stable\]](https://github.com/QuestNetwork/qd-quest-ts)
-- [qDesk Games \[Stable\]](https://github.com/QuestNetwork/qd-games-ts)
+- [qD Quests \[Stable\]](https://github.com/QuestNetwork/qd-quest-ts)
+- [qD Games \[Stable\]](https://github.com/QuestNetwork/qd-games-ts)
 
 **4.0.0**
 - [OpenAI GPT3](https://en.wikipedia.org/wiki/GPT-3) Integration For Suggestions, AutoRespond And Completion
