@@ -16,7 +16,7 @@ Our quest network aims to allow the creation and (distributed) completion of que
 
 0.9.5+ allow to connect qDesk Social profiles to Twitter without sharing information with Twitter as an additional layer of verification. It is planned to add passive verification for a custom list of external networks to verify the peer identities.
 
-1.0.0+ complies with privacy regulations and can be used for confidential information as a production social network for enterprises worldwide. 
+1.0.0+ complies with privacy regulations and can be used for confidential information as a production social network worldwide. 
 
 We have chosen Angular/Electron as an example environment because we believe it offers the best accessibility for developers coming from any other language/framework. The Quest Network is already being used in Python on PyQt5 and we aim to provide the underlying library in Go and wherever possible in Rust as well.
 
