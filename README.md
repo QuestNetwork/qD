@@ -210,13 +210,14 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 **0.9.4**
 - Encrypt Account
 - Change Swarm Peers In The Browser
-- [Quest Network Coral Process](https://github.com/QuestNetwork/quest-coral-js)
+- [Quest Coral Module](https://github.com/QuestNetwork/quest-coral-js)
 - Additional Peering, option to pull from GitHub.
 - Module Upgrades
 
 ## Roadmap
 
 **0.9.5**
+- [Quest Quorum Module](https://github.com/QuestNetwork/quest-quorum-js)
 - [qDesk Games \[Beta\]](https://github.com/QuestNetwork/qd-games-ts) (for free items)
 - [qDesk Apps \[Beta\]](https://github.com/QuestNetwork/qd-apps-ts) (for free items)
 - More Message Types And Inline Previews
