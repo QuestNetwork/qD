@@ -72,3 +72,14 @@ font-size: 16px;
   position: relative;
 top: -15px;
 }
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus{
+  color:#598adb !important;font-size:18px !important;      font-family: Ubuntu, MONOSPACE !important;
+  background:transparent !important;
+  -webkit-text-fill-color: #598adb;
+  transition: background-color 5000s ease-in-out 0s !important;
+
+}

@@ -32,7 +32,7 @@ isElectron = false;
 
   }
 
-  username;
+  username = "";
 
 
    DEVMODE = true;
