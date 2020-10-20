@@ -15,6 +15,7 @@ export class AuthGuard implements CanActivate {
       return true
     }
     else{
+      this.q.os.setLastLocation(next.url.toString())
       this._router.navigate(['/signin'])
     }
 

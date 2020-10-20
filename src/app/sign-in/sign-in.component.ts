@@ -112,15 +112,24 @@ async openFileLoaded(event){
 
   async jumpToChannels(){
 
+
     if(!this.q.os.hasPassword()){
       this.router.navigate(['/settings/account']);
       this.ui.enableTab('channelTab');
       this.ui.disableTab('signInTab');
       this.ui.updateProcessingStatus(false);
     }
+    else if(this.q.os.getLastLocation().length > 0){
+      console.log(this.q.os.getLastLocation());
+      this.router.navigate(['/'+this.q.os.getLastLocation()]);
+      this.ui.enableTab('channelTab');
+      this.ui.disableTab('signInTab');
+      setTimeout( () => {
+        this.ui.updateProcessingStatus(false);
+      },5000);
+    }
     else{
       this.router.navigate(['/messages']);
-      this.q.os.ui.toTabIndex(1);
       this.ui.enableTab('channelTab');
       this.ui.disableTab('signInTab');
 
