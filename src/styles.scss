@@ -7,7 +7,9 @@
 // framework component styles
 @import '~@nebular/theme/styles/globals';
 
-
+iframe#webpack-dev-server-client-overlay {
+    display: none;
+}
 
 // install the framework styles
 @include nb-install() {

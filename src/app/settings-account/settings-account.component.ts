@@ -28,6 +28,8 @@ export class SettingsAccountComponent implements OnInit {
     if(this.q.os.hasPassword()){
       //old pw set
     }
+    //
+
 
     if(this.newPassword != this.newPasswordRepeat){
       this.error = "Password don't match!";
@@ -48,7 +50,19 @@ export class SettingsAccountComponent implements OnInit {
       return false;
     }
 
-    this.q.os.ui.showSnack('Password Changed','Yeah!',{duration: 2000});
+    try{
+      this.q.os.setUsername(this.username, true);
+    }
+    catch(e){
+        this.error = "Username invalid!";
+        console.log('username error');
+        return false;
+    }
+
+
+    this.username = this.q.os.getUsername();
+
+    this.q.os.ui.showSnack('Settings Changed','Yeah!',{duration: 2000});
     this.oldPasswordSet = true;
     this.error = "";
 

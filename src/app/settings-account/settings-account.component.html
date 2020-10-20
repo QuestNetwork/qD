@@ -30,7 +30,7 @@
     </mat-form-field>
 
     <mat-form-field style="width: 100%;color:#598adb;font-size:18px" *ngIf="oldPasswordSet">
-        <input matInput placeholder="Current Password" [type]="hide['oldPassword'] ? 'password' : 'text'" required fullWidth [(ngModel)]= "oldPassword" id="password" autocomplete="current-password">
+        <input matInput placeholder="Current Password" [type]="hide['oldPassword'] ? 'password' : 'text'" required fullWidth [(ngModel)]= "oldPassword" id="old-password" autocomplete="old-password">
           <mat-icon matSuffix (click)="hide['oldPassword'] = !hide['oldPassword']">{{hide['oldPassword'] ? 'visibility_off' : 'visibility'}}</mat-icon>
           <mat-hint *ngIf="oldPassword.length < 1">Enter your current password</mat-hint>
     </mat-form-field>

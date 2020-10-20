@@ -304,6 +304,13 @@ this.pwd = "";
     }
 
     this.q.os.setPwd(pwd);
+
+    try{
+      this.q.os.setUsername(this.username);
+    }catch(e){
+      console.log(e);
+    }
+
     // console.log(pwd);
     await this.ui.delay(2000);
     this.ngOnInit();
