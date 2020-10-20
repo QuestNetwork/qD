@@ -306,7 +306,7 @@ this.pwd = "";
     this.q.os.setPwd(pwd);
 
     try{
-      this.q.os.setUsername(this.username);
+      this.q.os.setAccName(this.username);
     }catch(e){
       console.log(e);
     }

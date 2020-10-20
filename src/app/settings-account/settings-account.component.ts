@@ -51,7 +51,7 @@ export class SettingsAccountComponent implements OnInit {
     }
 
     try{
-      this.q.os.setUsername(this.username, true);
+      this.q.os.setAccName(this.username, true);
     }
     catch(e){
         this.error = "Username invalid!";
@@ -60,7 +60,7 @@ export class SettingsAccountComponent implements OnInit {
     }
 
 
-    this.username = this.q.os.getUsername();
+    this.username = this.q.os.getAccName();
 
     this.q.os.ui.showSnack('Settings Changed','Yeah!',{duration: 2000});
     this.oldPasswordSet = true;
@@ -94,7 +94,7 @@ sideBarFixed = { left:false}
 
     }
 
-    this.username = this.q.os.getUsername();
+    this.username = this.q.os.getAccName();
 
     if(this.q.os.utilities.engine.detect() == 'electron'){
         this.isElectron = true;

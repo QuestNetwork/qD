@@ -25,8 +25,8 @@
 
 
     <mat-form-field style="width: 100%;margin-top: 20px;color:#598adb;font-size:18px;">
-        <input matInput placeholder="Username"  fullWidth [(ngModel)]='username' id="new-username" autocomplete="new-username" required>
-          <mat-hint *ngIf="username.length < 1">Enter your username</mat-hint>
+        <input matInput placeholder="Account Name"  fullWidth [(ngModel)]='username' id="new-username" autocomplete="new-username" required>
+          <mat-hint *ngIf="username.length < 1">Enter the name of your account</mat-hint>
     </mat-form-field>
 
     <mat-form-field style="width: 100%;color:#598adb;font-size:18px" *ngIf="oldPasswordSet">
