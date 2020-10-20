@@ -22,6 +22,7 @@ export class SettingsAccountComponent implements OnInit {
   newPassword = "";
   newPasswordRepeat = "";
   error = "";
+  username = "";
 
   async changeOrSetPassword(){
     if(this.q.os.hasPassword()){
