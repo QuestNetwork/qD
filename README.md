@@ -214,6 +214,9 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - Additional Peering, option to pull from GitHub.
 - Module Upgrades
 
+**0.9.5**
+- Account Name For Additional Security & Hashing
+
 ## Roadmap
 
 **0.9.5**
