@@ -9,28 +9,31 @@
   <div class="settingsSubHeader" *ngIf="!oldPasswordSet">
   Claim Your Account!
     <div class="settingsSubHeaderInfo">
-      Your account is currently encrypted with a random password, if you do not set a password you will lose access to this account when you close the app!
+      Your account is currently encrypted with a random username and password, if you do not set a password you will lose access to this account when you close the app!
     </div>
 
   </div>
   <div fxLayout="column ">
 
-    <mat-form-field style="width: 100%;margin-top: 20px;color:#598adb;font-size:18px;position:fixed;z-index:0;bottom:-200px;">
-        <input matInput placeholder="Username"  fullWidth [(ngModel)]='username' id="username" autocomplete="username">
+
+      <mat-form-field style="width: 100%;margin-top: 20px;color:#598adb;font-size:18px;position:fixed;z-index:0;bottom:-200px;" *ngIf="!oldPasswordSet">
+          <input matInput placeholder="Current Password"  fullWidth  id="password" autocomplete="current-password">
+      </mat-form-field>
+      <mat-form-field style="width: 100%;margin-top: 20px;color:#598adb;font-size:18px;position:fixed;z-index:0;bottom:-200px;" >
+          <input matInput placeholder="Current Username"  fullWidth  id="username" autocomplete="new-username">
+      </mat-form-field>
+
+
+    <mat-form-field style="width: 100%;margin-top: 20px;color:#598adb;font-size:18px;">
+        <input matInput placeholder="Username"  fullWidth [(ngModel)]='username' id="new-username" autocomplete="new-username" required>
           <mat-hint *ngIf="username.length < 1">Enter your username</mat-hint>
     </mat-form-field>
 
-    <mat-form-field style="width: 100%;margin-top: 20px;color:#598adb;font-size:18px" *ngIf="oldPasswordSet">
+    <mat-form-field style="width: 100%;color:#598adb;font-size:18px" *ngIf="oldPasswordSet">
         <input matInput placeholder="Current Password" [type]="hide['oldPassword'] ? 'password' : 'text'" required fullWidth [(ngModel)]= "oldPassword" id="password" autocomplete="current-password">
           <mat-icon matSuffix (click)="hide['oldPassword'] = !hide['oldPassword']">{{hide['oldPassword'] ? 'visibility_off' : 'visibility'}}</mat-icon>
           <mat-hint *ngIf="oldPassword.length < 1">Enter your current password</mat-hint>
     </mat-form-field>
-
-
-    <mat-form-field style="width: 100%;margin-top: 20px;color:#598adb;font-size:18px;position:fixed;z-index:0;bottom:-200px;" *ngIf="!oldPasswordSet">
-        <input matInput placeholder="Current Password"  fullWidth  id="password" autocomplete="current-password">
-    </mat-form-field>
-
 
     <mat-form-field style="width: 100%;margin-top: 20px;color:#598adb;font-size:18px">
         <input matInput placeholder="New Password" [type]="hide['newPassword'] ? 'password' : 'text'" required fullWidth [(ngModel)]= "newPassword" autocomplete="new-password">

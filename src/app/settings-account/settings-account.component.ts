@@ -80,6 +80,7 @@ sideBarFixed = { left:false}
 
     }
 
+    this.username = this.q.os.getUsername();
 
     if(this.q.os.utilities.engine.detect() == 'electron'){
         this.isElectron = true;
