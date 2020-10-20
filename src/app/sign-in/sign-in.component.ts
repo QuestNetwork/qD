@@ -138,7 +138,7 @@ async openFileLoaded(event){
     this.ui.updateProcessingStatus(true);
     let importSettingsStatus = false;
     try{
-         importSettingsStatus = await this.attemptImportSettings({});
+         importSettingsStatus = await this.attemptImportSettings({ default: true });
     }catch(e){
       this.ui.updateProcessingStatus(false);
 this.pwd = "";
