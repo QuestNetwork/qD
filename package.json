@@ -1,7 +1,7 @@
 {
   "name": "@questnetwork/q-desk",
   "author": "StationedInTheField",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "Decentralized End-To-End Encrypted P2P Platform",
   "main": "main.js",
   "license": "AGPL-3.0",
