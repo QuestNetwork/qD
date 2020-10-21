@@ -1,4 +1,4 @@
-![Completion](https://img.shields.io/badge/completion-19%25-orange) ![Help Wanted](https://img.shields.io/badge/%20-help--wanted-%23159818) ![Version 0.9.3](https://img.shields.io/badge/stable-v0.9.4-green) ![Version 0.9.3](https://img.shields.io/badge/dev-v0.9.5-blue) ![Sponsors](https://img.shields.io/badge/sponsors-1-orange)
+![Completion](https://img.shields.io/badge/completion-21%25-orange) ![Help Wanted](https://img.shields.io/badge/%20-help--wanted-%23159818) ![Version 0.9.3](https://img.shields.io/badge/stable-v0.9.4-green) ![Version 0.9.3](https://img.shields.io/badge/dev-v0.9.5-blue) ![Sponsors](https://img.shields.io/badge/sponsors-1-orange)
 
 ## qDesk
 > Cross-Platform Trustless Social Network
@@ -216,6 +216,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 **0.9.5**
 - Account Name For Additional Security & Hashing
+- qDesk redirects to the originally requested URI after signIn
 
 ## Roadmap
 
