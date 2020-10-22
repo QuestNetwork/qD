@@ -83,8 +83,10 @@
     "@questnetwork/quest-os-js": "../quest-os-js",
     "@zxing/library": "0.17.1",
     "@zxing/ngx-scanner": "3.0.0",
+    "angular-mentions": "^1.2.0",
     "async": "^3.2.0",
     "autolinker": "^3.14.1",
+    "axios": "^0.19.2",
     "cids": "^0.8.3",
     "eva-icons": "^1.1.3",
     "express": "^4.17.1",
@@ -100,8 +102,7 @@
     "typescript": "3.9.7",
     "uuid": "8.3.0",
     "webpack": "4.44.1",
-    "zone.js": "~0.10.3",
-    "axios": "^0.19.2"
+    "zone.js": "~0.10.3"
   },
   "devDependencies": {
     "@angular/cli": "10.1.1",

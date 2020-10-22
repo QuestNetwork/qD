@@ -35,6 +35,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
+import { MentionModule } from 'angular-mentions';
 
 
 
@@ -73,6 +74,7 @@ SettingsGeneralComponent,
 SettingsIPFSComponent
   ],
   imports: [
+      MentionModule,
     NbTabsetModule,
     AppRoutingModule,
     BrowserModule,
