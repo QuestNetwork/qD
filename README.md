@@ -1,6 +1,6 @@
 ![Completion](https://img.shields.io/badge/completion-21%25-orange) ![Help Wanted](https://img.shields.io/badge/%20-help--wanted-%23159818) ![Version 0.9.3](https://img.shields.io/badge/stable-v0.9.4-green) ![Version 0.9.3](https://img.shields.io/badge/dev-v0.9.5-blue) ![Sponsors](https://img.shields.io/badge/sponsors-1-orange)
 
-## qDesk
+## qD
 > Cross-Platform Trustless Social Network
 
 ![Screenshot](https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/0.9.3.png?raw=true)
@@ -8,13 +8,13 @@
 >In case you are experiencing connectivity issues, on the app you can try using different [star node configurations](#troubleshooting) in Settings > IPFS.
 
 ## Description
-qDesk is an example app for our JavaScript p2p library [qOS](quest-os-js) with cool open source modules such as [qD Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qD Social](https://github.com/QuestNetwork/qd-social-ts) and the upcoming  [qD Vibes](https://github.com/QuestNetwork/qd-vibes-ts), [qD Markets](https://github.com/QuestNetwork/qd-market-ts), [qD News](https://github.com/QuestNetwork/qd-news-ts), [qD Apps](qd-apps-ts), [qD Games](https://github.com/QuestNetwork/qd-games-ts) and [qD Calendar](https://github.com/QuestNetwork/qd-calendar-ts).
+qD is an example app for our JavaScript p2p library [qOS](quest-os-js) with cool open source modules such as [qD Messages](https://github.com/QuestNetwork/qd-messages-ts) and [qD Social](https://github.com/QuestNetwork/qd-social-ts) and the upcoming  [qD Vibes](https://github.com/QuestNetwork/qd-vibes-ts), [qD Markets](https://github.com/QuestNetwork/qd-market-ts), [qD News](https://github.com/QuestNetwork/qd-news-ts), [qD Apps](qd-apps-ts), [qD Games](https://github.com/QuestNetwork/qd-games-ts) and [qD Calendar](https://github.com/QuestNetwork/qd-calendar-ts).
 
-qDesk makes it possible to build custom, secure and decentralized social networks in less than 20 days.
+qD makes it possible to build custom, secure and decentralized social networks in less than 20 days.
 
 Our quest network aims to allow the creation and (distributed) completion of quests supported by a feature rich decentralized social network.
 
-0.9.5+ allow to connect qDesk Social profiles to Twitter without sharing information with Twitter as an additional layer of verification. It is planned to add passive verification for a custom list of external networks to verify the peer identities.
+0.9.5+ allow to connect qD Social profiles to Twitter without sharing information with Twitter as an additional layer of verification. It is planned to add passive verification for a custom list of external networks to verify the peer identities.
 
 1.0.0+ complies with privacy regulations and can be used for confidential information as a production social network worldwide. 
 
@@ -22,9 +22,9 @@ We have chosen Angular/Electron as an example environment because we believe it 
 
 This app is built on [qOS](https://github.com/QuestNetwork/quest-os-js) which makes use of the [Interplanetary Filesystem](https://ipfs.io), [IPFS GossipSub](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1/) and [IPFS DAGs](https://docs.ipfs.io/concepts/merkle-dag/).
 
-Look what other people have built with qDesk: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
+Look what other people have built with qD: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
 
-qDesk allows to lazy load modules.
+qD allows to lazy load modules.
 
 ## Security
 
@@ -178,8 +178,6 @@ If you have trouble getting the directory discovered by gateways, you can try ``
 Keep in mind that the bundled web application is >14MB alone without assets, please be patient until we have a preloader.
 
 
-
-
 We added an example ```swarm.json``` to the ```src/app``` folder with an example node to make reproduction easier, but we strongly recommend to use our [Quest CLI](https://github.com/QuestNetwork/quest-cli) to test and build the app.
 
 Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/to/quest-cli/index.js` from any folder on your system. It's much nicer!
@@ -216,7 +214,8 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 **0.9.5**
 - Account Name For Additional Security & Hashing
-- qDesk redirects to the originally requested URI after signIn
+- qD redirects to the originally requested URI after signIn
+- New Help Link
 
 ## Roadmap
 
@@ -234,7 +233,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - Ethereum Payment Integration Beta
 
 **0.9.7**
-- [qDesk News \[Beta\]](https://github.com/QuestNetwork/qd-news-ts)
+- [qD News \[Beta\]](https://github.com/QuestNetwork/qd-news-ts)
 - Quest Worker To Render `.blend` Files And Earn Rewards
 - Add Custom Themes By Pasting CSS Into The Built-In Theme Editor
 - Import/Export Themes
