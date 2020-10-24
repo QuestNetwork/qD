@@ -17,6 +17,8 @@
         <nb-icon icon='shake-outline'></nb-icon>
       </a>
 
+      <a mat-tab-link routerLink="https://questnetwork.github.com/docs" [hidden]="!tabAccessibility['settingsTab']"  class="navTab settingsTab"  target="_blank" [routerLinkActive]="['nav-active']"><nb-icon icon='question-mark-outline' style="color: #46267e;"></nb-icon></a>
+
 
       <!-- <div  label="Sign In"  class="signInTab"
       </mat-tab>
@@ -60,5 +62,4 @@
       </div>
 
       <div class="web-top-links">
-      <a href="https://questnetwork.github.io/docs" target="_blank"><img src='./assets/1280px-Git-logo.svg.png' width=50></a>
       </div>
