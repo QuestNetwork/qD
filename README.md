@@ -235,6 +235,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 **0.9.7**
 - [qDesk News \[Beta\]](https://github.com/QuestNetwork/qd-news-ts)
+- Quest Worker To Render `.blend` Files And Earn Rewards
 - Add Custom Themes By Pasting CSS Into The Built-In Theme Editor
 - Import/Export Themes
 - Light Mode
