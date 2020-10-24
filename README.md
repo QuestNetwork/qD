@@ -22,9 +22,9 @@ We have chosen Angular/Electron as an example environment because we believe it 
 
 This app is built on [qOS](https://github.com/QuestNetwork/quest-os-js) which makes use of the [Interplanetary Filesystem](https://ipfs.io), [IPFS GossipSub](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1/) and [IPFS DAGs](https://docs.ipfs.io/concepts/merkle-dag/).
 
-Look what other people have built with qDesk: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
+Look what other people have built with qD: [Awesome Quest Network dApps](https://github.com/QuestNetwork/awesome/blob/master/README.md)!
 
-qDesk allows to lazy load modules.
+qD allows to lazy load modules.
 
 ## Security
 
@@ -178,8 +178,6 @@ If you have trouble getting the directory discovered by gateways, you can try ``
 Keep in mind that the bundled web application is >14MB alone without assets, please be patient until we have a preloader.
 
 
-
-
 We added an example ```swarm.json``` to the ```src/app``` folder with an example node to make reproduction easier, but we strongly recommend to use our [Quest CLI](https://github.com/QuestNetwork/quest-cli) to test and build the app.
 
 Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/to/quest-cli/index.js` from any folder on your system. It's much nicer!
@@ -216,7 +214,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 **0.9.5**
 - Account Name For Additional Security & Hashing
-- qDesk redirects to the originally requested URI after signIn
+- qD redirects to the originally requested URI after signIn
 - New Help Link
 
 ## Roadmap
@@ -235,7 +233,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - Ethereum Payment Integration Beta
 
 **0.9.7**
-- [qDesk News \[Beta\]](https://github.com/QuestNetwork/qd-news-ts)
+- [qD News \[Beta\]](https://github.com/QuestNetwork/qd-news-ts)
 - Quest Worker To Render `.blend` Files And Earn Rewards
 - Add Custom Themes By Pasting CSS Into The Built-In Theme Editor
 - Import/Export Themes
