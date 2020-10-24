@@ -250,6 +250,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 - [qD Vibes \[Beta\]](https://github.com/QuestNetwork/qd-vibes-ts) 
 
 **1.0.0**
+- Polkadot Integration Beta
 - [qD Quests \[Beta\]](https://github.com/QuestNetwork/qd-quest-ts)
 - [qD Calendar \[Beta\]](https://github.com/QuestNetwork/qd-calendar-ts) personal & shared calendars. Add events from other modules on qDesk.
 - [qD Messages \[Stable\]](https://github.com/QuestNetwork/qd-messages-ts)
@@ -268,6 +269,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 **3.0.0**
 - [qD Quests \[Stable\]](https://github.com/QuestNetwork/qd-quest-ts)
 - [qD Games \[Stable\]](https://github.com/QuestNetwork/qd-games-ts)
+- Polkadot Integration Finalized
 
 **4.0.0**
 - [OpenAI GPT3](https://en.wikipedia.org/wiki/GPT-3) Integration For Suggestions, AutoRespond And Completion
