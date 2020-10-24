@@ -16,7 +16,7 @@ Our quest network aims to allow the creation and (distributed) completion of que
 
 0.9.5+ allow to connect qD Social profiles to Twitter without sharing information with Twitter as an additional layer of verification. It is planned to add passive verification for a custom list of external networks to verify the peer identities.
 
-1.0.0+ complies with privacy regulations and can be used for confidential information as a production social network worldwide. 
+1.0.0+ complies with privacy regulations and can be used for confidential information as a production social network worldwide.
 
 We have chosen Angular/Electron as an example environment because we believe it offers the best accessibility for developers coming from any other language/framework. The Quest Network is already being used in Python on PyQt5 and we aim to provide the underlying library in Go and wherever possible in Rust as well.
 
@@ -37,8 +37,8 @@ qD allows to lazy load modules.
 
 | Version | Linux | Mac | Windows |
 |---------:|------------------------------|------------------------------|------------------------------|
-| 0.9.4 | [qDesk-0.9.4.AppImage](https://github.com/QuestNetwork/qDesk/releases/download/0.9.4/qDesk-0.9.4.AppImage) | [qDesk-0.9.4.dmg](https://github.com/QuestNetwork/qDesk/releases/download/0.9.4/qDesk-0.9.4.dmg) | No Official Build |
-| 0.9.3-rc1 | [q-desk-0.9.3.AppImage](https://github.com/QuestNetwork/qDesk/releases/download/0.9.3-rc1/q-desk-0.9.3.AppImage)  |  [q-desk-0.9.3.dmg](https://github.com/QuestNetwork/qDesk/releases/download/0.9.3-rc1/q-desk-0.9.3.dmg) | No Official Build |
+| 0.9.4 | [qDesk-0.9.4.AppImage](https://github.com/QuestNetwork/qD/releases/download/0.9.4/qD-0.9.4.AppImage) | [qDesk-0.9.4.dmg](https://github.com/QuestNetwork/qD/releases/download/0.9.4/qD-0.9.4.dmg) | No Official Build |
+| 0.9.3-rc1 | [q-desk-0.9.3.AppImage](https://github.com/QuestNetwork/qD/releases/download/0.9.3-rc1/q-desk-0.9.3.AppImage)  |  [q-desk-0.9.3.dmg](https://github.com/QuestNetwork/qD/releases/download/0.9.3-rc1/q-desk-0.9.3.dmg) | No Official Build |
 | 0.9.2 | [quest-messenger-0.9.2.AppImage](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.2/quest-messenger-0.9.2.AppImage) | [quest-messenger-0.9.2.dmg](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.2/quest-messenger-0.9.2.dmg) | No Official Build |
 | 0.9.1 | [quest-messenger-0.9.1.AppImage](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.1/quest-messenger-0.9.1.AppImage) | [quest-messenger-0.9.1.dmg](https://github.com/QuestNetwork/qd-messages-ts/releases/download/0.9.1/quest-messenger-0.9.1.dmg) | No Official Build |
 
@@ -66,7 +66,7 @@ http://ipfs.infura.io/ipfs/QmZNvMbTPCEW1vebsEc5L2dx18PeYCKgwP5oMCVREkmr3p/
 
 **0.9.3-rc1**
 
-<img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/cloudflarelink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qDesk/raw/0.9.3-rc1/doc/images/ipfsiolink.png?raw=true' width=25%>
+<img src='https://github.com/QuestNetwork/qD/raw/0.9.3-rc1/doc/images/pinatalink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qD/raw/0.9.3-rc1/doc/images/cloudflarelink.png?raw=true' width=25%> <img src='https://github.com/QuestNetwork/qD/raw/0.9.3-rc1/doc/images/ipfsiolink.png?raw=true' width=25%>
 
 https://gateway.pinata.cloud/ipfs/QmTSuYWm2LXyYndEq2W62raSpjjUioSoSW3otSJRFQ1wra/
 
@@ -92,33 +92,33 @@ Please consider supporting us, so that we can build a non-profit for this projec
 | Ethereum| Bitcoin |
 |---|---|
 | `0xBC2A050E7B87610Bc29657e7e7901DdBA6f2D34E` | `bc1qujrqa3s34r5h0exgmmcuf8ejhyydm8wwja4fmq`   |
-|  <img src="https://github.com/QuestNetwork/qDesk/raw/master/doc/images/eth-qr.png" >   | <img src="https://github.com/QuestNetwork/qDesk/raw/master/doc/images/btc-qr.png" > |
+|  <img src="https://github.com/QuestNetwork/qD/raw/master/doc/images/eth-qr.png" >   | <img src="https://github.com/QuestNetwork/qD/raw/master/doc/images/btc-qr.png" > |
 
 ## Development
 
-### Planning 
+### Planning
 
 See our [Kanban](https://github.com/orgs/QuestNetwork/projects/1) for the development of 0.9.5, feel free to add or pick up features!
 
 ### Prerequisites
 
-1.) 
+1.)
 
 Clone & Checkout essential repositories:
 ```
-git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-ts && git clone https://github.com/QuestNetwork/qDesk && cd qd-social-ts   && git checkout 0.9.4 && cd ..  &&  cd qd-messages-ts   && git checkout 0.9.4 && cd ..  &&  cd qDesk   && git checkout 0.9.4 && cd ..
+git clone https://github.com/QuestNetwork/qd-social-ts && git clone https://github.com/QuestNetwork/qd-messages-ts && git clone https://github.com/QuestNetwork/qD && cd qd-social-ts   && git checkout 0.9.4 && cd ..  &&  cd qd-messages-ts   && git checkout 0.9.4 && cd ..  &&  cd qD   && git checkout 0.9.4 && cd ..
 ```
 
-OR 
+OR
 
 Clone & Checkout all repositories on the latest dev branch:
-``` 
-git clone https://github.com/QuestNetwork/qDesk && cd qDesk && git checkout 0.9.5-dev && npm run q-dev && cd ..
+```
+git clone https://github.com/QuestNetwork/qD && cd qD && git checkout 0.9.5-dev && npm run q-dev && cd ..
 ````
 
-2.) Install Dependencies & Enter qDesk Repository:
+2.) Install Dependencies & Enter qD Repository:
 ```
-cd quest-utilities-js && npm install && cd .. && cd quest-crypto-js && npm install && cd .. && cd quest-os-js && npm install && cd .. && cd qd-social-ts && npm run inst && cd .. && cd qd-messages-ts && npm run inst && cd .. && cd qDesk && npm run inst
+cd quest-utilities-js && npm install && cd .. && cd quest-crypto-js && npm install && cd .. && cd quest-os-js && npm install && cd .. && cd qd-social-ts && npm run inst && cd .. && cd qd-messages-ts && npm run inst && cd .. && cd qD && npm run inst
 ```
 
 ### Commands
@@ -136,7 +136,7 @@ To The same directory you're cloning this repository to.
 **Build For Mac**
 ```
 sed -i 's/"@questnetwork\/q-desk"/"q-desk"/g' package.json
-&& npm run mac && 
+&& npm run mac &&
 sed -i  's/"q-desk"/"@questnetwork\/q-desk"/g'  package.json
 ```
 Builds MacOS DMG and .app files to ``dist/`` and ``dist/mac``
@@ -246,12 +246,12 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 **0.9.9**
 - Additional Patch
-- [qD Vibes \[Beta\]](https://github.com/QuestNetwork/qd-vibes-ts) 
+- [qD Vibes \[Beta\]](https://github.com/QuestNetwork/qd-vibes-ts)
 
 **1.0.0**
 - Polkadot Integration Beta
 - [qD Quests \[Beta\]](https://github.com/QuestNetwork/qd-quest-ts)
-- [qD Calendar \[Beta\]](https://github.com/QuestNetwork/qd-calendar-ts) personal & shared calendars. Add events from other modules on qDesk.
+- [qD Calendar \[Beta\]](https://github.com/QuestNetwork/qd-calendar-ts) personal & shared calendars. Add events from other modules on qD.
 - [qD Messages \[Stable\]](https://github.com/QuestNetwork/qd-messages-ts)
 - [qD Social \[Stable\]](https://github.com/QuestNetwork/qd-social-js)
 - [qD Apps \[Stable\]](https://github.com/QuestNetwork/qd-apps-ts)
@@ -262,7 +262,7 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 **2.0.0**
 - [qD Calendar \[Stable\]](https://github.com/QuestNetwork/qd-calendar-ts)
 - [qD Market \[Stable\]](https://github.com/QuestNetwork/qd-market-ts)
-- [qD Vibes \[Stable\]](https://github.com/QuestNetwork/qd-vibes-ts) 
+- [qD Vibes \[Stable\]](https://github.com/QuestNetwork/qd-vibes-ts)
 - Ethereum Payment Integration Finalized
 
 **3.0.0**
@@ -279,9 +279,9 @@ Pro Tip: Put a file in your `/bin` that runs the quest-cli like so `node /path/t
 
 # Troubleshooting
 **:warning: Messages are not being delivered || Participants won't update || Can't join channels**<br>
->Solution: qDesk ``^0.9.4`` go to ``Settings > IPFS`` and either download an example swarm peer list from GitHub (https://github.com/QuestNetwork/qDesk/blob/0.9.4/src/app/swarm.json) or enter your own.
+>Solution: qD ``^0.9.4`` go to ``Settings > IPFS`` and either download an example swarm peer list from GitHub (https://github.com/QuestNetwork/qD/blob/0.9.4/src/app/swarm.json) or enter your own.
 
-If your problem is not solved here, please file an [issue](https://github.com/QuestNetwork/qDesk/issues/new) on GitHub.
+If your problem is not solved here, please file an [issue](https://github.com/QuestNetwork/qD/issues/new) on GitHub.
 
 
 ## License
