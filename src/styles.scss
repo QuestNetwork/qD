@@ -16,6 +16,15 @@ iframe#webpack-dev-server-client-overlay {
   @include nb-theme-global();
 };
 
+
+.mention-active{
+  padding: 5px !important;
+    background: #1bb393 !important;
+    border: 0 transparent;
+    outline: 0;
+}
+
+
 .message-row input{
   background:#192038;
   font-weight:normal !important;
