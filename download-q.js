@@ -17,7 +17,7 @@ async function start(){
   let apiPackages = [];
   for( let repo of repositories){
     // checkout the repository as a sibling if it's not this reposito
-    if(repo['full_name'] != "QuestNetwork/qDesk"){
+    if(repo['full_name'] != "QuestNetwork/qD"){
       try{
       require('child_process').execSync('(cd .. && git clone https://github.com/'+repo['full_name']+')');
       }catch(e){}
