@@ -84,7 +84,6 @@
     "@questnetwork/quest-os-js": "../quest-os-js",
     "@zxing/library": "0.17.1",
     "@zxing/ngx-scanner": "3.0.0",
-    "angular-mentions": "^1.2.0",
     "async": "^3.2.0",
     "autolinker": "^3.14.1",
     "axios": "^0.19.2",
