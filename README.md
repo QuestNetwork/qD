@@ -1,6 +1,9 @@
 ![Completion](https://img.shields.io/badge/completion-21%25-orange) ![Help Wanted](https://img.shields.io/badge/%20-help--wanted-%23159818) ![Version 0.9.3](https://img.shields.io/badge/stable-v0.9.4-green) ![Version 0.9.3](https://img.shields.io/badge/dev-v0.9.5-blue) ![Sponsors](https://img.shields.io/badge/sponsors-1-orange)
 
 ## qD
+
+[![Join the chat at https://gitter.im/QuestNetwork/qD](https://badges.gitter.im/QuestNetwork/qD.svg)](https://gitter.im/QuestNetwork/qD?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > Cross-Platform Trustless Social Network
 
 ![Screenshot](https://github.com/QuestNetwork/qd-messages-ts/raw/0.9.3/doc/images/0.9.3.png?raw=true)
